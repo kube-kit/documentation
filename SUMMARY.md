@@ -2,8 +2,6 @@
 
 * [Welcome!](./docs/welcome.md)
 
-## Getting Started
-
 * [Quick Start Guide](./docs/getting-started/quick-start-guide.md)
 
 ## Tutorial

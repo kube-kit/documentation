@@ -13,7 +13,7 @@
 ## Installing KubeKit
 
 ### 1. Download KubeKit 
-Download KubeKit from official site [KubeKit.io](kubekit.io)
+Download KubeKit from official site [KubeKit.io](https://kubekit.io)
 <!-- TODO: Add image -->
 ### 2. Install KubeKit
 #### Linux (Debian/Ubuntu)
