@@ -18,6 +18,7 @@
 ## Cluster
 
 * [Creating a Cluster](./docs/cluster/creating-a-cluster.md)
+* [Importing a Cluster](./docs/cluster/importing-a-cluster.md)
 * [Supported OS](./docs/cluster/supported-os.md)
 * [Managing a Cluster](./docs/cluster/managing-a-cluster.md)
 * [Cluster Scaling](./docs/cluster/cluster-scalling.md)
