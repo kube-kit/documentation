@@ -10,6 +10,8 @@
 * **Disk Space:** Minimum 1.5 GB free space
 * **Network:** Internet connection required for certain features
 
+>Note: KubeKit may work on other operating systems or versions beyond those listed above. However, we recommend using the officially supported versions to ensure optimal performance and an error-free experience.
+
 ## Installing KubeKit
 
 ### 1. Download KubeKit 
