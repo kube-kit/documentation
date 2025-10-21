@@ -38,8 +38,6 @@
 * [Navigation](./docs/advance-feature/navigation.md)
 
 
-## Release Notes
-
 * [Release notes](./docs/release-notes/README.md)
 
 
