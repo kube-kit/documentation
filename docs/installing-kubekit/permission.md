@@ -8,8 +8,14 @@ KubeKit operates locally and requires access to two specific ports: **5963** and
 
 If these ports are already in use by another process, KubeKit will display an error message indicating that the ports are unavailable. To resolve this, terminate the processes currently using those ports before restarting the KubeKit application.
 
+On **Windows** systems, a firewall prompt may appear requesting permission to allow these ports. When this prompt appears, click Allow to grant KubeKit the necessary access.
+
+<!-- TODO: add image windows firewal prompt image to allow port -->
+
 ## Application Data
 
 KubeKit stores application-related data in the user's home directory under the folder named **.kube-kit-v2**. This directory contains essential files, including configuration data, databases, logs, and update packages.
 
 You may explore this folder if needed for troubleshooting, backup, or system maintenance purposes.
+
+<!-- TODO: add screen shot of data directory -->
