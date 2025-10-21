@@ -40,7 +40,7 @@
 
 ## Release Notes
 
-* [v2.0.0: Release notes](./docs/release-notes/v2.0.0-release-notes.md)
+* [Release notes](./docs/release-notes/README.md)
 
 
 ## Getting Help
