@@ -11,8 +11,7 @@
 
 ## Installing Kubekit
 
-* [System Requirements](./docs/installing-kubekit/system-requirements.md)
-* [Installing in Different OS](./docs/installing-kubekit/installing-in-differnt-os/README.md)
+* [Installing KubeKit](./docs/installing-kubekit/installing-kubekit.md)
 * [Permission](./docs/installing-kubekit/permission.md)
 * [Updating Kubekit](./docs/installing-kubekit/updating-kubekit.md)
 
