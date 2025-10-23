@@ -2,8 +2,6 @@
 
 * [Welcome!](./docs/welcome.md)
 
-## Getting Started
-
 * [Quick Start Guide](./docs/getting-started/quick-start-guide.md)
 
 ## Tutorial
@@ -13,14 +11,14 @@
 
 ## Installing Kubekit
 
-* [System Requirements](./docs/installing-kubekit/system-requirements.md)
-* [Installing in Different OS](./docs/installing-kubekit/installing-in-differnt-os/README.md)
+* [Installing KubeKit](./docs/installing-kubekit/installing-kubekit.md)
 * [Permission](./docs/installing-kubekit/permission.md)
 * [Updating Kubekit](./docs/installing-kubekit/updating-kubekit.md)
 
 ## Cluster
 
 * [Creating a Cluster](./docs/cluster/creating-a-cluster.md)
+* [Importing a Cluster](./docs/cluster/importing-a-cluster.md)
 * [Supported OS](./docs/cluster/supported-os.md)
 * [Managing a Cluster](./docs/cluster/managing-a-cluster.md)
 * [Cluster Scaling](./docs/cluster/cluster-scalling.md)
@@ -41,9 +39,7 @@
 * [Navigation](./docs/advance-feature/navigation.md)
 
 
-## Release Notes
-
-* [v2.0.0: Release notes](./docs/release-notes/v2.0.0-release-notes.md)
+* [Release notes](./docs/release-notes/README.md)
 
 
 ## Getting Help

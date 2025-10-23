@@ -6,7 +6,7 @@ Welcome to KubeKit! Effortlessly create clusters instantly via a GUI, no coding 
 
 
 
-## What is Kubekit?
+## What is KubeKit?
 
 KubeKit is an innovative DevOps automation tool designed to simplify on-premises Kubernetes cluster creation and management. Traditionally, building a Kubernetes cluster required deep technical expertise, manual configuration, and extensive scripting. KubeKit transforms this complex process into an intuitive, GUI-driven experience empowering developers and DevOps engineers to deploy and manage clusters with ease, speed, and confidence.
 
