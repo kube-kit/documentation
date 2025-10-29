@@ -12,19 +12,37 @@ An information page will appear. After reviewing it, click **I am ready to make 
 
 ---
 
-### **Step 2: Set Node Count**
+### **Step 2: Configure Node Details**
 
-In the **Node Number** page:
+In this page, you have to provide information related to your nodes.
+
+On the **left side of the screen**, you will see the **Node Count** section:
 
 * Adjust the total number of nodes for your cluster.
-* You need a **minimum of 2 nodes**.
-* Use the **+** and **−** icons to increase or decrease node count.
-  When ready, click **Continue**.
+* A **minimum of 2 nodes** is required.
+* Use the **+** and **−** icons to increase or decrease the number of nodes.
+
+On the **right side of the screen**, you will find several **options** that make configuration easier. These are designed to help when your cluster contains many nodes with similar settings.
+
+For example, when creating a cluster with a large number of nodes, you may have node IPs in a similar range such as:
+
+```
+10.0.0.21, 10.0.0.22, 10.0.0.23
+```
+
+If all nodes share the same **username** and **password** or have a similar **access method**, you can use these options to **prefill** the information automatically. This saves time and ensures consistency.
+
+If your nodes do not follow a similar pattern, don’t worry — you can manually adjust or update each node’s information on the next page.
+
+When ready, click **Continue** to move forward.
+
 <!-- TODO: Add image -->
 
 ---
 
 ### **Step 3: Provide Node Information**
+
+This page is for providing information for individual nodes. If you have chosen to fill similar IPs, nodes, or usernames in the previous page, then you will find that all the information has been prefilled for you. If you have not used those options, you will need to fill out each node’s information manually.
 
 On the **Node Information** page:
 
