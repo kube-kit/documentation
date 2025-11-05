@@ -21,7 +21,7 @@
 * [Importing a Cluster](./docs/cluster/importing-a-cluster.md)
 * [Supported OS](./docs/cluster/supported-os.md)
 * [Managing a Cluster](./docs/cluster/managing-a-cluster.md)
-* [Application Scaling](./docs/cluster/application-scalling.md)
+* [Deployment Scaling](./docs/cluster/deployment-scalling.md)
 
 
 ## Monitoring & Logging
