@@ -5,26 +5,30 @@ With KubeKit, you are empowered to access real-time log streams and leverage adv
 
 ---
 
-## Step 1: Access the Cluster Dashboard  
+## Access the Cluster Dashboard  
 From the KubeKit home screen, you will see all clusters you have created or imported. Select your target cluster to open its **Cluster Dashboard**.  
 
 ---
 
-## Step 2: Navigate to the Logs Page  
+## Navigate to the Logs Page  
 Within the selected cluster dashboard, locate the **Logs** section in the right-hand sidebar and click it. This will bring you to the Logs page where you can commence your log-analysis work.
+#### TODO: ADD IMAGE
 
 ---
 
-## Step 3: Filter Logs by Resource Type  
+## Filter Logs by Resource Type  
 On the Logs page, you may filter log output by namespace, deployment, replicaset, daemonset, replication controller, stateful set, job, node controller or pod. This enables you to narrow the scope of logs to the exact resource you wish to investigate.
+#### TODO: ADD IMAGE
 
 ---
 
-## Step 4: Search and Inspect Logs  
+## Search and Inspect Logs  
 Utilise the search bar located at the top-left of the Logs page to query specific log entries (e.g., error messages, component names, keywords). You may also enable the **Wrap** button to adjust text formatting and check the **Show Timestamps** checkbox if you need to view timestamped entries in the log stream.
+#### TODO: ADD IMAGE
 
 ---
 
-## Step 5: Download Logs for Offline Analysis  
+## Download Logs for Offline Analysis  
 If you wish to review or archive logs outside of the console, use the **Download** button to export the selected log output. This is particularly helpful for long-term investigations, auditing purposes or sharing with other teams.
+#### TODO: ADD IMAGE
 
