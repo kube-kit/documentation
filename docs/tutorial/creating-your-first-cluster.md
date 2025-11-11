@@ -8,23 +8,45 @@ Creating a cluster in **KubeKit** is simple, fast, and effortless. Follow these 
 
 On the KubeKit home page, click **Create Cluster**.
 An information page will appear. After reviewing it, click **I am ready to make my cluster** to proceed.
+![](../images/tutorial/kubekit_empty_home.png)
+![](../images/tutorial/cluster_create_info.png)
+
 <!-- TODO: Add image -->
 
 ---
 
-### **Step 2: Set Node Count**
+### **Step 2: Configure Node Details**
 
-In the **Node Number** page:
+In this page, you have to provide information related to your nodes.
+
+![](../images/tutorial/node_count_and_prefill.png)
+
+
+On the **left side of the screen**, you will see the **Node Count** section:
 
 * Adjust the total number of nodes for your cluster.
-* You need a **minimum of 2 nodes**.
-* Use the **+** and **−** icons to increase or decrease node count.
-  When ready, click **Continue**.
-<!-- TODO: Add image -->
+* A **minimum of 2 nodes** is required.
+* Use the **+** and **−** icons to increase or decrease the number of nodes.
+
+On the **right side of the screen**, you will find several **options** that make configuration easier. These are designed to help when your cluster contains many nodes with similar settings.
+
+For example, when creating a cluster with a large number of nodes, you may have node IPs in a similar range such as:
+
+```
+10.0.0.21, 10.0.0.22, 10.0.0.23
+```
+
+If all nodes share the same **username** and **password** or have a similar **access method**, you can use these options to **prefill** the information automatically. This saves time and ensures consistency.
+
+If your nodes do not follow a similar pattern, don’t worry — you can manually adjust or update each node’s information on the next page.
+
+When ready, click **Continue** to move forward.
 
 ---
 
 ### **Step 3: Provide Node Information**
+
+This page is for providing information for individual nodes. If you have chosen to fill similar IPs, nodes, or usernames in the previous page, then you will find that all the information has been prefilled for you. If you have not used those options, you will need to fill out each node’s information manually.
 
 On the **Node Information** page:
 
@@ -35,8 +57,13 @@ On the **Node Information** page:
 
 Click **Continue** when all nodes are configured.
 
+![](../images/tutorial/node_information.png)
+
+
 A confirmation pop-up will appear asking to start verification. Click **Start** to begin.
-<!-- TODO: Add image -->
+
+![](../images/tutorial/node_check_confirmation_modal.png)
+![](../images/tutorial/node_check_confirmation_modal_complete.png)
 
 ---
 
@@ -53,7 +80,8 @@ KubeKit will now check the accessibility of your virtual machines (VMs):
   * Total storage
 
 Click **Continue** to move forward.
-<!-- TODO: Add image -->
+
+![](../images/tutorial/node_preview_page.png)
 
 ---
 
@@ -65,23 +93,30 @@ On the **Cluster Configuration** page:
 * Provide a **Cluster Name** and an optional **Description**.
 
 Click **Continue** to proceed.
-<!-- TODO: Add image -->
+
+![](../images/tutorial/cluster_configuration.png)
+![](../images/tutorial/cluster_configuration2.png)
+
 
 ---
 
 ### **Step 6: Start Cluster Creation**
 
 A confirmation dialog will appear. Click **Start** to begin the cluster creation process.
+![](../images/tutorial/cluster_creation_confirmation.png)
+
 
 * Depending on your **internet speed**, **VM resources**, and **node count**, the setup may take some time.
 * You can monitor progress and view logs during installation.
+
+![](../images/tutorial/cluster_creation_running.png)
 
 If an error occurs (often due to network issues):
 
 * The process will stop.
 * A **Retry** button will appear.
 * Click **Retry** to continue from where it stopped.
-<!-- TODO: Add image -->
+<!-- TODO: Add image of cluster creation error -->
 
 ---
 
@@ -92,4 +127,5 @@ When the process completes successfully, a **Congratulations** page will appear.
 Click **Manage This Cluster** to open your **Cluster Dashboard**, where you can start managing your cluster.
 
 You have now successfully created your first Kubernetes cluster using KubeKit!
-<!-- TODO: Add image -->
+![](../images/tutorial/cluster_creation_success.png)
+
