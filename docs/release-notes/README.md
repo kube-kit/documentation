@@ -4,7 +4,52 @@ This document provides a detailed overview of KubeKit releases, including new fe
 
 ---
 
-## Release v2.0.0 (Latest)
+## Release v2.0.3 (Latest)
+
+**Bug Fixes:**
+
+* Fixed root user home path issue
+* Verbose log enabled in metrics installation script
+
+---
+
+## Release v2.0.2
+
+**Bug Fixes:**
+
+*  SSH key input form fixed.
+
+---
+
+## Release v2.0.1
+
+**New Features:**
+
+* TLS support with Let's Encrypt
+* Node info prefill form
+* Node config form re-design
+* Helm feature integrated
+* CI/CD pipeline introduced with self-hosted OS
+* CNI supports
+* Kubernetes version up to 1.34 added
+
+**Bug Fixes:**
+
+* Get Started page scroll issue fix in Mac ARM laptop
+* CRI-O installation URL updated.
+* Node terminal issue fixed.
+* RPM .store write permission issue.
+
+**Enhancements:**
+
+* Firewall configured correctly.
+* Kubectl bundled as binary
+* Metrics & SSL added as add-ons.
+* Parallel node checking and cluster import
+
+---
+
+## Release v2.0.0 
 
 **New Features:**
 
