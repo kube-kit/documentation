@@ -1,7 +1,7 @@
 # Logs
 
 Logs are indispensable for effective cluster management. They provide a chronological record of events, errors, state-changes and operational activity within your cluster. In a dynamic environment like Kubernetes, where pods start and stop frequently and nodes may be rescheduled, timely access to logs enables you to **diagnose issues**, **audit actions**, **ensure compliance** and **maintain visibility** into system behaviour.
-With KubeKit, you are empowered to access real-time log streams and leverage advanced features such as filtering, searching, timestamp viewing and downloading — thereby transforming raw log data into actionable insights.
+With KubeKit, you are empowered to access real-time log streams and leverage advanced features such as filtering, searching, timestamp viewing and downloading thereby transforming raw log data into actionable insights.
 
 ---
 

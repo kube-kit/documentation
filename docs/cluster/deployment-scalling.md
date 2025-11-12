@@ -1,7 +1,7 @@
 # Scaling Deployments
 
-Scaling a deployment means adjusting the number of running instances (replicas) of a workload so that your cluster can respond appropriately to increased or decreased demand. When you scale up, additional pods are scheduled onto nodes, enabling your application to handle more load; when you scale down, you free up resources and avoid unnecessary cost or overhead. In Kubernetes, a deployment manages pods via a replica set — changing the replica count triggers the replica set controller to add or remove pods accordingly.  
-For further reading on the native Kubernetes approach to scaling: [Kubernetes — Scaling an application](https://kubernetes.io/docs/tutorials/kubernetes-basics/scale/scale-intro/) and [Kubernetes — Autoscaling Workloads](https://kubernetes.io/docs/concepts/workloads/autoscaling/) 
+Scaling a deployment means adjusting the number of running instances (replicas) of a workload so that your cluster can respond appropriately to increased or decreased demand. When you scale up, additional pods are scheduled onto nodes, enabling your application to handle more load; when you scale down, you free up resources and avoid unnecessary cost or overhead. In Kubernetes, a deployment manages pods via a replica set changing the replica count triggers the replica set controller to add or remove pods accordingly.  
+For further reading on the native Kubernetes approach to scaling: [Kubernetes Scaling an application](https://kubernetes.io/docs/tutorials/kubernetes-basics/scale/scale-intro/) and [Kubernetes Autoscaling Workloads](https://kubernetes.io/docs/concepts/workloads/autoscaling/)
 
 ---
 

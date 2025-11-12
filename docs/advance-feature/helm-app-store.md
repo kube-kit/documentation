@@ -117,7 +117,7 @@ Example: If you installed Prometheus and changed the `scrape_interval` from 1 mi
 
 ### Rollback
 
-Each installation or upgrade creates a **revision** — a checkpoint of your release. You can roll back to any previous revision to restore the application’s last working state in case of issues.
+Each installation or upgrade creates a **revision**,  a checkpoint of your release. You can roll back to any previous revision to restore the application’s last working state in case of issues.
 
 ### Uninstall
 

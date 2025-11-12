@@ -38,7 +38,7 @@ For example, when creating a cluster with a large number of nodes, you may have 
 
 If all nodes share the same **username** and **password** or have a similar **access method**, you can use these options to **prefill** the information automatically. This saves time and ensures consistency.
 
-If your nodes do not follow a similar pattern, don’t worry — you can manually adjust or update each node’s information on the next page.
+If your nodes do not follow a similar pattern, don’t worry you can manually adjust or update each node’s information on the next page.
 
 When ready, click **Continue** to move forward.
 
