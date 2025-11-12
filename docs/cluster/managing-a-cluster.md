@@ -1,95 +1,205 @@
 # Managing a Cluster
 
 ## Overview  
-Cluster management is at the heart of maintaining a stable, performant, and secure Kubernetes environment. **KubeKit** provides a powerful and intuitive interface for managing all aspects of your cluster — from nodes and workloads to events, metrics, and logs — directly from the **Cluster Dashboard**.
+Cluster management lies at the core of maintaining a resilient and efficient Kubernetes environment. **KubeKit** provides an intuitive interface to manage every aspect of your cluster — from nodes and workloads to networking, configurations, and access control — all within a unified dashboard.
 
-When you select a cluster from the **KubeKit Dashboard**, you’ll land on the **Overview Page**, which offers a complete summary of your cluster’s configuration and status.  
+Upon selecting a cluster from the **KubeKit Dashboard**, you’ll land on the **Overview Page**, which provides a concise summary of your cluster’s configuration and state.  
 
-At the top of the page, you’ll find details such as:  
+At the top, you’ll find:  
 - Kubernetes version  
 - Container Network Interface (CNI) type and version  
 - Container Runtime Engine type and version  
 - Load Balancer type and version  
 - Cluster age  
 
-You can download the **kubeconfig** file from the top-right corner of this page for local access or automation.  
+You can download the **kubeconfig** file from the top-right corner for local access or automation.  
 
-The overview also visualizes **CPU and memory usage** for all nodes — represented through a time-series graph. If the metrics are not visible, ensure that your metrics provider (Prometheus or KubeKit metrics) is configured properly.  
+Below, CPU and memory usage are visualized through time-series graphs for all nodes. If metrics are not visible, configure your monitoring toolkit (Prometheus or KubeKit metrics).  
 
-In the left panel, you can see all running **pods** within the cluster, filter them by namespace, and manage them directly using the **Manage** button (visible when hovering over the Pods section). Similarly, all **nodes** are listed in the **Nodes** section, where you can manage them via the **Manage** button.  
-
-All **cluster events** are displayed on the same page, offering insights into real-time activities and potential issues.
+In the left panel, all **pods** are displayed with filtering options by namespace. You can manage pods or nodes directly via the **Manage** button available on hover. All cluster **events** are also listed to provide real-time operational insights.
 
 ---
 
-## Cluster Management Options
-
-KubeKit’s **right sidebar** includes several tools for advanced cluster management. Each section provides dedicated views and controls for specific resources.
+## Cluster Management Options  
+KubeKit’s right sidebar contains several dedicated sections for managing different components of the cluster. Each section offers a focused view with search, filtering, and management capabilities.
 
 ---
 
 ### **Nodes**  
-This page lists all nodes in your cluster.  
-- Search for nodes by name using the search bar.  
-- Filter nodes by **status** and **roles**.  
-- Access node terminals for direct interaction — follow the instructions in [Terminal Access](#) *(hyperlink to be added)*.  
+Lists all nodes within the cluster.  
+- Search nodes by name.  
+- Filter by **status** or **roles**.  
+- Access terminals directly — follow [Terminal Access](../monitoring-and-logging/terminal-access.md) 
 
 ---
 
 ### **Namespaces**  
-All namespaces are displayed here.  
-- Search namespaces by name or filter by **status**.  
-- View **labels** and **age** for each namespace.  
-- Delete a namespace by clicking its **delete icon**.
+Displays all namespaces.  
+- Search and filter by **status**.  
+- View **labels** and **age**.  
+- Delete namespaces using the **delete icon**.
 
 ---
 
 ### **Events**  
-This section shows all cluster events.  
-- Search for events by **resource name**.  
-- Filter events by **namespace** to locate specific occurrences.
+Shows all events occurring within the cluster.  
+- Search by **resource name**.  
+- Filter by **namespace**.
+- See details by clicking on the selected item. 
 
 ---
 
 ### **Metrics**  
-Monitor cluster performance through detailed node and workload metrics.  
-- For more details, see [Metrics Documentation](#) *(hyperlink to be added)*.  
+Visualize real-time node and workload metrics.  
+- For detailed information, see [Metrics Documentation](../monitoring-and-logging/metrics.md).
 
 ---
 
 ### **Logs**  
-View real-time logs across nodes, pods, and workloads.  
-- For details, refer to [Logs Documentation](#) *(hyperlink to be added)*.  
+Access and manage real-time logs for nodes, workloads, and pods.  
+- For more information, refer to [Logs Documentation](../monitoring-and-logging/log.md).
 
 ---
 
 ### **Helm**  
-Manage Helm repositories and install Helm releases directly from KubeKit.  
-- For detailed guidance, refer to [Helm Management Documentation](#) *(hyperlink to be added)*.
+Manage Helm repositories and releases directly from KubeKit.  
+- For guidance, visit [Helm Management Documentation](../advance-feature/app-store.md).
 
 ---
 
-### **Workload**  
-All workloads in the cluster are listed under this section. Let’s explore each workload type individually.
+## Workloads  
+The **Workloads** section displays all running resources within your cluster. Each workload type supports searching, filtering, and management features such as deletion, scaling, and detailed inspection.
 
-#### **Pods**  
+---
+
+### **Pods**  
 - View all pods across namespaces.  
-- Search by pod name, filter by **namespace**, **node**, or **status**.  
-- Delete a pod by selecting it via the checkbox — a **Delete** button will appear.  
-- Access the pod’s terminal by following the steps in [Terminal Access](#) *(hyperlink to be added)*.
+- Search and filter by **namespace**, **node**, or **status**.  
+- Delete pods by selecting them — a **Delete** button will appear.  
+- Access pod terminals — see [Terminal Access](../monitoring-and-logging/terminal-access.md).
 
-#### **Deployments**  
-- View and search all deployments.  
-- Filter by **namespace**.  
-- Delete deployments by selecting them via checkbox — a **Delete** button will appear.  
-- Scale deployments easily — see [Scaling Deployments](#) *(hyperlink to be added)* for full instructions.
+### **Deployments**  
+- Search and filter by **namespace**.  
+- Delete or scale deployments as needed.  
+- Follow [Scaling Deployments](../cluster/deployment-scalling.md) for scaling instructions.
 
-#### **Daemon Sets**  
-- View all DaemonSets across namespaces.  
-- Search or filter as needed.  
-- Delete a DaemonSet by selecting it via checkbox — a **Delete** button will appear.  
-- View more details about any DaemonSet by clicking on its name.
+### **Replica Sets**  
+- Lists all ReplicaSets.  
+- Search or filter by **namespace**.  
+- Delete by selecting the desired ReplicaSet.  
+- View details by clicking on its name.
+
+### **Replication Controllers**  
+- Functionality identical to ReplicaSets.  
+- Search, filter, delete, or inspect detailed configurations.
+
+### **Stateful Sets**  
+- Lists all StatefulSets.  
+- Search or filter by namespace.  
+- Delete as required.  
+- Click to view configuration details.
+
+### **Jobs**  
+- Displays all Kubernetes Jobs.  
+- Search or filter by namespace.  
+- Delete Jobs when necessary.  
+- Click to see more details.
+
+### **CronJobs**  
+- Similar management features as Jobs.  
+- Search, filter, delete, or view details.
+
+### **Daemon Sets**  
+- View, search, and filter by **namespace**.  
+- Delete or inspect a DaemonSet by clicking its name.
 
 ---
 
-Managing your cluster with **KubeKit** consolidates all administrative, monitoring, and troubleshooting capabilities into a single intuitive interface — ensuring that your Kubernetes operations remain efficient, transparent, and fully under control.
+## Config  
+Configuration resources are critical for defining how workloads behave and interact. In Kubernetes, **ConfigMaps**, **Secrets**, **ResourceQuotas**, and related components define the operational boundaries and configurations of workloads. **KubeKit** offers an easy way to view, edit, and manage these configurations from a single dashboard.
+
+### **Config Maps**  
+- Lists all ConfigMaps.  
+- Search and filter by **namespace**.  
+- Delete using the **delete button**.  
+- Click on a ConfigMap to open its dedicated page for details and live editing via the built-in editor.
+
+### **Secrets**  
+- Same management features as ConfigMaps.  
+- View, edit, and delete Secrets as needed.
+
+### **Limit Ranges**  
+- Lists all LimitRanges in the cluster.  
+- Search, filter, and delete them directly.
+
+### **Resource Quotas**  
+- Manage cluster-level resource usage limits.  
+- Search, filter, and delete as required.
+
+### **Priority Classes**  
+- Displays all defined priority classes.  
+- Search, filter, and manage them as needed.
+
+### **Pod Disruption Budgets (PDBs)**  
+- Helps ensure availability during node or pod disruptions.  
+- Search, filter, and delete as necessary.
+
+### **Leases**  
+- Lists all resource leases.  
+- Search and delete where applicable.
+
+---
+
+## Network  
+Networking is fundamental in Kubernetes, governing communication between pods, services, and external clients. KubeKit provides clear visibility into your network configuration and lets you manage all related resources effortlessly.
+
+### **Endpoints**  
+- Lists all Endpoints.  
+- Search or filter by **namespace**.  
+- Delete endpoints as needed.  
+- Click an Endpoint to view its details.
+
+### **Services**  
+- Manage all Services in the cluster.  
+- Search, filter, and delete directly from the dashboard.
+
+### **Ingresses**  
+- View and manage all Ingress resources.  
+- Search, filter, delete, or inspect configuration details.
+
+### **Ingress Classes**  
+- Lists all Ingress Classes.  
+- Search, filter, and delete easily.
+
+### **Network Policies**  
+- Manage and monitor network access rules.  
+- Search, filter, and delete policies as needed.
+
+---
+
+## Access Control  
+Access control ensures that only authorized entities can perform actions within the cluster. Kubernetes enforces access management using RBAC (Role-Based Access Control), and KubeKit provides a streamlined way to manage all access-related resources.
+
+### **Service Accounts**  
+- View all Service Accounts.  
+- Search, filter, and delete as needed.
+
+### **Roles**  
+- Lists all Roles in the cluster.  
+- Search, filter, delete, and view details.
+
+### **Role Bindings**  
+- Manage relationships between Roles and Service Accounts.  
+- Search, filter, and delete as required.
+
+### **Cluster Roles**  
+- View and manage Cluster-wide Roles.  
+- Search, filter, delete, and inspect details.
+
+### **Cluster Role Bindings**  
+- Manage Cluster Role Bindings with ease.  
+- Search, filter, and delete as needed.
+
+---
+
+**KubeKit** provides complete lifecycle management of your Kubernetes cluster, from configuration and networking to workloads and access control, enabling a unified, efficient, and transparent operational experience for DevOps and platform teams.
