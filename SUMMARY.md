@@ -34,7 +34,7 @@
 
 ## Advance Feature
 
-* [App Store](./docs/advance-feature/app-store.md)
+* [Helm App Store](./docs/advance-feature/helm-app-store.md)
 * [Ingress](./docs/advance-feature/ingress.md)
 * [Navigation](./docs/advance-feature/navigation.md)
 

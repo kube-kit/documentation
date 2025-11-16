@@ -1,6 +1,6 @@
 # Metrics
 
-Metrics provide quantifiable insights into your cluster’s performance, resource utilization and operational health. By measuring key indicators—such as CPU, memory, network I/O and object-state changes—you gain the ability to proactively manage workloads, detect anomalies, optimize capacity, and support autoscaling. In the context of a Kubernetes cluster, metrics are fundamental to maintaining stability, enabling cost-efficiency and ensuring your applications scale appropriately.
+Metrics provide quantifiable insights into your cluster’s performance, resource utilization and operational health. By measuring key indicators such as CPU, memory, network I/O and object-state changes you gain the ability to proactively manage workloads, detect anomalies, optimize capacity, and support autoscaling. In the context of a Kubernetes cluster, metrics are fundamental to maintaining stability, enabling cost-efficiency and ensuring your applications scale appropriately.
 
 
 ---
@@ -12,7 +12,7 @@ When creating a cluster with **KubeKit**, you have the option to choose one of t
 ---
 
 ## Step 2: Access a Cluster Dashboard  
-From the KubeKit home screen, you will see all clusters you have created or imported. Select the desired cluster to open its **Cluster Dashboard** — this is your starting point for accessing metrics.
+From the KubeKit home screen, you will see all clusters you have created or imported. Select the desired cluster to open its **Cluster Dashboard** this is your starting point for accessing metrics.
 <!-- TODO: Add image -->
 
 ---
