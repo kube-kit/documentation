@@ -1,6 +1,6 @@
 # Metrics
 
-Metrics provide quantifiable insights into your cluster’s performance, resource utilization and operational health. By measuring key indicatorssuch as CPU, memory, network I/O and object-state changesyou gain the ability to proactively manage workloads, detect anomalies, optimize capacity, and support autoscaling. In the context of a Kubernetes cluster, metrics are fundamental to maintaining stability, enabling cost-efficiency and ensuring your applications scale appropriately.
+Metrics provide quantifiable insights into your cluster’s performance, resource utilization and operational health. By measuring key indicators such as CPU, memory, network I/O and object-state changes you gain the ability to proactively manage workloads, detect anomalies, optimize capacity, and support autoscaling. In the context of a Kubernetes cluster, metrics are fundamental to maintaining stability, enabling cost-efficiency and ensuring your applications scale appropriately.
 
 
 ---
