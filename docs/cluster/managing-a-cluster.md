@@ -1,7 +1,7 @@
 # Managing a Cluster
 
 ## Overview  
-Cluster management lies at the core of maintaining a resilient and efficient Kubernetes environment. **KubeKit** provides an intuitive interface to manage every aspect of your cluster — from nodes and workloads to networking, configurations, and access control — all within a unified dashboard.
+Cluster management lies at the core of maintaining a resilient and efficient Kubernetes environment. **KubeKit** provides an intuitive interface to manage every aspect of your cluster, including nodes, workloads, networking, configurations, and access control, all within a unified dashboard.
 
 Upon selecting a cluster from the **KubeKit Dashboard**, you’ll land on the **Overview Page**, which provides a concise summary of your cluster’s configuration and state.  
 
@@ -14,14 +14,14 @@ At the top, you’ll find:
 
 You can download the **kubeconfig** file from the top-right corner for local access or automation.  
 
-Below, CPU and memory usage are visualized through time-series graphs for all nodes. If metrics are not visible, configure your monitoring toolkit (Prometheus or KubeKit metrics).  
+Below, CPU and memory usage are visualized through time-series graphs for all nodes.  if metrics are not visible then you have to configure your metrics first. go to [metrics](../monitoring-and-logging/metrics.md) to see how to configure metrics.  
 
-In the left panel, all **pods** are displayed with filtering options by namespace. You can manage pods or nodes directly via the **Manage** button available on hover. All cluster **events** are also listed to provide real-time operational insights.
+In the right panel, all **pods** are displayed with filtering options by namespace. You can manage pods or nodes directly via the **Manage** button available on hover. All cluster **events** are also listed to provide real-time operational insights.
 
 ---
 
 ## Cluster Management Options  
-KubeKit’s right sidebar contains several dedicated sections for managing different components of the cluster. Each section offers a focused view with search, filtering, and management capabilities.
+KubeKit’s left sidebar contains several dedicated sections for managing different components of the cluster. Each section offers a focused view with search, filtering, and management capabilities.
 
 ---
 
