@@ -9,9 +9,9 @@ Creating a cluster in **KubeKit** is simple, fast, and effortless. Follow these 
 On the KubeKit home page, click **Create Cluster**.
 An information page will appear. After reviewing it, click **I am ready to make my cluster** to proceed.
 ![](../images/tutorial/kubekit_empty_home.png)
+Read requirements carefully.
 ![](../images/tutorial/cluster_create_info.png)
 
-<!-- TODO: Add image -->
 
 ---
 
@@ -24,9 +24,8 @@ In this page, you have to provide information related to your nodes.
 
 On the **left side of the screen**, you will see the **Node Count** section:
 
-* Adjust the total number of nodes for your cluster.
-* A **minimum of 2 nodes** is required.
-* Use the **+** and **−** icons to increase or decrease the number of nodes.
+Adjust the total number of nodes for your cluster (minimum 2 required) using the + and − icons.
+
 
 On the **right side of the screen**, you will find several **options** that make configuration easier. These are designed to help when your cluster contains many nodes with similar settings.
 
@@ -36,7 +35,7 @@ For example, when creating a cluster with a large number of nodes, you may have 
 10.0.0.21, 10.0.0.22, 10.0.0.23
 ```
 
-If all nodes share the same **username** and **password** or have a similar **access method**, you can use these options to **prefill** the information automatically. This saves time and ensures consistency.
+If all nodes share the same **username** and **password** or have a similar **access method**, you can fill information here.
 
 If your nodes do not follow a similar pattern, don’t worry as you can manually adjust or update each node’s information on the next page.
 
@@ -46,21 +45,19 @@ When ready, click **Continue** to move forward.
 
 ### **Step 3: Provide Node Information**
 
-This page is for providing information for individual nodes. If you have chosen to fill similar IPs, nodes, or usernames in the previous page, then you will find that all the information has been prefilled for you. If you have not used those options, you will need to fill out each node’s information manually.
 
 On the **Node Information** page:
 
-* For each node, enter the **IP address** and **access method** (e.g., SSH credentials).
-* You will see one form per node based on your previous selection.
 * Designate one node as the **Master Node**. You can choose any node to be the master.
-* Use the **Delete** button to remove a node or **+ Add Node** to include more.
+* Use the + and delete buttons to add or remove nodes.
+* Also you can modify any information of any node from here.
 
 Click **Continue** when all nodes are configured.
 
 ![](../images/tutorial/node_information.png)
 
 
-A confirmation pop-up will appear asking to start verification. Click **Start** to begin.
+Click **continue** and it will ask you for confirmation for node access and **requirements** check.
 
 ![](../images/tutorial/node_check_confirmation_modal.png)
 ![](../images/tutorial/node_check_confirmation_modal_complete.png)
@@ -69,8 +66,7 @@ A confirmation pop-up will appear asking to start verification. Click **Start** 
 
 ### **Step 4: Node Verification and Preview**
 
-KubeKit will now check the accessibility of your virtual machines (VMs):
-
+This page will ensure either your nodes are good to go or needs modifications.
 * If any node is unreachable, an **error message** will appear.
 * Once all nodes are verified, a **Preview Page** will display the following details:
 
@@ -89,13 +85,13 @@ Click **Continue** to move forward.
 
 On the **Cluster Configuration** page:
 
-* Choose the components you want to install. You may continue with default options or customize as needed.
-* Provide a **Cluster Name** and an optional **Description**.
+* On the left side of the page, you can find the cluster configuration entries. You may skip the add-ons for now and configure them later.
+* On the right side of the page, define the **Cluster Name** and an optional **Description**.
 
 Click **Continue** to proceed.
 
+
 ![](../images/tutorial/cluster_configuration.png)
-![](../images/tutorial/cluster_configuration2.png)
 
 
 ---
@@ -116,16 +112,17 @@ If an error occurs (often due to network issues):
 * The process will stop.
 * A **Retry** button will appear.
 * Click **Retry** to continue from where it stopped.
+* You can also track the error logs.
 <!-- TODO: Add image of cluster creation error -->
 
 ---
 
 ### **Step 7: Completion and Dashboard Access**
 
-When the process completes successfully, a **Congratulations** page will appear.
+When all the processes complete successfully, a **Congratulations** page will appear.
 
-Click **Manage This Cluster** to open your **Cluster Dashboard**, where you can start managing your cluster.
+Click **Manage This Cluster** to open your **Cluster Dashboard**, where you can start managing this cluster.
 
-You have now successfully created your first Kubernetes cluster using KubeKit!
+**Congratulations!!** You have now successfully created your first Kubernetes cluster using KubeKit!
 ![](../images/tutorial/cluster_creation_success.png)
 
