@@ -17,24 +17,24 @@
 
 ## Cluster
 
-* [Creating a Cluster](./docs/cluster/creating-a-cluster.md)
-* [Importing a Cluster](./docs/cluster/importing-a-cluster.md)
-* [Supported OS](./docs/cluster/supported-os.md)
-* [Managing a Cluster](./docs/cluster/managing-a-cluster.md)
-* [Deployment Scaling](./docs/cluster/deployment-scalling.md)
-
-
-## Monitoring & Logging
-
-* [Metrics](./docs/monitoring-and-logging/metrics.md)
-* [Cluster Metrics & Health](./docs/monitoring-and-logging/cluster-metrics-and-health.md)
-* [Log](./docs/monitoring-and-logging/log.md)
-* [Terminal Access](./docs/monitoring-and-logging/terminal-access.md)
+* [Creating a Cluster](./docs/cluster/creation/creating-a-cluster.md)
+  * [Prequisites](./docs/cluster/creation/prerequisites.md)
+  * [Node Configuration](./docs/cluster/creation/node-configurations.md)
+  * [Cluster Configuration](./docs/cluster/creation/Cluster-configurations.md)
+  * [Installation](./docs/cluster/creation/installation.md)
+* [Managing a Cluster](./docs/cluster/managing-cluster/managing-a-cluster.md)
+  * [Nodes](./docs/cluster/managing-cluster/nodes.md)
+  * [Namespaces](./docs/cluster/managing-cluster/namespaces.md)
+  * [Events](./docs/cluster/managing-cluster/events.md)
+  * [Metrics](./docs/cluster/managing-cluster/metrics.md)
+  * [Logs](./docs/cluster/managing-cluster/log.md)
+  * [Helm](./docs/cluster/managing-cluster/helm.md)
+  * [Workloads](./docs/cluster/managing-cluster/workload.md)
+    
 
 
 ## Advance Feature
 
-* [Helm App Store](./docs/advance-feature/helm-app-store.md)
 * [Ingress](./docs/advance-feature/ingress.md)
 * [Navigation](./docs/advance-feature/navigation.md)
 

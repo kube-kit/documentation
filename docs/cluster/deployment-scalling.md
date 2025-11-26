@@ -5,11 +5,6 @@ For further reading on the native Kubernetes approach to scaling: [Kubernetes Sc
 
 ---
 
-## Navigate to the Cluster Dashboard
-On the **Home** page, you can view all the clusters that you have created or imported. Select the desired cluster to open its **Cluster Dashboard**. From this dashboard, you can proceed to manage and scale your deployments.
-
----
-
 ## Open the Deployments page  
 Navigate to the **Deployments** view under the **Workload** section in the sidebar of the KubeKit interface. This page displays all existing deployments across namespaces by default.
 
@@ -17,25 +12,22 @@ Navigate to the **Deployments** view under the **Workload** section in the sideb
 
 ## Choose a namespace (optional)  
 If you wish to focus on a single namespace, use the namespace-selector dropdown at the top-left of the page to filter the list accordingly. Otherwise, you will see deployments from all namespaces.
-<!-- TODO: Add image -->
 
 ---
 
 ## Access the deployment’s action menu  
 Locate the row corresponding to the deployment you wish to scale. Then click the three-dot menu (⋮) at the end of that row to open the available actions.
-<!-- TODO: Add image -->
 
 ---
 
 ## Select the “Scale” action  
 From the action menu, choose **Scale**. This will open a dialog window where you can specify the new replica count.
-<!-- TODO: Add image -->
 
 ---
 
 ##  Specify the desired number of replicas  
 In the scale dialog, you will be shown the current number of replicas for reference. Enter the new desired count of replicas (for example, increasing from 3 to 6). This defines how many pod instances the deployment should run moving forward.
-<!-- TODO: Add image -->
+
 
 ---
 

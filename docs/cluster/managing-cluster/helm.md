@@ -44,6 +44,8 @@ Selecting a release displays detailed information on the **right panel**, includ
 * Full description and configurations
 * Option to choose a version for installation
 
+![](/docs/images/final/helm.png)
+
 ---
 
 ## Installing a Release
@@ -56,6 +58,8 @@ On this page, you can:
 * **Select a version** of the release.
 * **Choose a namespace** for deployment.
 * **Provide a custom name** to identify the release later.
+
+![](/docs/images/final/install-release.png)
 
 ### Configuring Release Values
 
@@ -77,6 +81,8 @@ Once configuration is complete, click **Install**. KubeKit handles the deploymen
 ## Managing Installed Releases
 
 Click the **Installed** tab to view all deployed releases. You can filter releases by namespace or search by name.
+
+![](/docs/images/final/deployed-release.png)
 
 Selecting a release shows its details on the right panel:
 
@@ -115,9 +121,13 @@ Upgrade a release to:
 
 Example: If you installed Prometheus and changed the `scrape_interval` from 1 minute to 30 seconds, enabling **Reuse current release values** keeps that configuration during upgrade.
 
+![](/docs/images/final/upgrade-release.png)
+
 ### Rollback
 
 Each installation or upgrade creates a **revision**,  a checkpoint of your release. You can roll back to any previous revision to restore the application’s last working state in case of issues.
+
+![](/docs/images/final/rollback-release.png)
 
 ### Uninstall
 
