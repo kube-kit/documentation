@@ -25,47 +25,12 @@ KubeKit’s left sidebar contains several dedicated sections for managing differ
 
 ---
 
-### **Nodes**  
-Lists all nodes within the cluster.  
-- Search nodes by name.  
-- Filter by **status** or **roles**.  
-- Access terminals directly — follow [Terminal Access](../monitoring-and-logging/terminal-access.md) 
+
+
+
 
 ---
 
-### **Namespaces**  
-Displays all namespaces.  
-- Search and filter by **status**.  
-- View **labels** and **age**.  
-- Delete namespaces using the **delete icon**.
-
----
-
-### **Events**  
-Shows all events occurring within the cluster.  
-- Search by **resource name**.  
-- Filter by **namespace**.
-- See details by clicking on the selected item. 
-
----
-
-### **Metrics**  
-Visualize real-time node and workload metrics.  
-- For detailed information, see [Metrics Documentation](../monitoring-and-logging/metrics.md).
-
----
-
-### **Logs**  
-Access and manage real-time logs for nodes, workloads, and pods.  
-- For more information, refer to [Logs Documentation](../monitoring-and-logging/log.md).
-
----
-
-### **Helm**  
-Manage Helm repositories and releases directly from KubeKit.  
-- For guidance, visit [Helm Management Documentation](../advance-feature/app-store.md).
-
----
 
 ## Workloads  
 The **Workloads** section displays all running resources within your cluster. Each workload type supports searching, filtering, and management features such as deletion, scaling, and detailed inspection.
