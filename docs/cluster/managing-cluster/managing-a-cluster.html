@@ -1,0 +1,827 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Managing a Cluster · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="nodes.html" />
+    
+    
+    <link rel="prev" href="../creation/installation.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../welcome.html">
+            
+                <a href="../../welcome.html">
+            
+                    
+                    Welcome!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../getting-started/quick-start-guide.html">
+            
+                <a href="../../getting-started/quick-start-guide.html">
+            
+                    
+                    Quick Start Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Tutorial</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../tutorial/creating-your-first-cluster.html">
+            
+                <a href="../../tutorial/creating-your-first-cluster.html">
+            
+                    
+                    Creating Your First Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../tutorial/accessing-cluster-dashboard.html">
+            
+                <a href="../../tutorial/accessing-cluster-dashboard.html">
+            
+                    
+                    Accessing Cluster Dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Installing Kubekit</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../installing-kubekit/installing-kubekit.html">
+            
+                <a href="../../installing-kubekit/installing-kubekit.html">
+            
+                    
+                    Installing KubeKit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../installing-kubekit/permission.html">
+            
+                <a href="../../installing-kubekit/permission.html">
+            
+                    
+                    Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../installing-kubekit/updating-kubekit.html">
+            
+                <a href="../../installing-kubekit/updating-kubekit.html">
+            
+                    
+                    Updating Kubekit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Cluster</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../creation/creating-a-cluster.html">
+            
+                <a href="../creation/creating-a-cluster.html">
+            
+                    
+                    Creating a Cluster
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../creation/prerequisites.html">
+            
+                <a href="../creation/prerequisites.html">
+            
+                    
+                    Prequisites
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../creation/node-configurations.html">
+            
+                <a href="../creation/node-configurations.html">
+            
+                    
+                    Node Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../creation/Cluster-configurations.html">
+            
+                <a href="../creation/Cluster-configurations.html">
+            
+                    
+                    Cluster Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../creation/installation.html">
+            
+                <a href="../creation/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.2" data-path="managing-a-cluster.html">
+            
+                <a href="managing-a-cluster.html">
+            
+                    
+                    Managing a Cluster
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="nodes.html">
+            
+                <a href="nodes.html">
+            
+                    
+                    Nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="namespaces.html">
+            
+                <a href="namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="events.md">
+            
+                <span>
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.4" data-path="metrics.html">
+            
+                <a href="metrics.html">
+            
+                    
+                    Metrics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.5" data-path="log.html">
+            
+                <a href="log.html">
+            
+                    
+                    Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.6" data-path="helm.html">
+            
+                <a href="helm.html">
+            
+                    
+                    Helm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.7" data-path="workload.html">
+            
+                <a href="workload.html">
+            
+                    
+                    Workloads
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advance Feature</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../advance-feature/ingress.html">
+            
+                <a href="../../advance-feature/ingress.html">
+            
+                    
+                    Ingress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../advance-feature/navigation.html">
+            
+                <a href="../../advance-feature/navigation.html">
+            
+                    
+                    Navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../release-notes/">
+            
+                <a href="../../release-notes/">
+            
+                    
+                    Release notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Getting Help</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../getting-help/">
+            
+                <a href="../../getting-help/">
+            
+                    
+                    Getting Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Troubleshooting</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../../troubleshooting/">
+            
+                <a href="../../troubleshooting/">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">FAQ</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../../faq/">
+            
+                <a href="../../faq/">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">How to</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../../how-to/">
+            
+                <a href="../../how-to/">
+            
+                    
+                    How to guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Managing a Cluster</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="managing-a-cluster">Managing a Cluster</h1>
+<h2 id="overview">Overview</h2>
+<p>Cluster management lies at the core of maintaining a resilient and efficient Kubernetes environment. <strong>KubeKit</strong> provides an intuitive interface to manage every aspect of your cluster, including nodes, workloads, networking, configurations, and access control, all within a unified dashboard.</p>
+<p>Upon selecting a cluster from the <strong>KubeKit Dashboard</strong>, you&#x2019;ll land on the <strong>Overview Page</strong>, which provides a concise summary of your cluster&#x2019;s configuration and state.  </p>
+<p>At the top, you&#x2019;ll find:  </p>
+<ul>
+<li>Kubernetes version  </li>
+<li>Container Network Interface (CNI) type and version  </li>
+<li>Container Runtime Engine type and version  </li>
+<li>Load Balancer type and version  </li>
+<li>Cluster age  </li>
+</ul>
+<p>You can download the <strong>kubeconfig</strong> file from the top-right corner for local access or automation.  </p>
+<p>Below, CPU and memory usage are visualized through time-series graphs for all nodes.  if metrics are not visible then you have to configure your metrics first. go to <a href="../monitoring-and-logging/metrics.md">metrics</a> to see how to configure metrics.  </p>
+<p>In the right panel, all <strong>pods</strong> are displayed with filtering options by namespace. You can manage pods or nodes directly via the <strong>Manage</strong> button available on hover. All cluster <strong>events</strong> are also listed to provide real-time operational insights.</p>
+<hr>
+<h2 id="cluster-management-options">Cluster Management Options</h2>
+<p>KubeKit&#x2019;s left sidebar contains several dedicated sections for managing different components of the cluster. Each section offers a focused view with search, filtering, and management capabilities.</p>
+<hr>
+<hr>
+<h2 id="workloads">Workloads</h2>
+<p>The <strong>Workloads</strong> section displays all running resources within your cluster. Each workload type supports searching, filtering, and management features such as deletion, scaling, and detailed inspection.</p>
+<hr>
+<h3 id="pods"><strong>Pods</strong></h3>
+<ul>
+<li>View all pods across namespaces.  </li>
+<li>Search and filter by <strong>namespace</strong>, <strong>node</strong>, or <strong>status</strong>.  </li>
+<li>Delete pods by selecting them &#x2014; a <strong>Delete</strong> button will appear.  </li>
+<li>Access pod terminals &#x2014; see <a href="../monitoring-and-logging/terminal-access.md">Terminal Access</a>.</li>
+</ul>
+<h3 id="deployments"><strong>Deployments</strong></h3>
+<ul>
+<li>Search and filter by <strong>namespace</strong>.  </li>
+<li>Delete or scale deployments as needed.  </li>
+<li>Follow <a href="../cluster/deployment-scalling.md">Scaling Deployments</a> for scaling instructions.</li>
+</ul>
+<h3 id="replica-sets"><strong>Replica Sets</strong></h3>
+<ul>
+<li>Lists all ReplicaSets.  </li>
+<li>Search or filter by <strong>namespace</strong>.  </li>
+<li>Delete by selecting the desired ReplicaSet.  </li>
+<li>View details by clicking on its name.</li>
+</ul>
+<h3 id="replication-controllers"><strong>Replication Controllers</strong></h3>
+<ul>
+<li>Functionality identical to ReplicaSets.  </li>
+<li>Search, filter, delete, or inspect detailed configurations.</li>
+</ul>
+<h3 id="stateful-sets"><strong>Stateful Sets</strong></h3>
+<ul>
+<li>Lists all StatefulSets.  </li>
+<li>Search or filter by namespace.  </li>
+<li>Delete as required.  </li>
+<li>Click to view configuration details.</li>
+</ul>
+<h3 id="jobs"><strong>Jobs</strong></h3>
+<ul>
+<li>Displays all Kubernetes Jobs.  </li>
+<li>Search or filter by namespace.  </li>
+<li>Delete Jobs when necessary.  </li>
+<li>Click to see more details.</li>
+</ul>
+<h3 id="cronjobs"><strong>CronJobs</strong></h3>
+<ul>
+<li>Similar management features as Jobs.  </li>
+<li>Search, filter, delete, or view details.</li>
+</ul>
+<h3 id="daemon-sets"><strong>Daemon Sets</strong></h3>
+<ul>
+<li>View, search, and filter by <strong>namespace</strong>.  </li>
+<li>Delete or inspect a DaemonSet by clicking its name.</li>
+</ul>
+<hr>
+<h2 id="config">Config</h2>
+<p>Configuration resources are critical for defining how workloads behave and interact. In Kubernetes, <strong>ConfigMaps</strong>, <strong>Secrets</strong>, <strong>ResourceQuotas</strong>, and related components define the operational boundaries and configurations of workloads. <strong>KubeKit</strong> offers an easy way to view, edit, and manage these configurations from a single dashboard.</p>
+<h3 id="config-maps"><strong>Config Maps</strong></h3>
+<ul>
+<li>Lists all ConfigMaps.  </li>
+<li>Search and filter by <strong>namespace</strong>.  </li>
+<li>Delete using the <strong>delete button</strong>.  </li>
+<li>Click on a ConfigMap to open its dedicated page for details and live editing via the built-in editor.</li>
+</ul>
+<h3 id="secrets"><strong>Secrets</strong></h3>
+<ul>
+<li>Same management features as ConfigMaps.  </li>
+<li>View, edit, and delete Secrets as needed.</li>
+</ul>
+<h3 id="limit-ranges"><strong>Limit Ranges</strong></h3>
+<ul>
+<li>Lists all LimitRanges in the cluster.  </li>
+<li>Search, filter, and delete them directly.</li>
+</ul>
+<h3 id="resource-quotas"><strong>Resource Quotas</strong></h3>
+<ul>
+<li>Manage cluster-level resource usage limits.  </li>
+<li>Search, filter, and delete as required.</li>
+</ul>
+<h3 id="priority-classes"><strong>Priority Classes</strong></h3>
+<ul>
+<li>Displays all defined priority classes.  </li>
+<li>Search, filter, and manage them as needed.</li>
+</ul>
+<h3 id="pod-disruption-budgets-pdbs"><strong>Pod Disruption Budgets (PDBs)</strong></h3>
+<ul>
+<li>Helps ensure availability during node or pod disruptions.  </li>
+<li>Search, filter, and delete as necessary.</li>
+</ul>
+<h3 id="leases"><strong>Leases</strong></h3>
+<ul>
+<li>Lists all resource leases.  </li>
+<li>Search and delete where applicable.</li>
+</ul>
+<hr>
+<h2 id="network">Network</h2>
+<p>Networking is fundamental in Kubernetes, governing communication between pods, services, and external clients. KubeKit provides clear visibility into your network configuration and lets you manage all related resources effortlessly.</p>
+<h3 id="endpoints"><strong>Endpoints</strong></h3>
+<ul>
+<li>Lists all Endpoints.  </li>
+<li>Search or filter by <strong>namespace</strong>.  </li>
+<li>Delete endpoints as needed.  </li>
+<li>Click an Endpoint to view its details.</li>
+</ul>
+<h3 id="services"><strong>Services</strong></h3>
+<ul>
+<li>Manage all Services in the cluster.  </li>
+<li>Search, filter, and delete directly from the dashboard.</li>
+</ul>
+<h3 id="ingresses"><strong>Ingresses</strong></h3>
+<ul>
+<li>View and manage all Ingress resources.  </li>
+<li>Search, filter, delete, or inspect configuration details.</li>
+</ul>
+<h3 id="ingress-classes"><strong>Ingress Classes</strong></h3>
+<ul>
+<li>Lists all Ingress Classes.  </li>
+<li>Search, filter, and delete easily.</li>
+</ul>
+<h3 id="network-policies"><strong>Network Policies</strong></h3>
+<ul>
+<li>Manage and monitor network access rules.  </li>
+<li>Search, filter, and delete policies as needed.</li>
+</ul>
+<hr>
+<h2 id="access-control">Access Control</h2>
+<p>Access control ensures that only authorized entities can perform actions within the cluster. Kubernetes enforces access management using RBAC (Role-Based Access Control), and KubeKit provides a streamlined way to manage all access-related resources.</p>
+<h3 id="service-accounts"><strong>Service Accounts</strong></h3>
+<ul>
+<li>View all Service Accounts.  </li>
+<li>Search, filter, and delete as needed.</li>
+</ul>
+<h3 id="roles"><strong>Roles</strong></h3>
+<ul>
+<li>Lists all Roles in the cluster.  </li>
+<li>Search, filter, delete, and view details.</li>
+</ul>
+<h3 id="role-bindings"><strong>Role Bindings</strong></h3>
+<ul>
+<li>Manage relationships between Roles and Service Accounts.  </li>
+<li>Search, filter, and delete as required.</li>
+</ul>
+<h3 id="cluster-roles"><strong>Cluster Roles</strong></h3>
+<ul>
+<li>View and manage Cluster-wide Roles.  </li>
+<li>Search, filter, delete, and inspect details.</li>
+</ul>
+<h3 id="cluster-role-bindings"><strong>Cluster Role Bindings</strong></h3>
+<ul>
+<li>Manage Cluster Role Bindings with ease.  </li>
+<li>Search, filter, and delete as needed.</li>
+</ul>
+<hr>
+<p><strong>KubeKit</strong> provides complete lifecycle management of your Kubernetes cluster, from configuration and networking to workloads and access control, enabling a unified, efficient, and transparent operational experience for DevOps and platform teams.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../creation/installation.html" class="navigation navigation-prev " aria-label="Previous page: Installation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="nodes.html" class="navigation navigation-next " aria-label="Next page: Nodes">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Managing a Cluster","level":"4.2","depth":1,"next":{"title":"Nodes","level":"4.2.1","depth":2,"path":"docs/cluster/managing-cluster/nodes.md","ref":"./docs/cluster/managing-cluster/nodes.md","articles":[]},"previous":{"title":"Installation","level":"4.1.4","depth":2,"path":"docs/cluster/creation/installation.md","ref":"./docs/cluster/creation/installation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"docs/cluster/managing-cluster/managing-a-cluster.md","mtime":"2025-11-27T06:22:30.608Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-11-27T06:29:50.454Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
