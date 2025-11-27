@@ -1,8 +1,16 @@
 {
+  "name": "kubekit-documentation",
+  "version": "1.0.0",
+  "description": "Kubekit documentation",
+  "main": "index.js",
+  "scripts": {
+    "build": "gitbook build",
+    "deploy": "gh-pages -d _book"
+  },
+  "author": "kubekit",
+  "license": "MIT",
   "devDependencies": {
     "gh-pages": "^6.3.0"
-  },
-  "scripts": {
-    "deploy": "gitbook build && gh-pages -d _book"
   }
 }
+
