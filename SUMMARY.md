@@ -1,6 +1,5 @@
 # Summary
 
-* [Welcome!](./docs/welcome.md)
 
 * [Quick Start Guide](./docs/getting-started/quick-start-guide.md)
 
@@ -29,6 +28,7 @@
   * [Metrics](./docs/cluster/managing-cluster/metrics.md)
   * [Logs](./docs/cluster/managing-cluster/log.md)
   * [Helm](./docs/cluster/managing-cluster/helm.md)
+  * [Terminal Access](./docs/cluster/managing-cluster/terminal-access.md)
   * [Workloads](./docs/cluster/managing-cluster/workload.md)
     
 

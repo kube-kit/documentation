@@ -355,3 +355,42 @@
   max-width: none; /* Remove inner width constraint */
   padding: 0;
 }
+/* Tables */
+.markdown-section table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  table-layout: fixed; /* Force equal column widths */
+}
+
+.markdown-section table thead {
+  background: var(--table-bg);
+}
+
+.markdown-section table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--heading-color);
+  border-bottom: 2px solid var(--border-color);
+  width: 50%; /* Each column takes exactly 50% */
+}
+
+.markdown-section table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-color);
+  width: 50%; /* Each column takes exactly 50% */
+  vertical-align: top; /* Align content to top */
+}
+
+.markdown-section table tr:last-child td {
+  border-bottom: none;
+}
+
+.markdown-section table tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}

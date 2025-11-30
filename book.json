@@ -20,7 +20,8 @@
     "chapter-fold",
     "github",
     "emphasize",
-    "theme-default"
+    "theme-default",
+    "favicon"
   ],
   
   "pluginsConfig": {
@@ -43,6 +44,10 @@
       "css": [
         "prismjs/themes/prism-tomorrow.css"
       ]
+    },
+    "favicon": {
+      "shortcut": "./docs/images/final/icon.ico",
+      "bookmark": "./docs/images/final/icon.ico"
     }
   },
   "styles": {

@@ -3,38 +3,39 @@
 
 ## Installing KubeKit
 
-### 1. Download KubeKit 
-Download KubeKit from official site [KubeKit.io](https://kubekit.io) based on your OS and architecture.
+## 1. Download KubeKit 
+- Download KubeKit from official site [KubeKit.io](https://kubekit.io) based on your OS and architecture.
 
-### 2. Install KubeKit
+## 2. Install KubeKit
 
-#### Linux (Debian/Ubuntu)
+### Linux
 
-- Locate the downloaded file (`kubekit_2.0.3-amd64.deb`) and double-click it to open the installer, then proceed with the installation.  
-  For ARM devices, the download file will be `kubekit_2.0.3-arm64.deb`.
+- Locate the downloaded file and double-click it to open the installer, then follow the on-screen instructions to complete the installation.
 
-- Alternatively, you can install it using the terminal. Navigate to the directory where the file was downloaded and run:
+- Alternatively, you can install KubeKit using the terminal. Navigate to the directory where the file was downloaded and run one of the following commands depending on your system:
 
-   ```bash
-   sudo apt install ./kubekit_2.0.3-amd64.deb
-   ```
+For Debian/Ubuntu - amd64
+```bash
+sudo apt install ./KubeKit-2.1.1-amd64.deb -y
+```
+For Debian/Ubuntu - arm64
+```bash
+sudo apt install ./KubeKit-2.1.1-arm64.deb -y
+```
+For Fedora/CentOS - amd64
+```bash
+sudo rpm -ivh KubeKit-2.1.1-amd64.rpm -y
+```
+For Fedora/CentOS - arm64
+```bash
+sudo rpm -ivh KubeKit-2.1.1-arm64.rpm -y
+```
 
 
-#### Linux (Fedora/CentOS)
+### Windows
 
-- Locate the downloaded file (`kubekit_2.0.3-amd64.rpm`) and double-click it to open the installer, then proceed with the installation.  
-  For ARM devices, the download file will be `kubekit_2.0.3-arm64.rpm`.
+- Double-click on the `.exe` file KubeKit will be installed automatically.
 
-- Alternatively, you can install it using the terminal. Navigate to the directory where the file was downloaded and run:
+### MAC OS
 
-   ```bash
-   sudo rpm -ivh kubekit_2.0.3-amd64.rpm
-   ```
-
-#### Windows
-
-- Double-click the file (`KubeKit-2.0.3-amd64.exe`) and KubeKit will be installed automatically.
-
-#### macOS
-
-- Drag KubeKit into the Applications folder.
+- Double click on the `.dmg` file and drag KubeKit into the Applications folder.

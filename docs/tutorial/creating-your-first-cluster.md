@@ -1,111 +1,95 @@
 # Creating Your First Cluster
 
-Creating a cluster in **KubeKit** is simple, fast, and effortless. Follow these steps to set up your first Kubernetes cluster. You can include images for each step to visually guide users.
+Creating a cluster in **KubeKit** is simple, fast, and effortless. Follow these steps to set up your first Kubernetes cluster. You can include images for each step to visually guide users. See the prerequisites for creating a KubeKit cluster [here](/docs/cluster/creation/prerequisites.md).
 
 ---
 
-### **Step 1: Open the Home Page**
+### **Step 1: Open KubeKit Application**
 
-On the KubeKit home page, click **Create Cluster**.
-An information page will appear. After reviewing it, click **I am ready to make my cluster** to proceed.
-![](../images/tutorial/kubekit_empty_home.png)
-Read requirements carefully.
-![](../images/tutorial/cluster_create_info.png)
-
+At first, Click on the **Get Started** button, this will bring the below page.
+![](../images/final/create-cluster.png)
+If you have any existing cluster cluster, you can proceed with [importing](/docs/cluster/importing-a-cluster.md).
+Now click **Create Cluster** button to start cluster creation, then follow the requirement guideline. 
 
 ---
 
-### **Step 2: Configure Node Details**
+### **Step 2: Configure Node Information**
 
-In this page, you have to provide information related to your nodes.
+Here, you provide total numbers of nodes.
+![](../images/final/cluster-creation.png)
 
-![](../images/tutorial/node_count_and_prefill.png)
+You will find several optional options that will make configuration easier. (If you  have many nodes with similar configuration.)
 
+- If all your nodes have the same username, then you enable the first switch and enter the username. 
+- If all your node IPs are in the same serial. Like, you have three nodes and your IPs look like below:
+  * First node has the IP of `10.0.0.21` 
+  * Second node has the IP of `10.0.0.22` 
+  * Third node has the IP of `10.0.0.23` 
+  Then enter the first node's IP only, which is `10.0.0.21`.
+- If all your nodes have the same ssh methods, then enable the switch and select common method for all nodes and enter the ssh password or upload the ssh-key file respectively. 
 
-On the **left side of the screen**, you will see the **Node Count** section:
-
-Adjust the total number of nodes for your cluster (minimum 2 required) using the + and − icons.
-
-
-On the **right side of the screen**, you will find several **options** that make configuration easier. These are designed to help when your cluster contains many nodes with similar settings.
-
-For example, when creating a cluster with a large number of nodes, you may have node IPs in a similar range such as:
-
-```
-10.0.0.21, 10.0.0.22, 10.0.0.23
-```
-
-If all nodes share the same **username** and **password** or have a similar **access method**, you can fill information here.
-
-If your nodes do not follow a similar pattern, don’t worry as you can manually adjust or update each node’s information on the next page.
-
-When ready, click **Continue** to move forward.
+Finally, click **Continue** to move forward.
 
 ---
 
-### **Step 3: Provide Node Information**
+### **Step 3: Verify/Edit Node Information**
 
 
-On the **Node Information** page:
+Here you can see details information of your each node separately, also you can modify or adjust node information independently.
 
-* Designate one node as the **Master Node**. You can choose any node to be the master.
-* Use the + and delete buttons to add or remove nodes.
-* Also you can modify any information of any node from here.
-
-Click **Continue** when all nodes are configured.
+* Select your master node first, You can select any node as master node.
+* You can edit the ssh port(if it's not 22).
+* Use **+** or **Delete** button to add or remove any node.
 
 ![](../images/tutorial/node_information.png)
 
 
 Click **continue** and it will ask you for confirmation for node access and **requirements** check.
 
-![](../images/tutorial/node_check_confirmation_modal.png)
-![](../images/tutorial/node_check_confirmation_modal_complete.png)
 
 ---
 
-### **Step 4: Node Verification and Preview**
+### **Step 4: Node Information Preview**
 
-This page will ensure either your nodes are good to go or needs modifications.
-* If any node is unreachable, an **error message** will appear.
-* Once all nodes are verified, a **Preview Page** will display the following details:
+* After successfully checking all of your nodes, the below node details will be previewed:
 
   * CPU count
   * Total memory
   * Operating system
   * Total storage
 
-Click **Continue** to move forward.
+* If any node is unreachable, an **error message** will appear.
 
+Click **Continue** to move forward.
+<!-- todo:image will be updated -->
 ![](../images/tutorial/node_preview_page.png)
 
 ---
 
-### **Step 5: Configure Cluster Settings**
+### **Step 5: Configure Cluster**
 
 On the **Cluster Configuration** page:
+ * Select your cluster icon and provide a name for your cluster, this will appear in the dashboard after creation.
+ * Choose your desired Kubernetes version, Container Runtime Engine, CNI Provider, Load Balancer. Or you can keep the default options.
+ * KubeKit support multiple Add-ons options, which are optional
+    * **Metrics Provider**: You can enable Metrics Provider like kubekit or Prometheus. (Kubekit is a light-weight metrics which work with metrics server)
+    * **Ingress Controller**: You can choose your desired ingress controller and provide ingress IP to access your ingress service.
+    * **TLS/SSL(HTTPS)**: If you want to enable TLS/SSL(HTTPS) in your cluster, then enable the switch, provide your email. If you want to know more, click [here](/docs/cluster/creation/Cluster-configurations.md) 
 
-* On the left side of the page, you can find the cluster configuration entries. You may skip the add-ons for now and configure them later.
-* On the right side of the page, define the **Cluster Name** and an optional **Description**.
-
-Click **Continue** to proceed.
+Click **Continue** to start the cluster creation process.
 
 
-![](../images/tutorial/cluster_configuration.png)
+![](../images/final/cluster-configuration.png)
 
 
 ---
 
-### **Step 6: Start Cluster Creation**
 
-A confirmation dialog will appear. Click **Start** to begin the cluster creation process.
-![](../images/tutorial/cluster_creation_confirmation.png)
+Great!! Your cluster is building now
 
+![](../images/final/installation.png)
 
-* Depending on your **internet speed**, **VM resources**, and **node count**, the setup may take some time.
-* You can monitor progress and view logs during installation.
-
-![](../images/tutorial/cluster_creation_running.png)
+Depending on your **internet speed**, **VM resources**, and **node count**, the setup may take some time.
 
 If an error occurs (often due to network issues):
 
@@ -113,16 +97,10 @@ If an error occurs (often due to network issues):
 * A **Retry** button will appear.
 * Click **Retry** to continue from where it stopped.
 * You can also track the error logs.
-<!-- TODO: Add image of cluster creation error -->
 
 ---
 
-### **Step 7: Completion and Dashboard Access**
-
-When all the processes complete successfully, a **Congratulations** page will appear.
-
-Click **Manage This Cluster** to open your **Cluster Dashboard**, where you can start managing this cluster.
-
 **Congratulations!!** You have now successfully created your first Kubernetes cluster using KubeKit!
-![](../images/tutorial/cluster_creation_success.png)
+![](../images/final/congratulations.png)
+Click **Manage This Cluster** to open your **Cluster Dashboard**, where you can start managing this cluster.
 
