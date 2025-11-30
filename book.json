@@ -1,0 +1,59 @@
+{
+  "title": "Kubekit Documentation",
+  "description": "Complete documentation for kubekit",
+  "author": "kubekit",
+  "language": "en",
+  "root": ".",
+  
+  "plugins": [
+    "-lunr",
+    "-search",
+    "search-plus",
+    "splitter",
+    "expandable-chapters-small",
+    "back-to-top-button",
+    "tbfed-pagefooter",
+    "code",
+    "prism",
+    "-highlight",
+    "copy-code-button",
+    "chapter-fold",
+    "github",
+    "emphasize",
+    "theme-default"
+  ],
+  
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": false,
+      "styles": {
+        "website": "styles/website.css"
+      }
+    },
+    "search-plus": {
+      "depth": 3
+    },
+    "tbfed-pagefooter": {
+      "copyright": "Copyright &copy; KubeKit"
+    },
+    "github": {
+      "url": "https://github.com/kube-kit/kube-kit"
+    },
+    "prism": {
+      "css": [
+        "prismjs/themes/prism-tomorrow.css"
+      ]
+    }
+  },
+  "styles": {
+    "website": "styles/website.css",
+    "ebook": "styles/ebook.css",
+    "pdf": "styles/pdf.css",
+    "mobi": "styles/mobi.css",
+    "epub": "styles/epub.css"
+  },
+  
+  "structure": {
+    "readme": "README.md"
+  }
+}
