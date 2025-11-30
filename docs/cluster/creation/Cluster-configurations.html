@@ -1,0 +1,685 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Cluster Configuration · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="installation.html" />
+    
+    
+    <link rel="prev" href="node-configurations.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../welcome.html">
+            
+                <a href="../../welcome.html">
+            
+                    
+                    Welcome!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../getting-started/quick-start-guide.html">
+            
+                <a href="../../getting-started/quick-start-guide.html">
+            
+                    
+                    Quick Start Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Tutorial</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../tutorial/creating-your-first-cluster.html">
+            
+                <a href="../../tutorial/creating-your-first-cluster.html">
+            
+                    
+                    Creating Your First Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../tutorial/accessing-cluster-dashboard.html">
+            
+                <a href="../../tutorial/accessing-cluster-dashboard.html">
+            
+                    
+                    Accessing Cluster Dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Installing Kubekit</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../installing-kubekit/installing-kubekit.html">
+            
+                <a href="../../installing-kubekit/installing-kubekit.html">
+            
+                    
+                    Installing KubeKit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../installing-kubekit/permission.html">
+            
+                <a href="../../installing-kubekit/permission.html">
+            
+                    
+                    Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../installing-kubekit/updating-kubekit.html">
+            
+                <a href="../../installing-kubekit/updating-kubekit.html">
+            
+                    
+                    Updating Kubekit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Cluster</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="creating-a-cluster.html">
+            
+                <a href="creating-a-cluster.html">
+            
+                    
+                    Creating a Cluster
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="prerequisites.html">
+            
+                <a href="prerequisites.html">
+            
+                    
+                    Prequisites
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="node-configurations.html">
+            
+                <a href="node-configurations.html">
+            
+                    
+                    Node Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.1.3" data-path="Cluster-configurations.html">
+            
+                <a href="Cluster-configurations.html">
+            
+                    
+                    Cluster Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../managing-cluster/managing-a-cluster.html">
+            
+                <a href="../managing-cluster/managing-a-cluster.html">
+            
+                    
+                    Managing a Cluster
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../managing-cluster/nodes.html">
+            
+                <a href="../managing-cluster/nodes.html">
+            
+                    
+                    Nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="../managing-cluster/namespaces.html">
+            
+                <a href="../managing-cluster/namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="../managing-cluster/events.md">
+            
+                <span>
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.4" data-path="../managing-cluster/metrics.html">
+            
+                <a href="../managing-cluster/metrics.html">
+            
+                    
+                    Metrics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.5" data-path="../managing-cluster/log.html">
+            
+                <a href="../managing-cluster/log.html">
+            
+                    
+                    Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.6" data-path="../managing-cluster/helm.html">
+            
+                <a href="../managing-cluster/helm.html">
+            
+                    
+                    Helm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.7" data-path="../managing-cluster/workload.html">
+            
+                <a href="../managing-cluster/workload.html">
+            
+                    
+                    Workloads
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advance Feature</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../advance-feature/ingress.html">
+            
+                <a href="../../advance-feature/ingress.html">
+            
+                    
+                    Ingress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../advance-feature/navigation.html">
+            
+                <a href="../../advance-feature/navigation.html">
+            
+                    
+                    Navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../release-notes/">
+            
+                <a href="../../release-notes/">
+            
+                    
+                    Release notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Getting Help</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../getting-help/">
+            
+                <a href="../../getting-help/">
+            
+                    
+                    Getting Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Troubleshooting</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../../troubleshooting/">
+            
+                <a href="../../troubleshooting/">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">FAQ</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../../faq/">
+            
+                <a href="../../faq/">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">How to</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../../how-to/">
+            
+                <a href="../../how-to/">
+            
+                    
+                    How to guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Cluster Configuration</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="cluster-configuration">Cluster Configuration</h1>
+<p>The Cluster Configuration page allows you to customize your cluster:</p>
+<h3 id="basic-information">Basic Information</h3>
+<ul>
+<li><strong>Cluster Name and Icon</strong>: Assign a unique name and icon for reference. This helps identify your cluster in the dashboard.</li>
+<li><strong>Description</strong>: Add an optional description for documentation or context.</li>
+</ul>
+<h3 id="kubernetes-version">Kubernetes Version</h3>
+<ul>
+<li>Choose the version of Kubernetes for your cluster. The <strong>latest stable version</strong> is recommended for security, performance, and feature updates.</li>
+</ul>
+<h3 id="container-runtime">Container Runtime</h3>
+<ul>
+<li>Kubernetes runs applications in isolated containers. Choose a container runtime to manage these containers. KubeKit supports <strong>containerd</strong> and <strong>CRI-O</strong>, both of which are widely used and production-ready.</li>
+</ul>
+<h3 id="network-configuration-cni-provider">Network Configuration (CNI Provider)</h3>
+<ul>
+<li>The CNI (Container Network Interface) manages network communication between pods. Options include <strong>Calico</strong>, <strong>Weave Net</strong>, and <strong>Flannel</strong>. All are robust and production-grade solutions.</li>
+</ul>
+<h3 id="ingress-controller">Ingress Controller</h3>
+<ul>
+<li>An ingress controller manages external access to services within the cluster. Choose between <strong>NGINX</strong> and <strong>Traefik</strong>.</li>
+<li>Specify an <strong>Ingress IP</strong> to route incoming traffic correctly.</li>
+</ul>
+<h3 id="add-ons">Add-ons</h3>
+<ul>
+<li><strong>Metrics Provider</strong>: Enable to view cluster performance metrics. You can also configure this later.</li>
+<li><strong>Cert Manager</strong>: Integrate with Let&apos;s Encrypt to manage SSL certificates. Provide an email and select a deployment mode (staging or production).</li>
+</ul>
+<p><img src="../../images/final/cluster-configuration.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="node-configurations.html" class="navigation navigation-prev " aria-label="Previous page: Node Configuration">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="installation.html" class="navigation navigation-next " aria-label="Next page: Installation">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Cluster Configuration","level":"4.1.3","depth":2,"next":{"title":"Installation","level":"4.1.4","depth":2,"path":"docs/cluster/creation/installation.md","ref":"./docs/cluster/creation/installation.md","articles":[]},"previous":{"title":"Node Configuration","level":"4.1.2","depth":2,"path":"docs/cluster/creation/node-configurations.md","ref":"./docs/cluster/creation/node-configurations.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"docs/cluster/creation/Cluster-configurations.md","mtime":"2025-11-27T06:22:30.603Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-11-27T06:29:50.454Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

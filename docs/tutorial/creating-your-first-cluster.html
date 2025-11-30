@@ -1,0 +1,737 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Creating Your First Cluster · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="accessing-cluster-dashboard.html" />
+    
+    
+    <link rel="prev" href="../getting-started/quick-start-guide.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../welcome.html">
+            
+                <a href="../welcome.html">
+            
+                    
+                    Welcome!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../getting-started/quick-start-guide.html">
+            
+                <a href="../getting-started/quick-start-guide.html">
+            
+                    
+                    Quick Start Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Tutorial</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="creating-your-first-cluster.html">
+            
+                <a href="creating-your-first-cluster.html">
+            
+                    
+                    Creating Your First Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="accessing-cluster-dashboard.html">
+            
+                <a href="accessing-cluster-dashboard.html">
+            
+                    
+                    Accessing Cluster Dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Installing Kubekit</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../installing-kubekit/installing-kubekit.html">
+            
+                <a href="../installing-kubekit/installing-kubekit.html">
+            
+                    
+                    Installing KubeKit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../installing-kubekit/permission.html">
+            
+                <a href="../installing-kubekit/permission.html">
+            
+                    
+                    Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../installing-kubekit/updating-kubekit.html">
+            
+                <a href="../installing-kubekit/updating-kubekit.html">
+            
+                    
+                    Updating Kubekit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Cluster</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../cluster/creation/creating-a-cluster.html">
+            
+                <a href="../cluster/creation/creating-a-cluster.html">
+            
+                    
+                    Creating a Cluster
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../cluster/creation/prerequisites.html">
+            
+                <a href="../cluster/creation/prerequisites.html">
+            
+                    
+                    Prequisites
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../cluster/creation/node-configurations.html">
+            
+                <a href="../cluster/creation/node-configurations.html">
+            
+                    
+                    Node Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../cluster/creation/Cluster-configurations.html">
+            
+                <a href="../cluster/creation/Cluster-configurations.html">
+            
+                    
+                    Cluster Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../cluster/creation/installation.html">
+            
+                <a href="../cluster/creation/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../cluster/managing-cluster/managing-a-cluster.html">
+            
+                <a href="../cluster/managing-cluster/managing-a-cluster.html">
+            
+                    
+                    Managing a Cluster
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../cluster/managing-cluster/nodes.html">
+            
+                <a href="../cluster/managing-cluster/nodes.html">
+            
+                    
+                    Nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="../cluster/managing-cluster/namespaces.html">
+            
+                <a href="../cluster/managing-cluster/namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="../cluster/managing-cluster/events.md">
+            
+                <span>
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.4" data-path="../cluster/managing-cluster/metrics.html">
+            
+                <a href="../cluster/managing-cluster/metrics.html">
+            
+                    
+                    Metrics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.5" data-path="../cluster/managing-cluster/log.html">
+            
+                <a href="../cluster/managing-cluster/log.html">
+            
+                    
+                    Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.6" data-path="../cluster/managing-cluster/helm.html">
+            
+                <a href="../cluster/managing-cluster/helm.html">
+            
+                    
+                    Helm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.7" data-path="../cluster/managing-cluster/workload.html">
+            
+                <a href="../cluster/managing-cluster/workload.html">
+            
+                    
+                    Workloads
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advance Feature</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../advance-feature/ingress.html">
+            
+                <a href="../advance-feature/ingress.html">
+            
+                    
+                    Ingress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../advance-feature/navigation.html">
+            
+                <a href="../advance-feature/navigation.html">
+            
+                    
+                    Navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../release-notes/">
+            
+                <a href="../release-notes/">
+            
+                    
+                    Release notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Getting Help</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../getting-help/">
+            
+                <a href="../getting-help/">
+            
+                    
+                    Getting Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Troubleshooting</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../troubleshooting/">
+            
+                <a href="../troubleshooting/">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">FAQ</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">How to</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../how-to/">
+            
+                <a href="../how-to/">
+            
+                    
+                    How to guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Creating Your First Cluster</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="creating-your-first-cluster">Creating Your First Cluster</h1>
+<p>Creating a cluster in <strong>KubeKit</strong> is simple, fast, and effortless. Follow these steps to set up your first Kubernetes cluster. You can include images for each step to visually guide users.</p>
+<hr>
+<h3 id="step-1-open-the-home-page"><strong>Step 1: Open the Home Page</strong></h3>
+<p>On the KubeKit home page, click <strong>Create Cluster</strong>.
+An information page will appear. After reviewing it, click <strong>I am ready to make my cluster</strong> to proceed.
+<img src="../images/tutorial/kubekit_empty_home.png" alt="">
+Read requirements carefully.
+<img src="../images/tutorial/cluster_create_info.png" alt=""></p>
+<hr>
+<h3 id="step-2-configure-node-details"><strong>Step 2: Configure Node Details</strong></h3>
+<p>In this page, you have to provide information related to your nodes.</p>
+<p><img src="../images/tutorial/node_count_and_prefill.png" alt=""></p>
+<p>On the <strong>left side of the screen</strong>, you will see the <strong>Node Count</strong> section:</p>
+<p>Adjust the total number of nodes for your cluster (minimum 2 required) using the + and &#x2212; icons.</p>
+<p>On the <strong>right side of the screen</strong>, you will find several <strong>options</strong> that make configuration easier. These are designed to help when your cluster contains many nodes with similar settings.</p>
+<p>For example, when creating a cluster with a large number of nodes, you may have node IPs in a similar range such as:</p>
+<pre><code>10.0.0.21, 10.0.0.22, 10.0.0.23
+</code></pre><p>If all nodes share the same <strong>username</strong> and <strong>password</strong> or have a similar <strong>access method</strong>, you can fill information here.</p>
+<p>If your nodes do not follow a similar pattern, don&#x2019;t worry as you can manually adjust or update each node&#x2019;s information on the next page.</p>
+<p>When ready, click <strong>Continue</strong> to move forward.</p>
+<hr>
+<h3 id="step-3-provide-node-information"><strong>Step 3: Provide Node Information</strong></h3>
+<p>On the <strong>Node Information</strong> page:</p>
+<ul>
+<li>Designate one node as the <strong>Master Node</strong>. You can choose any node to be the master.</li>
+<li>Use the + and delete buttons to add or remove nodes.</li>
+<li>Also you can modify any information of any node from here.</li>
+</ul>
+<p>Click <strong>Continue</strong> when all nodes are configured.</p>
+<p><img src="../images/tutorial/node_information.png" alt=""></p>
+<p>Click <strong>continue</strong> and it will ask you for confirmation for node access and <strong>requirements</strong> check.</p>
+<p><img src="../images/tutorial/node_check_confirmation_modal.png" alt="">
+<img src="../images/tutorial/node_check_confirmation_modal_complete.png" alt=""></p>
+<hr>
+<h3 id="step-4-node-verification-and-preview"><strong>Step 4: Node Verification and Preview</strong></h3>
+<p>This page will ensure either your nodes are good to go or needs modifications.</p>
+<ul>
+<li>If any node is unreachable, an <strong>error message</strong> will appear.</li>
+<li><p>Once all nodes are verified, a <strong>Preview Page</strong> will display the following details:</p>
+<ul>
+<li>CPU count</li>
+<li>Total memory</li>
+<li>Operating system</li>
+<li>Total storage</li>
+</ul>
+</li>
+</ul>
+<p>Click <strong>Continue</strong> to move forward.</p>
+<p><img src="../images/tutorial/node_preview_page.png" alt=""></p>
+<hr>
+<h3 id="step-5-configure-cluster-settings"><strong>Step 5: Configure Cluster Settings</strong></h3>
+<p>On the <strong>Cluster Configuration</strong> page:</p>
+<ul>
+<li>On the left side of the page, you can find the cluster configuration entries. You may skip the add-ons for now and configure them later.</li>
+<li>On the right side of the page, define the <strong>Cluster Name</strong> and an optional <strong>Description</strong>.</li>
+</ul>
+<p>Click <strong>Continue</strong> to proceed.</p>
+<p><img src="../images/tutorial/cluster_configuration.png" alt=""></p>
+<hr>
+<h3 id="step-6-start-cluster-creation"><strong>Step 6: Start Cluster Creation</strong></h3>
+<p>A confirmation dialog will appear. Click <strong>Start</strong> to begin the cluster creation process.
+<img src="../images/tutorial/cluster_creation_confirmation.png" alt=""></p>
+<ul>
+<li>Depending on your <strong>internet speed</strong>, <strong>VM resources</strong>, and <strong>node count</strong>, the setup may take some time.</li>
+<li>You can monitor progress and view logs during installation.</li>
+</ul>
+<p><img src="../images/tutorial/cluster_creation_running.png" alt=""></p>
+<p>If an error occurs (often due to network issues):</p>
+<ul>
+<li>The process will stop.</li>
+<li>A <strong>Retry</strong> button will appear.</li>
+<li>Click <strong>Retry</strong> to continue from where it stopped.</li>
+<li>You can also track the error logs.<!-- TODO: Add image of cluster creation error -->
+</li>
+</ul>
+<hr>
+<h3 id="step-7-completion-and-dashboard-access"><strong>Step 7: Completion and Dashboard Access</strong></h3>
+<p>When all the processes complete successfully, a <strong>Congratulations</strong> page will appear.</p>
+<p>Click <strong>Manage This Cluster</strong> to open your <strong>Cluster Dashboard</strong>, where you can start managing this cluster.</p>
+<p><strong>Congratulations!!</strong> You have now successfully created your first Kubernetes cluster using KubeKit!
+<img src="../images/tutorial/cluster_creation_success.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../getting-started/quick-start-guide.html" class="navigation navigation-prev " aria-label="Previous page: Quick Start Guide">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="accessing-cluster-dashboard.html" class="navigation navigation-next " aria-label="Next page: Accessing Cluster Dashboard">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Creating Your First Cluster","level":"2.1","depth":1,"next":{"title":"Accessing Cluster Dashboard","level":"2.2","depth":1,"path":"docs/tutorial/accessing-cluster-dashboard.md","ref":"./docs/tutorial/accessing-cluster-dashboard.md","articles":[]},"previous":{"title":"Quick Start Guide","level":"1.3","depth":1,"path":"docs/getting-started/quick-start-guide.md","ref":"./docs/getting-started/quick-start-guide.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"docs/tutorial/creating-your-first-cluster.md","mtime":"2025-11-27T06:22:30.644Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-11-27T06:29:50.454Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
