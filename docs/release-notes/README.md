@@ -4,7 +4,26 @@ This document provides a detailed overview of KubeKit releases, including new fe
 
 ---
 
-## Release v2.0.3 (Latest)
+## Release v2.1.0 (Latest)
+**New Feature:**
+* Added in app analytics
+* Cluster remove/reconnect from dashboard
+* App menu added
+
+**Enhancement**
+
+* Updated Kubernetes & OS version supports
+* Design updated for node, cluster, import configurations
+* Cluster import issue fixed even CNI, LB pods are not available
+
+**Bug Fix**
+* Fixed Helm repo add/remove issue 
+* Metrics graph initial value issue fixed.
+* Node terminal issue fixed
+
+
+
+## Release v2.0.3 
 
 **Bug Fixes:**
 
