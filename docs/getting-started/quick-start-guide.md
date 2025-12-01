@@ -34,7 +34,7 @@ sudo rpm -ivh KubeKit-2.1.1-arm64.rpm -y
 
 ### Windows
 
-- Double-click on the `.exe` file KubeKit will be installed automatically.
+- Double-click on the `.exe` file, KubeKit will be installed automatically.
 
 ### MAC OS
 
