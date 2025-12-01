@@ -3,10 +3,6 @@
 
 * [Quick Start Guide](./docs/getting-started/quick-start-guide.md)
 
-## Tutorial
-
-* [Creating Your First Cluster](./docs/tutorial/creating-your-first-cluster.md)
-* [Accessing Cluster Dashboard](./docs/tutorial/accessing-cluster-dashboard.md)
 
 ## Installing Kubekit
 
@@ -31,7 +27,9 @@
   * [Helm](./docs/cluster/managing-cluster/helm.md)
   * [Terminal Access](./docs/cluster/managing-cluster/terminal-access.md)
   * [Workloads](./docs/cluster/managing-cluster/workload.md)
-* [Importing a cluster](./docs/cluster/importing-a-cluster.md)
+* [Importing a cluster](./docs/cluster/importing/importing-a-cluster.md)
+  * [Using kubeconfig](./docs/cluster/importing/by-kubeconfig.md)
+  * [Using Master Node ](./docs/cluster/importing/by-credentials.md)
     
 
 

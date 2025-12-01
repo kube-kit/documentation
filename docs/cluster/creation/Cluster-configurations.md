@@ -13,4 +13,4 @@ On the **Cluster Configuration** page:
 Click **Continue** to start the cluster creation process.
 
 
-![](../images/final/cluster-configuration.png)
+![](/docs/images/final/cluster-configuration.png)

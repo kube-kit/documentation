@@ -4,6 +4,8 @@ Importing or adding a cluster to KubeKit is straightforward. Adding a cluster al
 
 When you create a cluster using KubeKit, it is automatically added to your cluster list.
 
+To initiate the importing process, Navigate to the Import Cluster Page by clicking the **Import Cluster** button.
+<!-- 
 ## How to Import a Cluster
 
 1. **Navigate to the Import Cluster Page**
@@ -44,4 +46,4 @@ When you create a cluster using KubeKit, it is automatically added to your clust
 * Ensure your kubeconfig file or master node credentials are valid to prevent import failures.
 * Imported clusters can be managed alongside clusters created in KubeKit, enabling unified multi-cluster management.
 * Adding descriptive names and icons helps in quickly identifying clusters, especially in environments with multiple clusters.
-* KubeKit supports importing clusters from diverse OS nodes including Ubuntu, Debian, CentOS, Fedora, and Amazon Linux for seamless integration.
+* KubeKit supports importing clusters from diverse OS nodes including Ubuntu, Debian, CentOS, Fedora, and Amazon Linux for seamless integration. -->

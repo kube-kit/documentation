@@ -23,7 +23,7 @@ KubeKit supports the following operating systems for VM-based clusters:
 * **Amazon Linux 2**
 * **Amazon Linux 2023**
 
-![](../../images/final/supported-os.png)
+![](/docs/images/final/supported-os.png)
 
 
 Each node in your cluster (control plane and worker) must have one of the above operating systems installed and properly configured before initiating cluster creation. Using a non-supported OS may cause compatibility issues with Kubernetes components, system dependencies, or network configurations.
