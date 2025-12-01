@@ -1,19 +1,21 @@
 # Installation
 
-The **Installation** stage is the final step of setting up a cluster in KubeKit. This process is divided into four major phases:
+**Great!!** Your cluster is building now
 
-1. **Installing Prerequisites**  
-   KubeKit prepares all required dependencies and components for your cluster.
+![](../images/final/installation.png)
 
-2. **Master Node Setup**  
-   The control plane node is initialized and configured.
+Cluster setup time depends on your **cpu**, **memory** and **node internet speed**.
 
-3. **Worker Node Setup**  
-   Worker nodes are joined and prepared to run workloads.
+If any error occurs (often due to network issues):
 
-4. **Finalizing Cluster**  
-   KubeKit completes the setup and installs the selected add-ons during this phase.
+* The process will stop.
+* A **Retry** button will appear.
+* Click **Retry** to continue from where it stopped.
+* You can also track the error logs.
 
-![](../../images/final/installation.png)
+---
 
-Once these steps are completed, your cluster will be fully provisioned and ready for use.
+**Congratulations!!** You have successfully created your first Kubernetes cluster using KubeKit!
+![](../images/final/congratulations.png)
+Click **Manage This Cluster** to open your **Cluster Dashboard**, where you can start managing this cluster.
+

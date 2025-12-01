@@ -10,14 +10,15 @@
 
 ## Installing Kubekit
 
+* [System Requirements](./docs/installing-kubekit/system-req.md)
 * [Installing KubeKit](./docs/installing-kubekit/installing-kubekit.md)
-* [Permission](./docs/installing-kubekit/permission.md)
 * [Updating Kubekit](./docs/installing-kubekit/updating-kubekit.md)
 
 ## Cluster
 
 * [Creating a Cluster](./docs/cluster/creation/creating-a-cluster.md)
   * [Prequisites](./docs/cluster/creation/prerequisites.md)
+  * [Getting started](./docs/cluster/creation/get-started.md)
   * [Node Configuration](./docs/cluster/creation/node-configurations.md)
   * [Cluster Configuration](./docs/cluster/creation/Cluster-configurations.md)
   * [Installation](./docs/cluster/creation/installation.md)
@@ -30,6 +31,7 @@
   * [Helm](./docs/cluster/managing-cluster/helm.md)
   * [Terminal Access](./docs/cluster/managing-cluster/terminal-access.md)
   * [Workloads](./docs/cluster/managing-cluster/workload.md)
+* [Importing a cluster](./docs/cluster/importing-a-cluster.md)
     
 
 

@@ -1,32 +1,16 @@
 # Cluster Configuration
 
-The Cluster Configuration page allows you to customize your cluster:
+## **Configure Cluster**
 
-### Basic Information
+On the **Cluster Configuration** page:
+ * Select your cluster **icon** and provide a **name** for your cluster, this will appear in the dashboard after creation.
+ * Choose your desired **Kubernetes version**, **Container Runtime Engine**, **CNI Provider**, **Load Balancer**. Or you can keep the default options.
+ * KubeKit support multiple Add-ons options, which are optional
+    * **Metrics Provider**: You can enable Metrics Provider like kubekit or Prometheus. (Kubekit is a light-weight metrics which works with metrics server)
+    * **Ingress Controller**: You can choose your desired ingress controller and provide ingress IP to access your ingress service.
+    * **TLS/SSL(HTTPS)**: If you want to enable TLS/SSL(HTTPS) in your cluster, then enable the switch, provide your email. If you want to know more, click [here](/docs/cluster/creation/Cluster-configurations.md) 
 
-* **Cluster Name and Icon**: Assign a unique name and icon for reference. This helps identify your cluster in the dashboard.
-* **Description**: Add an optional description for documentation or context.
+Click **Continue** to start the cluster creation process.
 
-### Kubernetes Version
 
-* Choose the version of Kubernetes for your cluster. The **latest stable version** is recommended for security, performance, and feature updates.
-
-### Container Runtime
-
-* Kubernetes runs applications in isolated containers. Choose a container runtime to manage these containers. KubeKit supports **containerd** and **CRI-O**, both of which are widely used and production-ready.
-
-### Network Configuration (CNI Provider)
-
-* The CNI (Container Network Interface) manages network communication between pods. Options include **Calico**, **Weave Net**, and **Flannel**. All are robust and production-grade solutions.
-
-### Ingress Controller
-
-* An ingress controller manages external access to services within the cluster. Choose between **NGINX** and **Traefik**.
-* Specify an **Ingress IP** to route incoming traffic correctly.
-
-### Add-ons
-
-* **Metrics Provider**: Enable to view cluster performance metrics. You can also configure this later.
-* **Cert Manager**: Integrate with Let's Encrypt to manage SSL certificates. Provide an email and select a deployment mode (staging or production).
-
-![](../../images/final/cluster-configuration.png)
+![](../images/final/cluster-configuration.png)

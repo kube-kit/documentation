@@ -1,6 +1,6 @@
 # Creating a Cluster
 
-Creating a Kubernetes cluster with KubeKit is designed to be simple, visual, and intuitive. Even users with minimal Kubernetes experience can understand and prepare for cluster creation. This page is not a step-by-step guide but highlights important considerations and best practices. If you have not done so already, check the [Creating Your First Cluster](../tutorial/creating-your-first-cluster.md) tutorial for a guided setup.
+Creating a Kubernetes cluster with KubeKit is designed to be simple, visual, and intuitive. Even users with minimal Kubernetes experience can understand and prepare for cluster creation.
 
 
 ## Cluster Creation Steps

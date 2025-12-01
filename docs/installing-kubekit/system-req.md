@@ -1,4 +1,8 @@
-# Permissions
+# System Requirements
+
+KubeKit can be installed on a wide range of operating systems, including Ubuntu, Debian, Fedora, Red Hat, Amazon Linux, macOS, and Windows. Installation is supported on all Windows editions except Windows ARM.
+
+## Permissions
 
 Administrative (sudo) privileges are required to install and run KubeKit on your operating system. During installation or while executing certain tasks, the system may prompt you to enter your administrator or sudo password. This is necessary because KubeKit needs elevated privileges to perform system-level operations, such as managing services and accessing network configurations.
 
@@ -10,7 +14,6 @@ If these ports are already in use by another process, KubeKit will display an er
 
 On **Windows** systems, a firewall prompt may appear requesting permission to allow these ports. When this prompt appears, click Allow to grant KubeKit the necessary access.
 
-<!-- TODO: add image windows firewal prompt image to allow port -->
 
 ## Application Data
 
@@ -18,4 +21,4 @@ KubeKit stores application-related data in the user's home directory under the f
 
 You may explore this folder if needed for troubleshooting, backup, or system maintenance purposes.
 
-<!-- TODO: add screen shot of data directory -->
+Click [here](/docs/installing-kubekit/installing-kubekit.md) to continue installation process. 
