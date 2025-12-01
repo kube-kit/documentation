@@ -24,7 +24,8 @@ To make configuration easier there are several optional settings that help multi
   * First node has the IP of `10.0.0.21` 
   * Second node has the IP of `10.0.0.22` 
   * Third node has the IP of `10.0.0.23` 
-Then enter the first node's IP only, which is `10.0.0.21`.
+
+  Then enter the first node's IP only, which is `10.0.0.21`.
 - If all your nodes have the same SSH methods, then enable the switch and select common method for all nodes and enter the SSH password or upload the ssh-key file respectively. 
 
 Finally, click **Continue** to move forward.
