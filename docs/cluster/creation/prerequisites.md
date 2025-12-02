@@ -1,33 +1,41 @@
 # Prerequisites
 
-Before starting the cluster creation process, ensure the following:
-
-* You have at least **two virtual machines (VMs)** to create a cluster.
-* Each VM should have a minimum of **2 CPU cores** and **2 GB RAM**.
-* **SSH access** must be enabled on all nodes.
-* All nodes should have **network connectivity** with each other.
+Before starting the cluster creation process, make sure the following requirements are met:
 
 ![](/docs/images/final/cluster-requirement.png)
 
-If you encounter errors during the creation process, these are often related to network connectivity or SSH access. Double-check your VM configurations and retry.
+## Node Requirements
 
-## Supported Operating Systems
+- You have at least two nodes(1 master, 1 worker) to create a cluster.
+- 2 GB or more of RAM per node (any less will leave little room for your apps).
+- 2 CPUs or more for control plane nodes.
+- All nodes must have any of **Ubuntu**, **Debian**, **Fedora**, **CentOS**, **RedHat** and **Amazon Linux** operating systems. Also combination of multiple operating system for a single cluster is supported. Click on **`I'm ready to make my cluster`** button to see the following page. For details click on **List of supported operating systems**.
+ ![](/docs/images/final/cluster-creation.png)
+ 
 
-When creating a Kubernetes cluster with **KubeKit**, each virtual machine (VM) must run a supported operating system. You can attempt to create a cluster with an unsupported operating system, but KubeKit does not guarantee compatibility. In most cases, the cluster creation process will likely fail or result in unstable behavior. KubeKit supports Ubuntu, Debian, Fedora, CentOS, RedHat and Amazon Linux for VM-based clusters.
 
-![](/docs/images/final/supported-os.png)
+## SSH Requirements
+
+- **SSH access** must be enabled to all your nodes from your PC where KubeKit is running.
+- For **password-less** and **key-based** **SSH access** you need to enable sudo previliges. Click on **How to enable sudo** for detail instructions.
 
 
-Each node in your cluster (control plane and worker) must have one of the above operating systems installed and properly configured before initiating cluster creation. Using a non-supported OS may cause compatibility issues with Kubernetes components, system dependencies, or network configurations.
+## Network Requirements
 
-> **Recommendation:** Always ensure that your VM images are up to date with the latest security patches and system packages before cluster deployment. Consistency in OS type and version across all nodes is also recommended for stable performance and easier maintenance.
-
+- Full network connectivity between all nodes in the cluster (public or private network is fine).
 
 ## Tips for a Smooth Cluster Creation
 
-* Ensure **all nodes meet the minimum system requirements**.
-* Check **network connectivity** and **SSH access** to each node before starting.
-* Use the latest Kubernetes version for optimal stability and features.
-* If an error occurs during deployment, review the logs and verify node configurations.
+-  Ensure **package managers** are up to date in all of your nodes.
+   For **Ubuntu**, **Debian** and **Amazon linux** run following command to update
+   ```bash
+   sudo apt-get update -y
+   ```
+   For **Fedora** and **Redhat** run following command to update
+   ```bash
+   sudo yum update -y
+   ```
+- Stable **network connectivity** in all nodes.
+- Faster **Internet speed** ensures faster cluster creation. 
 
 By following these steps, you can create a stable, fully functional Kubernetes cluster with KubeKit, ready for application deployment and management.

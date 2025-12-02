@@ -34,7 +34,7 @@ From the action menu, choose **Scale**. A dialog window will open where you can 
 The scale dialog will display the current number of replicas for reference. Enter the new desired count of replicas, for example increasing from 3 to 6. This defines how many pod instances the deployment should run moving forward.
 
 ### Apply the Change
-Click the **Apply** button to confirm your change. KubeKit will instruct Kubernetes to reconcile the deployment to the new replica count and update the underlying ReplicaSet accordingly.
+Click the **`Apply`** button to confirm your change. KubeKit will instruct Kubernetes to reconcile the deployment to the new replica count and update the underlying ReplicaSet accordingly.
 
 By following these steps, you can quickly and reliably scale any deployment using KubeKit’s UI, adapting your application footprint to match runtime conditions.
 

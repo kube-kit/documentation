@@ -26,7 +26,7 @@ Here you can see the details information of your each node separately, also you 
 
 * Select your master node first, You can select any node as master node.
 * You can edit the SSH port(if it's not `22`).
-* Use **+** or **Delete** button to add or remove any node.
+* Use **`+`** or **`Delete`** button to add or remove any node.
 
 ![](/docs/images/final/node-configuration.png)
 

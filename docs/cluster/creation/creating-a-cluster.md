@@ -7,9 +7,9 @@ Creating a Kubernetes cluster with KubeKit is designed to be fast, simple and re
 
 The cluster creation workflow in KubeKit follows a fully guided step-by-step process:
 
-**1.** [**Prerequisites**](/docs/cluster/creation/prerequisites.md)
+**1.** [**Getting Started**](/docs/cluster/creation/get-started.md)
 
-**2.** [**Getting Started**](/docs/cluster/creation/get-started.md)
+**2.** [**Prerequisites**](/docs/cluster/creation/prerequisites.md)
 
 **3.** [**Node Configuration**](/docs/cluster/creation/node-configurations.md)
 

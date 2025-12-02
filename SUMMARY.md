@@ -13,8 +13,8 @@
 ## Cluster
 
 * [Creating a Cluster](./docs/cluster/creation/creating-a-cluster.md)
-  * [Prequisites](./docs/cluster/creation/prerequisites.md)
   * [Getting started](./docs/cluster/creation/get-started.md)
+  * [Prequisites](./docs/cluster/creation/prerequisites.md)
   * [Node Configuration](./docs/cluster/creation/node-configurations.md)
   * [Cluster Configuration](./docs/cluster/creation/Cluster-configurations.md)
   * [Installation](./docs/cluster/creation/installation.md)

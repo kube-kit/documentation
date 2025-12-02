@@ -23,12 +23,12 @@ On the Logs page, you may filter log output by namespace, deployment, replicaset
 ---
 
 ## Search and Inspect Logs  
-Utilise the search bar located at the top-left of the Logs page to query specific log entries (e.g., error messages, component names, keywords). You may also enable the **Wrap** button to adjust text formatting and check the **Show Timestamps** checkbox if you need to view timestamped entries in the log stream.
+Utilise the search bar located at the top-left of the Logs page to query specific log entries (e.g., error messages, component names, keywords). You may also enable the **`Wrap*`* button to adjust text formatting and check the **Show Timestamps** checkbox if you need to view timestamped entries in the log stream.
 
 ---
 
 ## Download Logs for Offline Analysis  
-If you wish to review or archive logs outside of the console, use the **Download** button to export the selected log output. This is particularly helpful for long-term investigations, auditing purposes or sharing with other teams.
+If you wish to review or archive logs outside of the console, use the **`Download`** button to export the selected log output. This is particularly helpful for long-term investigations, auditing purposes or sharing with other teams.
 
 
 
