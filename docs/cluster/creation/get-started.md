@@ -1,4 +1,4 @@
-# Initiate installation
+# Getting Started
 
 After launching KubeKit application, Click on the **Get Started** button, this will bring the below page.
 ![](/docs/images/final/create-cluster.png)

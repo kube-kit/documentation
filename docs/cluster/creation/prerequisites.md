@@ -7,21 +7,13 @@ Before starting the cluster creation process, ensure the following:
 * **SSH access** must be enabled on all nodes.
 * All nodes should have **network connectivity** with each other.
 
+![](/docs/images/final/cluster-requirement.png)
+
 If you encounter errors during the creation process, these are often related to network connectivity or SSH access. Double-check your VM configurations and retry.
 
 ## Supported Operating Systems
 
-When creating a Kubernetes cluster with **KubeKit**, each virtual machine (VM) must run a supported operating system. You can attempt to create a cluster with an unsupported operating system, but KubeKit does not guarantee compatibility. In most cases, the cluster creation process will likely fail or result in unstable behavior.
-
-KubeKit supports the following operating systems for VM-based clusters:
-
-* **Ubuntu** 
-* **Debian** 
-* **Fedora** 
-* **CentOS** 
-* **RedHat**
-* **Amazon Linux 2**
-* **Amazon Linux 2023**
+When creating a Kubernetes cluster with **KubeKit**, each virtual machine (VM) must run a supported operating system. You can attempt to create a cluster with an unsupported operating system, but KubeKit does not guarantee compatibility. In most cases, the cluster creation process will likely fail or result in unstable behavior. KubeKit supports Ubuntu, Debian, Fedora, CentOS, RedHat and Amazon Linux for VM-based clusters.
 
 ![](/docs/images/final/supported-os.png)
 

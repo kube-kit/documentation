@@ -1,8 +1,19 @@
-# Import a cluster using kubeconfig file
+# Import a cluster using kubeconfig 
 
-You can import your existing cluster by kubeconfig file. 
-- If you have the kubeconfig file on your local machine, you can just **upload** the file or **drag and drop** the file into kubekit.
+You can import your existing cluster using kubeconfig file or content. 
+
+## Option 1:
+
+On the left panel, select the first option **I have the kubeconfig file**.
+
+Then just **upload** or **drag and drop** your kubeconfig file.
+
 ![](/docs/images/final/import-configuration.png)
 
-- Or you can just paste the contents of kubeconfig file 
+## Option 2:
+On the left panel, select the second option **I want to paste the kubeconfig content**
+
+Then just paste the kubeconfig contents. 
+
+Also you can edit here.
 ![](/docs/images/final/paste-config.png)

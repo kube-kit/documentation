@@ -1,25 +1,27 @@
 # Updating KubeKit
 
-KubeKit releases regular updates to enhance performance, security, and overall user experience. Staying up to date ensures access to the latest features, bug fixes, and improvements.
+KubeKit releases regular updates with new features, performance improvement, bugfix and bettter user experience.
 
-This section applies to users who have already installed KubeKit and wish to upgrade to the latest version.
+It is recommended to stay up to date to the latest version.
 
 ## Steps to Update KubeKit
 
 1. **Launch KubeKit**  
-   Open the KubeKit application on your system.
+   Launch the KubeKit application.
 
 2. **Access the Menu**  
-   Click the menu icon located in the top-right corner of the application.
+   Click the menu icon located in the top-right corner.
 
 3. **Check for Updates**  
-   Navigate to the **About** section to view your current KubeKit version. Click **Check for updates** to see if a newer version is available.
+   Navigate to the **About** section to view your current KubeKit version, then click **Check for updates** to see if a newer version is available.
 
    ![](/docs/images/final/check-update.png)
 
 4. **Install Updates**  
    - If KubeKit is up to date, a message will appear: **"Your KubeKit is up to date!"**  
-   - If an update is available, the latest version will be displayed. Confirm to download and install the update automatically.  
-   - The update duration may vary depending on your system performance and internet connection.
+   - If an update is available, then click on **`Download`** button to download the update.
+   - Click on **`Install`** to install the update.
 
 Once the update completes, KubeKit will restart automatically, and you will be ready to use the latest version.
+
+If it fails to start automatically, then launch the app manually.

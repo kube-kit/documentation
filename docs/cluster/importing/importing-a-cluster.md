@@ -1,49 +1,23 @@
 # Importing a Cluster
 
-Importing or adding a cluster to KubeKit is straightforward. Adding a cluster allows KubeKit to access your existing Kubernetes cluster and store its configuration details for easy management. All added clusters can be viewed directly from the KubeKit homepage.
+Importing an existing kubernetes cluster from anywhere to kubekit is very simple.
 
-When you create a cluster using KubeKit, it is automatically added to your cluster list.
+To initiate the importing process, Navigate to the Import Cluster Page by clicking the **`Import Cluster`** button. Then follow the below steps:
 
-To initiate the importing process, Navigate to the Import Cluster Page by clicking the **Import Cluster** button.
-<!-- 
-## How to Import a Cluster
+1. **Provide Cluster Details**
 
-1. **Navigate to the Import Cluster Page**
+   * On the left panel, select an icon, provide a name for your cluster and this will appear in the dashboard after importing. 
 
-   * From the homepage, click on `Import Cluster`.
-
-2. **Provide Cluster Details**
-
-   * On the right side, select an icon, provide a name, and optionally add a description for your cluster. This information will be displayed in your cluster list on the homepage.
-
-3. **Select Access Method**
-
-   * On the left side, you can choose how KubeKit will access your cluster. There are two primary methods:
-
-   #### Option 1 and 2: Using a Kubeconfig File
-
-   * The kubeconfig file contains all necessary credentials and configuration for accessing your cluster. You do not need to understand its contents.
-   * Option 1: Upload the kubeconfig file directly.
-   * Option 2: Paste the contents of the kubeconfig file if you have it in text format.
-
-    #### Option 3: Using Master Node Credentials
-
-    * You can provide credentials to access the cluster's master node directly.
-    * Required information includes the node IP, username, and preferred access method (e.g., SSH).
+3. **Select Import Method**
+    KubeKit provides three options for importing:
+   - [Using Kubeconfig file](/docs/cluster/importing/by-kubeconfig.md#option-1)
+   - [Using Kubeconfig content](/docs/cluster/importing/by-kubeconfig.md#option-2)
+   - [Using master node](/docs/cluster/importing/by-credentials.md)
 
 4. **Import the Cluster**
 
-   * Click `Continue` to complete the import process.
+   * Click `Continue` to start the importing process.
 
-5. **Verify the Imported Cluster**
-
-   * Return to the homepage to see the imported cluster in the list.
-   * The cluster entry displays details such as CPU cores, memory, storage, number of pods, and other essential metrics.
-   * You can also download the kubeconfig file from the cluster entry for future use.
-
-## Notes and Best Practices
-
-* Ensure your kubeconfig file or master node credentials are valid to prevent import failures.
-* Imported clusters can be managed alongside clusters created in KubeKit, enabling unified multi-cluster management.
-* Adding descriptive names and icons helps in quickly identifying clusters, especially in environments with multiple clusters.
-* KubeKit supports importing clusters from diverse OS nodes including Ubuntu, Debian, CentOS, Fedora, and Amazon Linux for seamless integration. -->
+**Congratulations!!** You have successfully imported your Kubernetes cluster using KubeKit!
+![](/docs/images/final/congratulations.png)
+You can also download the **kubeconfig** file from here.
