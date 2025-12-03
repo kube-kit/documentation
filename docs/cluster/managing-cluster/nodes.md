@@ -1,11 +1,39 @@
-# **Nodes**
+# Nodes
 
-This section provides a comprehensive overview of all nodes that are part of your cluster. It allows you to quickly inspect node details, verify their health, and perform administrative actions. You can search for specific nodes by name and apply filters based on **status** or **roles** to narrow down the list and focus on the nodes that matter.
+All nodes along with their **status**, **cpu**, **memory usages** and their **roles**(master or worker) are listed here.
 
-## Access Node Terminal
+## Node Details
 
-From the KubeKit **Cluster Dashboard**, open the **Nodes** section using the right-sidebar navigation. On the **Nodes** page, you will find a table displaying every node in your cluster along with key metadata such as name, role, and status.
+Click on a node row to view detailed information about that node.
 
-Identify the node you want to access, then click the three-dot action menu on the far right of its row. Select **Terminal**. A shell session will open instantly, allowing you to run commands directly on the selected node without leaving the KubeKit interface.
+You can see real-time graphs of **CPU** and **Memory** usage.  
+Other important information about the node is also displayed, including **Name**, **Labels**, **Annotations**, **OS**, **Kernel Version**, and **IP addresses**.  
 
-![](../../images/final/node-terminal.png)
+Below, you will find a list of pods running on the node and a list of events occurring on the node.
+
+<!-- todo: node details ss -->
+
+
+## Access Terminal
+
+To access a node's terminal, locate the three-dot menu on the node row and click the **`Terminal`** button.  
+
+Alternatively, if you open the node's detailed page by clicking on its row, the **`Terminal`** button is available at the top-right corner. Clicking it will open the terminal for that node.  
+
+KubeKit provides terminal access as the **root** user. To switch to another user, run the following command:
+
+```bash
+su <username>
+```
+
+![](/docs/images/final/node-terminal.png)
+
+## Delete Node
+
+To delete a node, locate the three-dot menu on the node row and click the **`Delete`** icon.  
+
+Alternatively, if you open the node's detailed page by clicking on its row, the **`Delete`** icon is available at the top-right corner. 
+
+This **Delete** action works the same way as *`kubectl delete`.*
+
+It does **not** perform actions like *`kubectl cordon`* or *`kubectl drain`.*

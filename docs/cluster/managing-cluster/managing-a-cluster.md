@@ -1,24 +1,25 @@
-# Managing a Cluster
+# Managing Clusters
 
-## Overview  
-Cluster management lies at the core of maintaining a resilient and efficient Kubernetes environment. **KubeKit** provides an intuitive interface to manage every aspect of your cluster, including nodes, workloads, networking, configurations, and access control, all within a unified dashboard.
+## KubeKit Dashboard
 
-Upon selecting a cluster from the **KubeKit Dashboard**, you’ll land on the **Overview Page**, which provides a concise summary of your cluster’s configuration and state.  
+You can manage multiple cluster using KubeKit simultaneously. All the clusters you have created or imported are listed in the dashboard.
 
-At the top, you’ll find:  
-- Kubernetes version  
-- Container Network Interface (CNI) type and version  
-- Container Runtime Engine type and version  
-- Load Balancer type and version  
-- Cluster age  
+![](/docs/images/final/kubekit-dashboard.png)
 
-You can download the **kubeconfig** file from the top-right corner for local access or automation.  
+You can download the **kubeconfig** file of any cluster in the dashboard.
 
-Below, CPU and memory usage are visualized through time-series graphs for all nodes.  if metrics are not visible then you have to configure your metrics first. go to [metrics](../monitoring-and-logging/metrics.md) to see how to configure metrics.  
+You can manage specific cluster by clicking the **`Manage`** button, this will land you to the [**`Cluster Dashboard`**](/docs/cluster/managing-cluster/overview.md) button.
 
-In the right panel, all **pods** are displayed with filtering options by namespace. You can manage pods or nodes directly via the **Manage** button available on hover. All cluster **events** are also listed to provide real-time operational insights.
+If a cluster becomes **disconnected**, you can attempt to reconnect by clicking the **`Reconnect`** icon. Also you can remove **disconnected** cluster from KubeKit application. This will not delete your cluster. Its just detach from KubeKit, it is always safe, you can import it anytime later.
 
----
+From here, you can check the cluster status (**connected** or **disconnected**), and versions of **Kubernetes**, **Container Network Interface**, **Container Runtime Engine**, **Load Balancer** .  
+
+You can also see the total number of **Pods**, **Nodes**, **Deployments**, and **Containers**.  
+Additionally, the dashboard displays total cluster capacity metrics such as **CPU**, **Memory**, **Storage**, and **Pods**.
+
+
+
+
 
 ## Cluster Management Options  
 KubeKit’s left sidebar contains several dedicated sections for managing different components of the cluster. Each section offers a focused view with search, filtering, and management capabilities.
@@ -29,7 +30,6 @@ KubeKit’s left sidebar contains several dedicated sections for managing differ
 
 
 
----
 
 
 ## Workloads  

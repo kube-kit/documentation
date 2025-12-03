@@ -21,7 +21,8 @@
 * [Importing a cluster](./docs/cluster/importing/importing-a-cluster.md)
   * [Using kubeconfig](./docs/cluster/importing/by-kubeconfig.md)
   * [Using Master Node ](./docs/cluster/importing/by-credentials.md)
-* [Managing a Cluster](./docs/cluster/managing-cluster/managing-a-cluster.md)
+* [Managing Clusters](./docs/cluster/managing-cluster/managing-a-cluster.md)
+  * [Cluster Dashboard](/docs/cluster/managing-cluster/overview.md)
   * [Nodes](./docs/cluster/managing-cluster/nodes.md)
   * [Namespaces](./docs/cluster/managing-cluster/namespaces.md)
   * [Events](./docs/cluster/managing-cluster/events.md)
@@ -30,6 +31,10 @@
   * [Helm](./docs/cluster/managing-cluster/helm.md)
   * [Terminal Access](./docs/cluster/managing-cluster/terminal-access.md)
   * [Workloads](./docs/cluster/managing-cluster/workload.md)
+  * [Config](/docs/cluster/managing-cluster/config.md)
+  * [Network](/docs/cluster/managing-cluster/networking.md)
+  * [Access Control](/docs/cluster/managing-cluster/access-control.md)
+  * [Storage](/docs/cluster/managing-cluster/storage.md)
     
 
 
