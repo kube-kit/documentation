@@ -1,70 +1,156 @@
 # Workloads  
-The **Workloads** section displays all running resources within your cluster. Each workload type supports searching, filtering, and management features such as deletion, scaling, and detailed inspection.
+The **Workloads** section displays all running resources within your cluster including [**Pods**](/docs/cluster/managing-cluster/workload.md#pods), [**Deployments**](/docs/cluster/managing-cluster/workload.md#deployments), [**Daemon Sets**](/docs/cluster/managing-cluster/workload.md#daemon-sets), [**Replica Sets**](/docs/cluster/managing-cluster/workload.md#replica-sets), [**Replication Controllers**](/docs/cluster/managing-cluster/workload.md#replication-controller), [**Stateful Sets**](/docs/cluster/managing-cluster/workload.md#stateful-sets), [**Jobs**](/docs/cluster/managing-cluster/workload.md#jobs), [**Cron Jobs**](/docs/cluster/managing-cluster/workload.md#cron-jobs).
+
+
+## **Pods**  
+
+All **pods** along with their **name**, **namespace**, **container**, **cpu**, **memory**, **restarts**, **controlled by**, **node**, **age**, **status** are listed her.
+![](/docs/images/final/pod-list.png)
+
+### Pod Details
+
+Click on a **pod** row to view detailed information about it.
+![](/docs/images/final/pod-details.png)
+
+This page shows real-time **CPU** and **Memory** usage graphs for the selected pod. You will also find detailed information such as **Annotations**, **Service Account**, **QoS Class**, **Conditions**, **Affinities**, **Tolerations** and more.  
+
+In addition, you can view details about the **containers** running inside the pod, along with **Volumes** and **Events** related to the pod.
+
+
+### Access pod terminal
+
+To access a pod's terminal, locate the three-dot menu on the pod row and click the **`Terminal`** button.  
+
+Alternatively, if you open the pod's detailed page by clicking on its row, the **`Terminal`** button is available at the top-right corner. Clicking it will open the terminal for that node.  
+![](/docs/images/final/pods.png)
 
 ---
 
-## **Pods**  
-You can view all pods across all namespaces within the Cluster Dashboard. The pod list allows you to search and filter by namespace, node, or status to easily locate specific pods. For any pod, you have the option to delete it by selecting the pod, which will display a Delete button. 
-### Access pod terminal
-You can also access the terminal of a pod directly from the dashboard. To do this, navigate to the Workloads section and select Pods. On the Pods page, locate the pod you want to access and click the three-dot action menu on the far right of its row. From the menu, click the Terminal button to open a shell session into the container running inside that pod. This feature enables you to interact with the pod directly for troubleshooting, configuration, or monitoring purposes.
+## **Deployments**   
 
-## **Deployments**  
-You can search and filter deployments by namespace. Each deployment can be deleted or scaled as needed to adjust your application workload.
-
+All the **deployments** along with **name**, **namespace**, **pods**, **replicas**, **age** and **status** are listed here.
+You can view **logs** of any **deployment** by clicking the **`Logs`** option in the three-dot menu of the deployment row.
 ![](/docs/images/final/deployments.png)
 
-## Scaling Deployments
-Scaling a deployment means adjusting the number of running instances, or replicas, of a workload so that your cluster can respond appropriately to changing demand. Scaling up schedules additional pods onto nodes, enabling your application to handle increased load. Scaling down frees up resources and reduces unnecessary cost or overhead. In Kubernetes, a deployment manages pods through a replica set. Changing the replica count triggers the replica set controller to add or remove pods accordingly.  
+### Deployment Details
 
-For further reading on the native Kubernetes approach to scaling, see [Kubernetes Scaling an Application](https://kubernetes.io/docs/tutorials/kubernetes-basics/scale/scale-intro/) and [Kubernetes Autoscaling Workloads](https://kubernetes.io/docs/concepts/workloads/autoscaling/).
+Click on a **deployment** row to view detailed information about it.
 
-### Open the Deployments Page
-Navigate to the **Deployments** view under the **Workload** section in the sidebar of the KubeKit interface. This page displays all existing deployments across namespaces by default.
+This page shows real-time **CPU** and **Memory** usage graphs for the selected deployment. You will also find detailed information such as **Annotations**, **Selector**, **Node Selector**, **Conditions**, **Affinities**, **Tolerations**, **Straegy Type** and more.  
+![](/docs/images/final/deployments-details.png)
 
-### Choose a Namespace (Optional)
-To focus on a single namespace, use the namespace-selector dropdown at the top-left of the page to filter the list. If no namespace is selected, deployments from all namespaces will be shown.
+In addition, you can view details about the **pods** running inside the deployment, along with **Events** related to the deployment.
 
-### Access the Deployment’s Action Menu
-Find the row corresponding to the deployment you wish to scale. Click the three-dot menu (⋮) at the end of the row to view available actions.
+### Scaling Deployments
 
-### Select the “Scale” Action
-From the action menu, choose **Scale**. A dialog window will open where you can specify the new replica count.
+You can scale a deployment to your desired number of replicas.  
+The **`Scale`** option is available in the three-dot menu of each deployment row.  
 
-### Specify the Desired Number of Replicas
-The scale dialog will display the current number of replicas for reference. Enter the new desired count of replicas, for example increasing from 3 to 6. This defines how many pod instances the deployment should run moving forward.
+You can also scale from the deployment detail page (opened by clicking the deployment row), where the **`Scale`** icon is located in the top-right corner.
 
-### Apply the Change
-Click the **`Apply`** button to confirm your change. KubeKit will instruct Kubernetes to reconcile the deployment to the new replica count and update the underlying ReplicaSet accordingly.
+---
 
-By following these steps, you can quickly and reliably scale any deployment using KubeKit’s UI, adapting your application footprint to match runtime conditions.
+## Daemon Sets
 
+All the **daemon sets** along with **name**, **namespace**, **pods**, **node selector**, **age** and **update strategy** are listed here.
+You can view **logs** of any **daemon set** by clicking the **`Logs`** option in the three-dot menu of the **daemon set** row.
+![](/docs/images/final/ds-list.png)
 
-## **Replica Sets**  
-- Lists all ReplicaSets.  
-- Search or filter by **namespace**.  
-- Delete by selecting the desired ReplicaSet.  
-- View details by clicking on its name.
+### Daemon set details
 
-## **Replication Controllers**  
-- Functionality identical to ReplicaSets.  
-- Search, filter, delete, or inspect detailed configurations.
+Click on a **daemon sets** row to view detailed information about it.
 
-## **Stateful Sets**  
-- Lists all StatefulSets.  
-- Search or filter by namespace.  
-- Delete as required.  
-- Click to view configuration details.
+This page shows real-time **CPU** and **Memory** usage graphs for the selected daemon set. You will also find detailed information such as **Annotations**, **Images**, **Selector**, **Service account**, **DNS policy**, **Schedular**, **Straegy Type** and more.  
+![](/docs/images/final/ds-details.png)
 
-## **Jobs**  
-- Displays all Kubernetes Jobs.  
-- Search or filter by namespace.  
-- Delete Jobs when necessary.  
-- Click to see more details.
+You can view details about the **pods** running inside the daemon set, as well as **Events** related to it.  
+A **Logs** button is also available at the top-right corner to view the daemon set logs.
 
-## **CronJobs**  
-- Similar management features as Jobs.  
-- Search, filter, delete, or view details.
+---
 
-## **Daemon Sets**  
-- View, search, and filter by **namespace**.  
-- Delete or inspect a DaemonSet by clicking its name.
+## Replica Sets
+
+All the **replica sets** along with **name**, **namespace**, **node selector**, **desired**, **current**, **ready** and **age** are listed here.
+You can view **logs** of any **replica set** by clicking the **`Logs`** option in the three-dot menu of the **replica set** row.
+![](/docs/images/final/rs-list.png)
+
+### Replica set details
+
+Click on a **replica sets** row to view detailed information about it.
+
+This page shows real-time **CPU** and **Memory** usage graphs for the selected replica set. You will also find detailed information such as **Annotations**, **Tolerations**, **Selector**, **Service account**, **DNS policy**, **Schedular**, **Restart Policy** and more.  
+![](/docs/images/final/rs-details.png)
+
+You can view details about the **pods** running inside the replica set, as well as **Events** related to it.  
+A **Logs** button is also available at the top-right corner to view the replica set logs.
+
+---
+
+## Replication Controller
+
+All the **replication controller** along with **name**, **namespace**, **selector**, **replicas**, **ready** and **age** are listed here.
+You can view **logs** of any **replication controller** by clicking the **`Logs`** option in the three-dot menu of the **replication controller** row.
+![](/docs/images/final/rc-list.png)
+
+### Replication controller details
+
+Click on a **replication controller** row to view detailed information about it.
+
+This page shows real-time **CPU** and **Memory** usage graphs for the selected replication controller. You will also find detailed information such as **Labels**, **Selector**, **DNS policy**, **Schedular**, **Restart Policy** and more.  
+![](/docs/images/final/rc-details.png)
+
+You can view details about the **pods** running inside the replication controller, as well as **Events** related to it.  
+A **Logs** button is also available at the top-right corner to view the replication controller logs.
+
+---
+
+## Stateful Sets
+
+All the **stateful sets** along with **name**, **namespace**, **service name**, **pods**, **replicas**, **age** and **update strategy** are listed here.
+You can view **logs** of any **stateful set** by clicking the **`Logs`** option in the three-dot menu of the **stateful set** row.
+![](/docs/images/final/ss-list.png)
+
+### Stateful Set details
+
+Click on a **stateful sets** row to view detailed information about it.
+
+This page shows real-time **CPU** and **Memory** usage graphs for the selected stateful set. You will also find detailed information such as **Images**, **Status**, **Selector**, **Schedular**, **Restart Policy** and more.  
+![](/docs/images/final/ss-details.png)
+
+You can view details about the **pods** running inside the stateful set, as well as **Events** related to it.  
+A **Logs** button is also available at the top-right corner to view the stateful set logs.
+
+---
+
+## **Jobs**   
+
+All the **jobs** along with **name**, **namespace**, **completions**, **age** and **conditions** are listed here.
+You can view **logs** of any **jobs** by clicking the **`Logs`** option in the three-dot menu of the jobs row.
+![](/docs/images/final/job-list.png)
+
+### Job Details
+
+Click on a **job** row to view detailed information about it.
+
+This page shows real-time **CPU** and **Memory** usage graphs for the selected jobs. You will also find detailed information such as **Annotations**, **Labels**, **Node Selector** and more.  
+![](/docs/images/final/job-details.png)
+
+You can view details about the **pods** running inside the jobs, as well as **Events** related to it.  
+A **Logs** button is also available at the top-right corner to view the job logs.
+
+---
+
+## **Cron Jobs**   
+
+All the **cron Jobs** along with **name**, **namespace**, **schedule**, **suspend**, **last schedule**, **age**,  and **conditions** are listed here.
+![](/docs/images/final/cj-list.png)
+
+### Cron Job Details
+
+Click on a **cron Jobs** row to view detailed information about it.
+
+This page shows real-time **CPU** and **Memory** usage graphs for the selected cron Jobs. You will also find detailed information such as **Scheduler**, **DNS policy**, **Status**, **Concurrency policy** and more.  
+![](/docs/images/final/cj-details.png)
+
+You can view details about the **events** related to the cron jobs. 
+

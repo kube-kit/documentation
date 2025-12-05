@@ -1,6 +1,14 @@
-# **Namespaces**
+# Namespaces
 
-This section displays all namespaces within your cluster, giving you a clear overview of how workloads and resources are organized. Each namespace entry includes key details such as its **status**, **labels**, and **age**, allowing you to quickly assess its purpose and health. You can see more detail about the namespace by simply clicking on it.
+All **namespaces** along with their **name**, **labels**, **age** and **status** are listed here.
+![](/docs/images/final/ns-list.png)
 
-You can search for a specific namespace or apply status-based filters to narrow down the list and focus on the namespaces that matter.  
-If a namespace is no longer required, you can remove it easily using the **delete icon** available on the right side of each row.
+## Namespace Details
+
+Click on a namespace row to view detailed information about it.
+![](/docs/images/final/ns-details.png)
+
+Here, you can see all details related to the namespace, along with a list of events occurring within it.
+
+If you want to delete the namespace, click the **`Delete`** icon located in the top-right corner.
+
