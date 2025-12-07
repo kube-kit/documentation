@@ -1,10 +1,37 @@
-# KubeKit Documentation
->Welcome to the official KubeKit documentation repository. This repository contains comprehensive documentation designed to help users understand, set up, and manage Kubernetes clusters using KubeKit.
+## Clone the repo 
 
-## Overview
+```bash
+git clone https://github.com/kube-kit/documentation.git
+```
 
-KubeKit simplifies on-premises Kubernetes cluster creation and management, providing a GUI-driven, no-code solution that reduces the technical barrier for developers and DevOps engineers. With KubeKit, users can quickly deploy, configure, and manage clusters while maintaining full control over their infrastructure.
+## switch to gh-pages branch
 
-This documentation is written in **GitBook format**, making it easy to navigate, read, and reference directly from this repository.
+```bash
+git checkout gh-pages
+```
 
-For more information about KubeKit and to access the official website, visit [kubekit.io](https://kubekit.io).
+## For local build
+
+```bash
+nvm install 10
+npm use 10
+npm install -g gitbook-cli
+npm install
+gitbook install
+gitbook server
+```
+
+### Visit http://localhost:4000
+
+## For deployment
+
+```bash
+nvm install 18
+npm use 18
+npm install -g gitbook-cli
+npm install
+gitbook install
+gitbook build
+```
+
+### Visit https://kube-kit.github.io/documentation

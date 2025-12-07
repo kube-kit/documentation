@@ -1,2 +1,8 @@
 _book
 .vscode
+node_modules
+.DS_Store
+dist
+.env
+*.log
+npm-debug.log  
