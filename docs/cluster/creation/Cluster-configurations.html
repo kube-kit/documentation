@@ -153,6 +153,51 @@
             
         </li>
     
+        <li class="chapter " data-level="1.3" data-path="../../release-notes/">
+            
+                <a href="../../release-notes/">
+            
+                    
+                    Release notes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../release-notes/release-v2.1.1.md">
+            
+                <span>
+            
+                    
+                    v2.1.1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../release-notes/release-v2.1.0.md">
+            
+                <span>
+            
+                    
+                    v2.1.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
         
@@ -427,12 +472,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.7" data-path="../managing-cluster/helm.html">
+        <li class="chapter " data-level="3.3.7" data-path="../managing-cluster/terminal-access.html">
             
-                <a href="../managing-cluster/helm.html">
+                <a href="../managing-cluster/terminal-access.html">
             
                     
-                    Helm
+                    Terminal Access
             
                 </a>
             
@@ -440,12 +485,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.8" data-path="../managing-cluster/terminal-access.html">
+        <li class="chapter " data-level="3.3.8" data-path="../managing-cluster/helm.html">
             
-                <a href="../managing-cluster/terminal-access.html">
+                <a href="../managing-cluster/helm.html">
             
                     
-                    Terminal Access
+                    Helm
             
                 </a>
             
@@ -466,193 +511,8 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.10" data-path="../managing-cluster/config.html">
-            
-                <a href="../managing-cluster/config.html">
-            
-                    
-                    Config
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.3.11" data-path="../managing-cluster/networking.html">
-            
-                <a href="../managing-cluster/networking.html">
-            
-                    
-                    Network
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.3.12" data-path="../managing-cluster/access-control.html">
-            
-                <a href="../managing-cluster/access-control.html">
-            
-                    
-                    Access Control
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.3.13" data-path="../managing-cluster/storage.html">
-            
-                <a href="../managing-cluster/storage.html">
-            
-                    
-                    Storage
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
-            
-        </li>
-    
-
-    
-        
-        <li class="header">Advance Feature</li>
-        
-        
-    
-        <li class="chapter " data-level="4.1" data-path="../../advance-feature/ingress.html">
-            
-                <a href="../../advance-feature/ingress.html">
-            
-                    
-                    Ingress
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="4.2" data-path="../../advance-feature/navigation.html">
-            
-                <a href="../../advance-feature/navigation.html">
-            
-                    
-                    Navigation
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-        
-        <li class="divider"></li>
-        
-        
-    
-        <li class="chapter " data-level="5.1" data-path="../../release-notes/">
-            
-                <a href="../../release-notes/">
-            
-                    
-                    Release notes
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-        
-        <li class="header">Getting Help</li>
-        
-        
-    
-        <li class="chapter " data-level="6.1" data-path="../../getting-help/">
-            
-                <a href="../../getting-help/">
-            
-                    
-                    Getting Help
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-        
-        <li class="header">Troubleshooting</li>
-        
-        
-    
-        <li class="chapter " data-level="7.1" data-path="../../troubleshooting/">
-            
-                <a href="../../troubleshooting/">
-            
-                    
-                    Troubleshooting
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-        
-        <li class="header">FAQ</li>
-        
-        
-    
-        <li class="chapter " data-level="8.1" data-path="../../faq/">
-            
-                <a href="../../faq/">
-            
-                    
-                    FAQ
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-        
-        <li class="header">How to</li>
-        
-        
-    
-        <li class="chapter " data-level="9.1" data-path="../../how-to/">
-            
-                <a href="../../how-to/">
-            
-                    
-                    How to guide
-            
-                </a>
-            
-
             
         </li>
     
@@ -707,17 +567,21 @@
 <ul>
 <li>Select your cluster <strong>icon</strong> and provide a <strong>name</strong> for your cluster, this will appear in the dashboard after creation.</li>
 <li>Choose your desired <strong>Kubernetes version</strong>, <strong>Container Runtime Engine</strong>, <strong>CNI Provider</strong>, <strong>Load Balancer</strong>. Or you can keep the default options.</li>
-<li>KubeKit support multiple Add-ons options, which are optional<ul>
-<li><strong>Metrics Provider</strong>: You can enable Metrics Provider like kubekit or Prometheus. (Kubekit is a light-weight metrics which works with metrics server)</li>
-<li><strong>Ingress Controller</strong>: You can choose your desired ingress controller and provide ingress IP to access your ingress service.</li>
-<li><strong>TLS/SSL(HTTPS)</strong>: If you want to enable TLS/SSL(HTTPS) in your cluster, then enable the switch, provide your email. If you want to know more, click <a href="Cluster-configurations.html">here</a> </li>
+<li><p>KubeKit support multiple <strong>Add-ons</strong> options, which are optional</p>
+<ul>
+<li><p><strong>Metrics Provider</strong>: You can enable Metrics Provider like <strong>KubeKit</strong> or <strong>Prometheus</strong>. (KubeKit is a light-weight metrics which works with metrics server).<br>If you skip this step, you can always add a metrics provider later by following the <a href="../managing-cluster/metrics.html#addding-a-metrics-provider">instructions</a>.</p>
+</li>
+<li><p><strong>Ingress Controller</strong>: You can choose your desired ingress controller either <strong>Nginx</strong> or <strong>Traefik</strong> and provide ingress IP to access your ingress service.</p>
+</li>
+<li><p><strong>TLS/SSL(HTTPS)</strong>: If you want to enable TLS/SSL(HTTPS) in your cluster, then enable the switch, and select the deployment mode either <strong>Production</strong> or <strong>Staging</strong> and  provide your <strong>email address</strong>. You must enable ingress controller to use this feature.<br>To know more about TLS/SSL(HTTPS) with <strong>Let&apos;s Encrypt</strong>, <a href="https://letsencrypt.org/" target="_blank">Click Here</a> </p>
+</li>
 </ul>
 </li>
 </ul>
 <p>Click <strong>Continue</strong> to start the cluster creation process.</p>
-<p><img src="../../images/final/cluster-configuration.png" alt=""></p>
+<p><img src="../../images/final/cluster-configuration.png" alt="Cluster Configuration"></p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; KubeKit all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">File Modify: 
-2025-12-07 13:36:45
+2025-12-07 20:53:49
 </span></footer>
                                 
                                 </section>
@@ -761,7 +625,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Cluster Configuration","level":"3.1.4","depth":2,"next":{"title":"Installation","level":"3.1.5","depth":2,"path":"docs/cluster/creation/installation.md","ref":"./docs/cluster/creation/installation.md","articles":[]},"previous":{"title":"Node Configuration","level":"3.1.3","depth":2,"path":"docs/cluster/creation/node-configurations.md","ref":"./docs/cluster/creation/node-configurations.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","splitter","expandable-chapters-small","back-to-top-button","tbfed-pagefooter","code","prism","-highlight","copy-code-button","chapter-fold","github","emphasize","theme-default","favicon","livereload"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy; KubeKit"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"emphasize":{},"github":{"url":"https://github.com/kube-kit/kube-kit"},"livereload":{},"splitter":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"./docs/images/final/icon.ico","bookmark":"./docs/images/final/icon.ico"},"back-to-top-button":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{"depth":3}},"theme":"default","author":"kubekit","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kubekit Documentation","language":"en","gitbook":"*","description":"Complete documentation for kubekit"},"file":{"path":"docs/cluster/creation/Cluster-configurations.md","mtime":"2025-12-07T07:36:45.236Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-12-07T07:43:15.112Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Cluster Configuration","level":"3.1.4","depth":2,"next":{"title":"Installation","level":"3.1.5","depth":2,"path":"docs/cluster/creation/installation.md","ref":"./docs/cluster/creation/installation.md","articles":[]},"previous":{"title":"Node Configuration","level":"3.1.3","depth":2,"path":"docs/cluster/creation/node-configurations.md","ref":"./docs/cluster/creation/node-configurations.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","splitter","expandable-chapters-small","back-to-top-button","tbfed-pagefooter","code","prism","-highlight","copy-code-button","chapter-fold","github","emphasize","theme-default","favicon","livereload"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy; KubeKit"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"emphasize":{},"github":{"url":"https://github.com/kube-kit/kube-kit"},"livereload":{},"splitter":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"./docs/images/final/icon.ico","bookmark":"./docs/images/final/icon.ico"},"back-to-top-button":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{"depth":3}},"theme":"default","author":"kubekit","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kubekit Documentation","language":"en","gitbook":"*","description":"Complete documentation for kubekit"},"file":{"path":"docs/cluster/creation/Cluster-configurations.md","mtime":"2025-12-07T14:53:49.535Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-12-07T15:25:15.427Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
