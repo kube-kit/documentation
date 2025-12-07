@@ -2,7 +2,7 @@
 
 Metrics are essential for monitoring and managing the health and performance of your Kubernetes cluster. They provide insights into resource utilization, application performance, and overall cluster stability.
 
-If you have not installed a metrics provider like Prometheus or KubeKit in your cluster, you can add any metrics provider from [here](/docs/cluster/creation/metrics.md#adding-a-metrics-provider).
+If you have not installed a metrics provider like Prometheus or KubeKit in your cluster, you can add any metrics provider from [here](#addding-a-metrics-provider).
 
 ## Individual Resource Metrics 
 
