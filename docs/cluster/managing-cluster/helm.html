@@ -1,0 +1,979 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Helm · Kubekit Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="kubekit">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="terminal-access.html" />
+    
+    
+    <link rel="prev" href="log.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../images/final/icon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../images/final/icon.ico' type="image/x-icon">
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../getting-started/quick-start-guide.html">
+            
+                <a href="../../getting-started/quick-start-guide.html">
+            
+                    
+                    Quick Start Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Installing Kubekit</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../installing-kubekit/system-req.html">
+            
+                <a href="../../installing-kubekit/system-req.html">
+            
+                    
+                    System Requirements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../installing-kubekit/installing-kubekit.html">
+            
+                <a href="../../installing-kubekit/installing-kubekit.html">
+            
+                    
+                    Installing KubeKit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../installing-kubekit/updating-kubekit.html">
+            
+                <a href="../../installing-kubekit/updating-kubekit.html">
+            
+                    
+                    Updating Kubekit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Cluster</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../creation/creating-a-cluster.html">
+            
+                <a href="../creation/creating-a-cluster.html">
+            
+                    
+                    Creating a Cluster
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../creation/get-started.html">
+            
+                <a href="../creation/get-started.html">
+            
+                    
+                    Getting started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../creation/prerequisites.html">
+            
+                <a href="../creation/prerequisites.html">
+            
+                    
+                    Prequisites
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../creation/node-configurations.html">
+            
+                <a href="../creation/node-configurations.html">
+            
+                    
+                    Node Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../creation/Cluster-configurations.html">
+            
+                <a href="../creation/Cluster-configurations.html">
+            
+                    
+                    Cluster Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../creation/installation.html">
+            
+                <a href="../creation/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../importing/importing-a-cluster.html">
+            
+                <a href="../importing/importing-a-cluster.html">
+            
+                    
+                    Importing a cluster
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../importing/by-kubeconfig.html">
+            
+                <a href="../importing/by-kubeconfig.html">
+            
+                    
+                    Using kubeconfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../importing/by-credentials.html">
+            
+                <a href="../importing/by-credentials.html">
+            
+                    
+                    Using Master Node 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="managing-a-cluster.html">
+            
+                <a href="managing-a-cluster.html">
+            
+                    
+                    Managing Clusters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                    Cluster Dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="nodes.html">
+            
+                <a href="nodes.html">
+            
+                    
+                    Nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="namespaces.html">
+            
+                <a href="namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.4" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.5" data-path="metrics.html">
+            
+                <a href="metrics.html">
+            
+                    
+                    Metrics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.6" data-path="log.html">
+            
+                <a href="log.html">
+            
+                    
+                    Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.3.7" data-path="helm.html">
+            
+                <a href="helm.html">
+            
+                    
+                    Helm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.8" data-path="terminal-access.html">
+            
+                <a href="terminal-access.html">
+            
+                    
+                    Terminal Access
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.9" data-path="workload.html">
+            
+                <a href="workload.html">
+            
+                    
+                    Workloads
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.10" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.11" data-path="networking.html">
+            
+                <a href="networking.html">
+            
+                    
+                    Network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.12" data-path="access-control.html">
+            
+                <a href="access-control.html">
+            
+                    
+                    Access Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.13" data-path="storage.html">
+            
+                <a href="storage.html">
+            
+                    
+                    Storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advance Feature</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../advance-feature/ingress.html">
+            
+                <a href="../../advance-feature/ingress.html">
+            
+                    
+                    Ingress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../advance-feature/navigation.html">
+            
+                <a href="../../advance-feature/navigation.html">
+            
+                    
+                    Navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../release-notes/">
+            
+                <a href="../../release-notes/">
+            
+                    
+                    Release notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Getting Help</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../getting-help/">
+            
+                <a href="../../getting-help/">
+            
+                    
+                    Getting Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Troubleshooting</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../troubleshooting/">
+            
+                <a href="../../troubleshooting/">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">FAQ</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../../faq/">
+            
+                <a href="../../faq/">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">How to</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../../how-to/">
+            
+                <a href="../../how-to/">
+            
+                    
+                    How to guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Helm</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="helm-app-store">Helm App Store</h1>
+<p>Helm is a powerful package manager for Kubernetes that simplifies application deployment and management. It lets you define, install, and upgrade applications using pre-configured templates known as <em>releases</em>. Each release includes all the configuration and dependencies needed to run an application seamlessly within a cluster.</p>
+<p>In simple terms, Helm allows you to deploy applications on Kubernetes without manually handling complex YAML configuration files. Common applications like NGINX, Prometheus, and Grafana can be deployed easily using Helm.</p>
+<p><strong>KubeKit</strong> enhances this experience by providing a graphical interface for Helm operations, eliminating the need for command-line commands. With just a few clicks, you can browse, configure, and install applications directly into your clusters.</p>
+<hr>
+<h2 id="before-you-begin">Before You Begin</h2>
+<p>Before using Helm in KubeKit, ensure:</p>
+<ul>
+<li>You have at least one running cluster connected to KubeKit.</li>
+<li>Internet access is available to fetch Helm repositories and releases.</li>
+<li>Necessary permissions are configured to install applications on the target cluster.</li>
+</ul>
+<hr>
+<h2 id="accessing-helm-in-kubekit">Accessing Helm in KubeKit</h2>
+<ol>
+<li>Open the <strong>KubeKit Dashboard</strong>.</li>
+<li>From the left-hand menu, select <strong>Helm</strong>.</li>
+</ol>
+<p>The Helm page will display a list of available Helm releases. Loading time may vary depending on your internet connection and the number of repositories added.</p>
+<hr>
+<h2 id="browsing-helm-releases">Browsing Helm Releases</h2>
+<p>On the Helm page:</p>
+<ul>
+<li>The <strong>left panel</strong> shows all available releases.</li>
+<li><p>Each release card displays:</p>
+<ul>
+<li><strong>Name</strong> of the release</li>
+<li><strong>Repository</strong> it belongs to</li>
+<li><strong>Short description</strong> of its function</li>
+</ul>
+</li>
+</ul>
+<p>Selecting a release displays detailed information on the <strong>right panel</strong>, including:</p>
+<ul>
+<li>Available <strong>versions</strong></li>
+<li>Full description and configurations</li>
+<li>Option to choose a version for installation</li>
+</ul>
+<p><img src="../../images/final/helm.png" alt=""></p>
+<hr>
+<h2 id="installing-a-release">Installing a Release</h2>
+<ol>
+<li>Select a release from the list.</li>
+<li>Click <strong>Install</strong> to open the <strong>Release Installation Page</strong>.</li>
+</ol>
+<p>On this page, you can:</p>
+<ul>
+<li><strong>Select a version</strong> of the release.</li>
+<li><strong>Choose a namespace</strong> for deployment.</li>
+<li><strong>Provide a custom name</strong> to identify the release later.</li>
+</ul>
+<p><img src="../../images/final/install-release.png" alt=""></p>
+<h3 id="configuring-release-values">Configuring Release Values</h3>
+<p>In the right panel, you can view and modify the release&#x2019;s configuration values. These values define the application&#x2019;s behavior and resource usage.</p>
+<p>You can:</p>
+<ul>
+<li>Edit values directly.</li>
+<li>Search for specific parameters.</li>
+<li>Add or delete configuration entries.</li>
+<li>Reset to default values.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Configuration options vary between releases. Some applications have only a few settings, while others offer extensive customization.</p>
+</blockquote>
+<p>Once configuration is complete, click <strong>Install</strong>. KubeKit handles the deployment and will notify you when the installation finishes.</p>
+<hr>
+<h2 id="managing-installed-releases">Managing Installed Releases</h2>
+<p>Click the <strong>Installed</strong> tab to view all deployed releases. You can filter releases by namespace or search by name.</p>
+<p><img src="../../images/final/deployed-release.png" alt=""></p>
+<p>Selecting a release shows its details on the right panel:</p>
+<ul>
+<li><strong>Custom name</strong> (if assigned)</li>
+<li><strong>Release name and version</strong></li>
+<li><strong>Namespace</strong></li>
+<li><strong>App version</strong> and <strong>last updated time</strong></li>
+<li><strong>Current status</strong> (Deployed, Failed, Uninstalled, etc.)</li>
+</ul>
+<p>You can also view all associated Kubernetes resources, such as:</p>
+<ul>
+<li><strong>ClusterRole</strong> and <strong>ClusterRoleBinding</strong> &#x2013; define access permissions.</li>
+<li><strong>ConfigMap</strong> &#x2013; store configuration data.</li>
+<li><strong>Deployment</strong> &#x2013; manage stateless applications.</li>
+<li><strong>StatefulSet</strong> &#x2013; manage stateful workloads.</li>
+<li><strong>DaemonSet</strong> &#x2013; ensure pods run on specific nodes.</li>
+<li><strong>PersistentVolumeClaim (PVC)</strong> &#x2013; manage storage requests.</li>
+<li><strong>Service</strong> &#x2013; expose applications internally or externally.</li>
+<li><strong>ServiceAccount</strong> &#x2013; provide identities for pods.</li>
+</ul>
+<p>Viewing these components helps in understanding and troubleshooting the deployed release.</p>
+<hr>
+<h2 id="managing-release-lifecycle">Managing Release Lifecycle</h2>
+<p>After installation, you can perform the following lifecycle actions on any release:</p>
+<h3 id="upgrade">Upgrade</h3>
+<p>Upgrade a release to:</p>
+<ul>
+<li>Change its version</li>
+<li>Update configuration values</li>
+<li>Reuse current release values during upgrades</li>
+</ul>
+<p>Example: If you installed Prometheus and changed the <code>scrape_interval</code> from 1 minute to 30 seconds, enabling <strong>Reuse current release values</strong> keeps that configuration during upgrade.</p>
+<p><img src="../../images/final/upgrade-release.png" alt=""></p>
+<h3 id="rollback">Rollback</h3>
+<p>Each installation or upgrade creates a <strong>revision</strong>,  a checkpoint of your release. You can roll back to any previous revision to restore the application&#x2019;s last working state in case of issues.</p>
+<p><img src="../../images/final/rollback-release.png" alt=""></p>
+<h3 id="uninstall">Uninstall</h3>
+<p>Uninstalling removes the release from the cluster. By default, KubeKit keeps the release history for future rollbacks. You can uncheck <strong>Keep history for future rollback</strong> if you want to permanently delete it.</p>
+<hr>
+<h2 id="managing-repositories">Managing Repositories</h2>
+<p>Helm&#x2019;s ecosystem includes thousands of prebuilt releases organized within <strong>repositories</strong>. A Helm repository is a collection of application charts maintained by different providers.</p>
+<h3 id="viewing-and-managing-repositories">Viewing and Managing Repositories</h3>
+<ol>
+<li><p>Go to <strong>Helm &#x2192; Manage Repo</strong>.</p>
+</li>
+<li><p>The repository management page shows:</p>
+<ul>
+<li>Repository <strong>name</strong> and <strong>URL</strong></li>
+<li><strong>Category</strong></li>
+<li><strong>Status</strong> (Added or Not Added)</li>
+</ul>
+</li>
+<li><p>Popular repositories may appear as <strong>Not Added</strong> by default. You can:</p>
+<ul>
+<li>Click the <strong>&#x22EE; (three dots)</strong> menu next to a repository.</li>
+<li>Choose <strong>Add</strong> to include it or <strong>Remove</strong> to delete it.</li>
+</ul>
+</li>
+<li><p>To <strong>update repositories</strong>, use:</p>
+<ul>
+<li><strong>Update All</strong> to refresh every repository.</li>
+<li><strong>Update</strong> to refresh an individual one.</li>
+</ul>
+</li>
+</ol>
+<p>Updating ensures the latest versions of releases are available.</p>
+<h3 id="adding-a-custom-repository">Adding a Custom Repository</h3>
+<ol>
+<li>Click <strong>Add New Repository</strong>.</li>
+<li>Enter a <strong>custom name</strong> and the <strong>repository URL</strong>.</li>
+<li>Click <strong>Add</strong> to save.</li>
+</ol>
+<p>Your new repository will appear in the list, and its releases will load into the main Helm page.</p>
+<hr>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Issue</strong></th>
+<th><strong>Possible Cause</strong></th>
+<th><strong>Solution</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Release installation fails</td>
+<td>Network or repository error</td>
+<td>Check internet connection or repository URL</td>
+</tr>
+<tr>
+<td>Repository not visible</td>
+<td>Not added or outdated</td>
+<td>Refresh repositories using <strong>Update All</strong></td>
+</tr>
+<tr>
+<td>Configuration not applying</td>
+<td>Incorrect parameter format</td>
+<td>Reset to default values and reapply</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; KubeKit all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">File Modify: 
+2025-12-07 13:36:45
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="log.html" class="navigation navigation-prev " aria-label="Previous page: Logs">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="terminal-access.html" class="navigation navigation-next " aria-label="Next page: Terminal Access">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Helm","level":"3.3.7","depth":2,"next":{"title":"Terminal Access","level":"3.3.8","depth":2,"path":"docs/cluster/managing-cluster/terminal-access.md","ref":"./docs/cluster/managing-cluster/terminal-access.md","articles":[]},"previous":{"title":"Logs","level":"3.3.6","depth":2,"path":"docs/cluster/managing-cluster/log.md","ref":"./docs/cluster/managing-cluster/log.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","splitter","expandable-chapters-small","back-to-top-button","tbfed-pagefooter","code","prism","-highlight","copy-code-button","chapter-fold","github","emphasize","theme-default","favicon","livereload"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy; KubeKit"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"emphasize":{},"github":{"url":"https://github.com/kube-kit/kube-kit"},"livereload":{},"splitter":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"./docs/images/final/icon.ico","bookmark":"./docs/images/final/icon.ico"},"back-to-top-button":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{"depth":3}},"theme":"default","author":"kubekit","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kubekit Documentation","language":"en","gitbook":"*","description":"Complete documentation for kubekit"},"file":{"path":"docs/cluster/managing-cluster/helm.md","mtime":"2025-12-07T07:36:45.237Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-12-07T07:43:15.112Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
