@@ -32,7 +32,7 @@ In the scale dialog, you will be shown the current number of replicas for refere
 ---
 
 ## Apply the change  
-Click the **Apply** button to confirm your change. KubeKit will instruct Kubernetes to reconcile the deployment to the new replica count and will update the underlying ReplicaSet accordingly.
+Click the **`Apply`** button to confirm your change. KubeKit will instruct Kubernetes to reconcile the deployment to the new replica count and will update the underlying ReplicaSet accordingly.
 
 ---
 
