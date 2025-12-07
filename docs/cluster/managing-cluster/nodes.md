@@ -1,7 +1,8 @@
 # Nodes
 
 All nodes along with their **status**, **cpu**, **memory usages** and their **roles**(master or worker) are listed here.
-![](/docs/images/final/node-list.png)
+
+![Node List](/docs/images/final/node-list.png)
 
 ## Node Details
 
@@ -12,20 +13,12 @@ Other important information about the node is also displayed, including **Name**
 
 Below, you will find a list of pods running in the node and a list of events occurring in the node.
 
-![](/docs/images/final/node-details.png)
+![Node Details](/docs/images/final/node-details.png)
 
 ## Access Node Terminal
 
-To access a node's terminal, locate the three-dot menu on the node row and click the **`Terminal`** button.  
-
-Alternatively, if you open the node's detailed page by clicking on its row, the **`Terminal`** button is available at the top-right corner. Clicking it will open the terminal for that node.  
-
-KubeKit provides terminal access as the **root** user. To switch to desired user, run the following command:
-
-```bash
-su <username>
-```
-
+Follow the [instructions](/docs/cluster/managing-cluster/terminal-access.md#access-node-terminal)
+  to access the node terminal.
 
 ## Delete Node
 

@@ -2,7 +2,9 @@
 
 
 * [Quick Start Guide](./docs/getting-started/quick-start-guide.md)
-
+* [Release notes](./docs/release-notes/README.md)
+  * [v2.1.1](./docs/release-notes/release-v2.1.1.md)
+  * [v2.1.0](./docs/release-notes/release-v2.1.0.md)
 
 ## Installing Kubekit
 
@@ -28,42 +30,21 @@
   * [Events](./docs/cluster/managing-cluster/events.md)
   * [Metrics](./docs/cluster/managing-cluster/metrics.md)
   * [Logs](./docs/cluster/managing-cluster/log.md)
-  * [Helm](./docs/cluster/managing-cluster/helm.md)
   * [Terminal Access](./docs/cluster/managing-cluster/terminal-access.md)
+  * [Helm](./docs/cluster/managing-cluster/helm.md)
   * [Workloads](./docs/cluster/managing-cluster/workload.md)
-  * [Config](/docs/cluster/managing-cluster/config.md)
-  * [Network](/docs/cluster/managing-cluster/networking.md)
-  * [Access Control](/docs/cluster/managing-cluster/access-control.md)
-  * [Storage](/docs/cluster/managing-cluster/storage.md)
+  
+  <!-- * [Config](/docs/cluster/managing-cluster/config.md) -->
+  
+  <!-- * [Network](/docs/cluster/managing-cluster/networking.md) -->
+  
+  <!-- * [Access Control](/docs/cluster/managing-cluster/access-control.md) -->
+  
+  <!-- * [Storage](/docs/cluster/managing-cluster/storage.md) -->
     
+<!-- ## FAQ
 
+* [FAQ](./docs/faq/README.md) -->
 
-## Advance Feature
-
-* [Ingress](./docs/advance-feature/ingress.md)
-* [Navigation](./docs/advance-feature/navigation.md)
-
-
-* [Release notes](./docs/release-notes/README.md)
-
-
-## Getting Help
-
-* [Getting Help](./docs/getting-help/README.md)
-
-
-## Troubleshooting
-
-* [Troubleshooting](./docs/troubleshooting/README.md)
-
-
-## FAQ
-
-* [FAQ](./docs/faq/README.md)
-
-
-## How to
-
-* [How to guide](./docs/how-to/README.md)
 
 

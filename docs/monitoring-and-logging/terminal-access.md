@@ -5,7 +5,7 @@ Gaining terminal access to nodes and pods within a cluster empowers engineers to
 ---
 
 ## Access Node Terminal  
-From the KubeKit **Cluster Dashboard**, navigate to the **Nodes** section via the right-sidebar. On the **Nodes** page, you will see a list of all nodes in the cluster. Locate the row of the node you wish to inspect, then click the three-dot action menu at the far right of that row. Select the **Terminal** button this will instantly open a shell session on the selected node.
+From the KubeKit **Cluster Dashboard**, navigate to the **Nodes** section via the left-sidebar. On the **Nodes** page, you will see a list of all nodes in the cluster. Locate the row of the node you wish to inspect, then click the three-dot action menu at the far right of that row. Select the **Terminal** button this will instantly open a shell session on the selected node.
 <!-- TODO: Add image -->
 
 ---
