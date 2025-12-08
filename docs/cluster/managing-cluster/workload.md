@@ -45,7 +45,7 @@ All the **deployments** along with **name**, **namespace**, **pods**, **replicas
 
 Click on a **deployment** row to view detailed information about it.
 
-This page shows real-time **CPU** and **Memory** usage graphs for the selected deployment. You will also find detailed information such as **Annotations**, **Selector**, **Node Selector**, **Conditions**, **Affinities**, **Tolerations**, **Straegy Type** and more. 
+This page shows real-time **CPU** and **Memory** usage graphs for the selected deployment. You will also find detailed information such as **Annotations**, **Selector**, **Node Selector**, **Conditions**, **Affinities**, **Tolerations**, **Strategy Type** and more. 
 
 ![Deployment Details](/docs/images/final/deployments-details.png)
 

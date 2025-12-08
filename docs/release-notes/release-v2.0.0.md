@@ -1,6 +1,6 @@
 <h1 style="display:flex; justify-content: space-between; align-items: center;"> Release v2.0.0  <span style="font-size:medium; font-weight:normal; font-style:italic;">Released on  Aug 20, 2025</span> </h1> 
 
-## Bug fix:
+## Bug Fix:
 - Title bar back button issue fixed.
 - App update installation design issue fixed.
 - Node info form SSH key auto select issue fixed.

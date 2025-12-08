@@ -8,7 +8,7 @@
 - CNI supports
 - Kubernetes version up to 1.34 added
 
-## Bug fix:
+## Bug Fix:
 - Get Started page scroll issue fix in Mac ARM laptop
 - CRI-O installation URL updated.
 - Node terminal issue fixed.
