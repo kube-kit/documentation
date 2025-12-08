@@ -103,7 +103,7 @@
     top: 0 !important;
     background: var(--content-bg);
     background-color: var(--content-bg);
-    left: 280px; /* Match sidebar width */
+    left: 280px !important; /* Match sidebar width */
     color: var(--text-color);
 }
 
@@ -120,7 +120,7 @@
     font-size: 16px;
 }
 
-/* Make sidebar narrower to give more space to content */
+Make sidebar narrower to give more space to content
 .book-summary {
     width: 280px; /* Decreased from 300px default */
 }
