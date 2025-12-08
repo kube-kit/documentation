@@ -46,16 +46,17 @@ Selecting a release shows its details on the right panel:
 
 ## Upgrading a Release
 
-Upgrade a release to:
+Click on the **Upgrade** button to upgrade a release.
 
-* Change its version
-* Update configuration values
-* Reuse current release values during upgrades
+1. Select current release **Repository**.
+2. Select the desired **Version**.
+3. Reuse the last release's values and merge them with the new values by checking the **Reuse current release values** checkbox.
+4. You can **edit** the selected version's chart values in the editor while the **Base Values** option is selected.
+5. Click the **Upgrade now** button to start the upgrade process.
 
-Example: If you installed Prometheus and changed the `scrape_interval` from 1 minute to 30 seconds, enabling **Reuse current release values** keeps that configuration during upgrade.
+Also, you can see the current release values by selecting the **Current release values** option. This enables you to see the current release custom values by checking the **See only custom values** checkbox. 
 
 ![Upgrade a release](/docs/images/final/upgrade-release.png)
-
 
 
 ## Rolling Back a Release
@@ -76,46 +77,24 @@ Uninstalling removes the release from the cluster. By default, KubeKit keeps the
 
 ## Managing Repositories
 
-Helm’s ecosystem includes thousands of prebuilt releases organized within **repositories**. A Helm repository is a collection of application charts maintained by different providers.
+Click on the **Manage Repo** button to see the list of available repositories provided by KubeKit. 
 
-### Viewing and Managing Repositories
+By default, KubeKit includes popular Helm repositories like **Bitnami**, **Argo**, **Jetstack**, **Grafana**, **Prometheus Community**, **HashiCorp** and so on. All repositories are not added by default to helm. So, you can add the desired repositories from the list by clicking on the three-dot menu.
+![Repo Add List](/docs/images/final/repo-add-list.png)
 
-1. Go to **Helm → Manage Repo**.
+Also, you can **update** or **delete** any added repositories from the same three-dot menu. By clicking on **Update all** button, you can update all added repositories at once.
 
-2. The repository management page shows:
-
-   * Repository **name** and **URL**
-   * **Category**
-   * **Status** (Added or Not Added)
-
-3. Popular repositories may appear as **Not Added** by default. You can:
-
-   * Click the **⋮ (three dots)** menu next to a repository.
-   * Choose **Add** to include it or **Remove** to delete it.
-
-4. To **update repositories**, use:
-
-   * **Update All** to refresh every repository.
-   * **Update** to refresh an individual one.
-
-Updating ensures the latest versions of releases are available.
+> Chart list in the helm dashboard gets refreshed after adding, removing, or updating repositories.
 
 ### Adding a Custom Repository
 
-1. Click **Add New Repository**.
-2. Enter a **custom name** and the **repository URL**.
-3. Click **Add** to save.
+1. Click on **Add New Repository** button.
+2. Enter a **Repo name** and a **URL**.
+3. Finally, Click on **Add** button.
 
-Your new repository will appear in the list, and its releases will load into the main Helm page.
+![Add Custom Repo](/docs/images/final/add-custom-repo.png)
 
----
+> All custom repositories are categorized under **Others** category in the repository list page.
 
-## Troubleshooting
 
-| **Issue**                  | **Possible Cause**          | **Solution**                                |
-| -------------------------- | --------------------------- | ------------------------------------------- |
-| Release installation fails | Network or repository error | Check internet connection or repository URL |
-| Repository not visible     | Not added or outdated       | Refresh repositories using **Update All**   |
-| Configuration not applying | Incorrect parameter format  | Reset to default values and reapply         |
 
----

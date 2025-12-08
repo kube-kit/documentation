@@ -57,8 +57,9 @@
     "mobi": "styles/mobi.css",
     "epub": "styles/epub.css"
   },
-  
+
+
   "structure": {
-    "readme": "README.md"
+    "readme": "INTRODUCTION.md"
   }
 }
