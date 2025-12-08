@@ -24,18 +24,10 @@ Additionally, the dashboard displays total cluster capacity metrics such as **CP
 ## Cluster Management Options  
 KubeKit’s left sidebar contains several dedicated sections for managing different components of the cluster. Each section offers a focused view with search, filtering, and management capabilities.
 
----
-
-
-
-
-
-
 
 ## Workloads  
 The **Workloads** section displays all running resources within your cluster. Each workload type supports searching, filtering, and management features such as deletion, scaling, and detailed inspection.
 
----
 
 ### **Pods**  
 - View all pods across namespaces.  
@@ -78,7 +70,6 @@ The **Workloads** section displays all running resources within your cluster. Ea
 - View, search, and filter by **namespace**.  
 - Delete or inspect a DaemonSet by clicking its name.
 
----
 
 ## Config  
 Configuration resources are critical for defining how workloads behave and interact. In Kubernetes, **ConfigMaps**, **Secrets**, **ResourceQuotas**, and related components define the operational boundaries and configurations of workloads. **KubeKit** offers an easy way to view, edit, and manage these configurations from a single dashboard.
@@ -113,8 +104,6 @@ Configuration resources are critical for defining how workloads behave and inter
 - Lists all resource leases.  
 - Search and delete where applicable.
 
----
-
 ## Network  
 Networking is fundamental in Kubernetes, governing communication between pods, services, and external clients. KubeKit provides clear visibility into your network configuration and lets you manage all related resources effortlessly.
 
@@ -140,8 +129,6 @@ Networking is fundamental in Kubernetes, governing communication between pods, s
 - Manage and monitor network access rules.  
 - Search, filter, and delete policies as needed.
 
----
-
 ## Access Control  
 Access control ensures that only authorized entities can perform actions within the cluster. Kubernetes enforces access management using RBAC (Role-Based Access Control), and KubeKit provides a streamlined way to manage all access-related resources.
 
@@ -164,7 +151,5 @@ Access control ensures that only authorized entities can perform actions within 
 ### **Cluster Role Bindings**  
 - Manage Cluster Role Bindings with ease.  
 - Search, filter, and delete as needed.
-
----
 
 **KubeKit** provides complete lifecycle management of your Kubernetes cluster, from configuration and networking to workloads and access control, enabling a unified, efficient, and transparent operational experience for DevOps and platform teams.

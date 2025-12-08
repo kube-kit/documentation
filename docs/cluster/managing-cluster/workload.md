@@ -70,7 +70,6 @@ To view the logs of a deployment, click on the three-dot menu  and then select t
 
 Alternatively, you can view deployment logs from the deployment detail page by clicking on the **`Logs`** button located at the top-right corner.
 
----
 
 ## Daemon Sets
 
