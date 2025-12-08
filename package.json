@@ -4,8 +4,9 @@
   "description": "Kubekit documentation",
   "main": "index.js",
   "scripts": {
-    "build": "gitbook build",
-    "deploy": "gh-pages -d _book"
+    "build": "npx --node-version=10 gitbook build",
+    "deploy": "npx --node-version=18 gh-pages -d _book",
+    "start" : "npx --node-version=10 gitbook serve"
   },
   "author": "kubekit",
   "license": "MIT",
