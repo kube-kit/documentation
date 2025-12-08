@@ -6,7 +6,7 @@
 - App auto-update
 - Prometheus metrics auto-install support.
 
-## Bug fix:
+## Bug Fix:
 - Swap disable in cluster creation with CentOS 9 or above fixed.
 
 ## Enhancement:
