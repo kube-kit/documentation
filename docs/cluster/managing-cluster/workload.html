@@ -627,11 +627,11 @@
                                 <h1 id="workloads">Workloads</h1>
 <p>The <strong>Workloads</strong> section displays all running resources within your cluster including <a href="workload.html#pods"><strong>Pods</strong></a>, <a href="workload.html#deployments"><strong>Deployments</strong></a>, <a href="workload.html#daemon-sets"><strong>Daemon Sets</strong></a>, <a href="workload.html#replica-sets"><strong>Replica Sets</strong></a>, <a href="workload.html#replication-controller"><strong>Replication Controllers</strong></a>, <a href="workload.html#stateful-sets"><strong>Stateful Sets</strong></a>, <a href="workload.html#jobs"><strong>Jobs</strong></a>, <a href="workload.html#cron-jobs"><strong>Cron Jobs</strong></a>.</p>
 <h2 id="pods"><strong>Pods</strong></h2>
-<p>All <strong>pods</strong> along with their <strong>name</strong>, <strong>namespace</strong>, <strong>container</strong>, <strong>cpu</strong>, <strong>memory</strong>, <strong>restarts</strong>, <strong>controlled by</strong>, <strong>node</strong>, <strong>age</strong>, <strong>status</strong> are listed here.
-<img src="../../images/final/pod-list.png" alt=""></p>
+<p>All <strong>pods</strong> along with their <strong>name</strong>, <strong>namespace</strong>, <strong>container</strong>, <strong>cpu</strong>, <strong>memory</strong>, <strong>restarts</strong>, <strong>controlled by</strong>, <strong>node</strong>, <strong>age</strong>, <strong>status</strong> are listed here.</p>
+<p><img src="../../images/final/pod-list.png" alt="Pod List"></p>
 <h3 id="pod-details">Pod Details</h3>
-<p>Click on a <strong>pod</strong> row to view detailed information about it.
-<img src="../../images/final/pod-details.png" alt=""></p>
+<p>Click on a <strong>pod</strong> row to view detailed information about it.</p>
+<p><img src="../../images/final/pod-details.png" alt="Pod Details"></p>
 <p>This page shows real-time <strong>CPU</strong> and <strong>Memory</strong> usage graphs for the selected pod. You will also find detailed information such as <strong>Annotations</strong>, <strong>Service Account</strong>, <strong>QoS Class</strong>, <strong>Conditions</strong>, <strong>Affinities</strong>, <strong>Tolerations</strong> and more.  </p>
 <p>In addition, you can view details about the <strong>containers</strong> running inside the pod, along with real-time <strong>CPU</strong> and <strong>Memory</strong> usage graphs, <strong>Volumes</strong> and <strong>Events</strong> related to the pod.</p>
 <p><img src="../../images/final/pod-details-containers.png" alt="Pod Details Containers"></p>
@@ -648,7 +648,8 @@
 <p><img src="../../images/final/deployment-list.png" alt="Deployment List"></p>
 <h3 id="deployment-details">Deployment Details</h3>
 <p>Click on a <strong>deployment</strong> row to view detailed information about it.</p>
-<p>This page shows real-time <strong>CPU</strong> and <strong>Memory</strong> usage graphs for the selected deployment. You will also find detailed information such as <strong>Annotations</strong>, <strong>Selector</strong>, <strong>Node Selector</strong>, <strong>Conditions</strong>, <strong>Affinities</strong>, <strong>Tolerations</strong>, <strong>Straegy Type</strong> and more.<br><img src="../../images/final/deployments-details.png" alt="Deployment Details"></p>
+<p>This page shows real-time <strong>CPU</strong> and <strong>Memory</strong> usage graphs for the selected deployment. You will also find detailed information such as <strong>Annotations</strong>, <strong>Selector</strong>, <strong>Node Selector</strong>, <strong>Conditions</strong>, <strong>Affinities</strong>, <strong>Tolerations</strong>, <strong>Straegy Type</strong> and more. </p>
+<p><img src="../../images/final/deployments-details.png" alt="Deployment Details"></p>
 <p>In addition, you can view details about the <strong>pods</strong> running inside the deployment, along with <strong>Events</strong> related to the deployment.</p>
 <h3 id="scaling-deployments">Scaling Deployments</h3>
 <p>You can scale a deployment to your desired number of replicas.<br>The <strong><code>Scale</code></strong> option is available in the three-dot menu of each deployment row.</p>
@@ -709,22 +710,22 @@
 <h2 id="jobs"><strong>Jobs</strong></h2>
 <p>All the <strong>jobs</strong> along with <strong>name</strong>, <strong>namespace</strong>, <strong>completions</strong>, <strong>age</strong> and <strong>conditions</strong> are listed here.</p>
 <p>You can view <strong>logs</strong> of any <strong>jobs</strong> by clicking the <strong><code>Logs</code></strong> option in the three-dot menu of the jobs row.
-<img src="../../images/final/job-list.png" alt=""></p>
+<img src="../../images/final/job-list.png" alt="Job List"></p>
 <h3 id="job-details">Job Details</h3>
 <p>Click on a <strong>job</strong> row to view detailed information about it.</p>
 <p>This page shows real-time <strong>CPU</strong> and <strong>Memory</strong> usage graphs for the selected jobs. You will also find detailed information such as <strong>Annotations</strong>, <strong>Labels</strong>, <strong>Node Selector</strong> and more.  </p>
 <p>A <strong>Logs</strong> button is also available at the top-right corner to view the job logs.</p>
-<p><img src="../../images/final/job-details.png" alt=""></p>
+<p><img src="../../images/final/job-details.png" alt="Job Details"></p>
 <p>You can view all the <strong>pods</strong> running under the jobs, as well as <strong>Events</strong> related to it.  </p>
 <h2 id="cron-jobs"><strong>Cron Jobs</strong></h2>
 <p>All the <strong>cron Jobs</strong> along with <strong>name</strong>, <strong>namespace</strong>, <strong>schedule</strong>, <strong>suspend</strong>, <strong>last schedule</strong>, <strong>age</strong>,  and <strong>conditions</strong> are listed here.
-<img src="../../images/final/cj-list.png" alt=""></p>
+<img src="../../images/final/cj-list.png" alt="Cron Job List"></p>
 <h3 id="cron-job-details">Cron Job Details</h3>
 <p>Click on a <strong>cron Jobs</strong> row to view detailed information about it.</p>
-<p>This page shows real-time <strong>CPU</strong> and <strong>Memory</strong> usage graphs for the selected cron Jobs. You will also find detailed information such as <strong>Scheduler</strong>, <strong>DNS policy</strong>, <strong>Status</strong>, <strong>Concurrency policy</strong> and more.<br><img src="../../images/final/cj-details.png" alt=""></p>
+<p>This page shows real-time <strong>CPU</strong> and <strong>Memory</strong> usage graphs for the selected cron Jobs. You will also find detailed information such as <strong>Scheduler</strong>, <strong>DNS policy</strong>, <strong>Status</strong>, <strong>Concurrency policy</strong> and more.<br><img src="../../images/final/cj-details.png" alt="Cron Job Details"></p>
 <p>You can view all the <strong>events</strong> related to these cron jobs. </p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; KubeKit all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">File Modify: 
-2025-12-08 11:10:59
+2025-12-08 15:23:59
 </span></footer>
                                 
                                 </section>
@@ -764,7 +765,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Workloads","level":"3.3.9","depth":2,"previous":{"title":"Helm","level":"3.3.8","depth":2,"path":"docs/cluster/managing-cluster/helm.md","ref":"./docs/cluster/managing-cluster/helm.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","splitter","expandable-chapters-small","back-to-top-button","tbfed-pagefooter","code","prism","-highlight","copy-code-button","chapter-fold","github","emphasize","theme-default","favicon"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy; KubeKit"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"emphasize":{},"github":{"url":"https://github.com/kube-kit/kube-kit"},"splitter":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"./docs/images/final/icon.ico","bookmark":"./docs/images/final/icon.ico"},"back-to-top-button":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{"depth":3}},"theme":"default","author":"kubekit","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kubekit Documentation","language":"en","gitbook":"*","description":"Complete documentation for kubekit"},"file":{"path":"docs/cluster/managing-cluster/workload.md","mtime":"2025-12-08T05:10:59.286Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-12-08T07:51:23.051Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Workloads","level":"3.3.9","depth":2,"previous":{"title":"Helm","level":"3.3.8","depth":2,"path":"docs/cluster/managing-cluster/helm.md","ref":"./docs/cluster/managing-cluster/helm.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","splitter","expandable-chapters-small","back-to-top-button","tbfed-pagefooter","code","prism","-highlight","copy-code-button","chapter-fold","github","emphasize","theme-default","favicon"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy; KubeKit"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"emphasize":{},"github":{"url":"https://github.com/kube-kit/kube-kit"},"splitter":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"./docs/images/final/icon.ico","bookmark":"./docs/images/final/icon.ico"},"back-to-top-button":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{"depth":3}},"theme":"default","author":"kubekit","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRODUCTION.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kubekit Documentation","language":"en","gitbook":"*","description":"Complete documentation for kubekit"},"file":{"path":"docs/cluster/managing-cluster/workload.md","mtime":"2025-12-08T09:23:59.236Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-12-08T09:55:31.686Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
