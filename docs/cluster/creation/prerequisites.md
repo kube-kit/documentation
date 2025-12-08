@@ -2,7 +2,7 @@
 
 Before starting the cluster creation process, make sure the following requirements are met:
 
-![](/docs/images/final/cluster-requirement.png)
+![Cluster Requirement](/docs/images/final/cluster-requirement.png)
 Click on **`I'm ready to make my cluster`** button to continue the process.
 
 ## Node Requirements
@@ -11,10 +11,9 @@ Click on **`I'm ready to make my cluster`** button to continue the process.
 - 2 GB or more of RAM per node (any less will leave little room for your apps).
 - 2 CPUs or more for control plane nodes.
 - All nodes must have any of **Ubuntu**, **Debian**, **Fedora**, **CentOS**, **RedHat** and **Amazon Linux** operating systems. Also combination of multiple operating system for a single cluster is supported. For details click on **List of supported operating systems**.
- ![](/docs/images/final/cluster-creation.png)
+ ![Cluster Creation](/docs/images/final/cluster-creation.png)
  
-
-
+ 
 ## SSH Requirements
 
 - **SSH access** must be enabled to all your nodes from your PC where KubeKit is running.

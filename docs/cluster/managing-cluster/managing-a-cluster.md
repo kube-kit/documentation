@@ -4,7 +4,7 @@
 
 You can manage multiple cluster using KubeKit simultaneously. All the clusters you have created or imported are listed in the dashboard.
 
-![](/docs/images/final/kubekit-dashboard.png)
+![KubeKit Dashboard](/docs/images/final/kubekit-dashboard.png)
 
 You can download the **kubeconfig** file of any cluster in the dashboard.
 

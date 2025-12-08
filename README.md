@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="/docs/images/final/logo.svg" alt="KubeKit Logo"/>
+</p>
+
+<h4 align="center"> Create, Deploy and Manage Kubernetes Multi-cluster </h4>
+
 # Introduction
 >Welcome to the official KubeKit documentation repository. This repository contains comprehensive documentation designed to help users understand, set up, and manage Kubernetes clusters using KubeKit.
 

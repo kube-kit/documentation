@@ -8,7 +8,7 @@
 <!-- [**network**](/docs/cluster/managing-cluster/networking.md), [**access control**](/docs/cluster/managing-cluster/access-control.md),  -->
 <!-- and [**storage**](/docs/cluster/managing-cluster/storage.md)   -->
 
-![](/docs/images/final/cluster-dashboard.png)
+![Cluster Dashboard](/docs/images/final/cluster-dashboard.png)
 
 You can switch among clusters from top left dropdown.
 

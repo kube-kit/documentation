@@ -1,117 +1,50 @@
-# Helm App Store
+# Helm Management
 
-Helm is a powerful package manager for Kubernetes that simplifies application deployment and management. It lets you define, install, and upgrade applications using pre-configured templates known as *releases*. Each release includes all the configuration and dependencies needed to run an application seamlessly within a cluster.
+**KubeKit** enhances the Helm experience by providing a graphical interface to - 
+ * Add, remove, and update repositories  
+ * Search charts and releases 
+ * Install charts
+ * Upgrade, rollback, and uninstall releases
 
-In simple terms, Helm allows you to deploy applications on Kubernetes without manually handling complex YAML configuration files. Common applications like NGINX, Prometheus, and Grafana can be deployed easily using Helm.
+With a single click, you can manage all helm operations.
 
-**KubeKit** enhances this experience by providing a graphical interface for Helm operations, eliminating the need for command-line commands. With just a few clicks, you can browse, configure, and install applications directly into your clusters.
+> Make sure you have internet access in **KubeKit** application to fetch Helm repositories and releases.
 
----
+## Helm Dashboard
 
-## Before You Begin
+From the KubeKit **Cluster Dashboard**, open the **Helm** section using the left-sidebar navigation.
+![Helm Dashboard](/docs/images/final/helm-dashboard.png)
 
-Before using Helm in KubeKit, ensure:
+The dashboard shows list of available charts and installed releases. On the right-side, selected chart details along with available versions, descriptions, charts values are displayed. 
 
-* You have at least one running cluster connected to KubeKit.
-* Internet access is available to fetch Helm repositories and releases.
-* Necessary permissions are configured to install applications on the target cluster.
+## Installing a Chart
 
----
+By clicking on the top-right **Install** button, you can install any charts in your cluster by providing - 
+* **Version** 
+* **Namespace**
+* **Release name** 
 
-## Accessing Helm in KubeKit
+Also, you can **edit/modify** chart values in a **VS code** like editor as per your requirements. 
+![Helm Chart Install](/docs/images/final/helm-chart-install.png)
 
-1. Open the **KubeKit Dashboard**.
-2. From the left-hand menu, select **Helm**.
+Finally, click on **Install now** button to start the installation process. And, after successful installation, you will see the installed chart under **Installed** tab.
+![Helm Chart Installed](/docs/images/final/helm-chart-installed.png)
 
-The Helm page will display a list of available Helm releases. Loading time may vary depending on your internet connection and the number of repositories added.
-
----
-
-## Browsing Helm Releases
-
-On the Helm page:
-
-* The **left panel** shows all available releases.
-* Each release card displays:
-
-  * **Name** of the release
-  * **Repository** it belongs to
-  * **Short description** of its function
-
-Selecting a release displays detailed information on the **right panel**, including:
-
-* Available **versions**
-* Full description and configurations
-* Option to choose a version for installation
-
-![](/docs/images/final/helm.png)
-
----
-
-## Installing a Release
-
-1. Select a release from the list.
-2. Click **Install** to open the **Release Installation Page**.
-
-On this page, you can:
-
-* **Select a version** of the release.
-* **Choose a namespace** for deployment.
-* **Provide a custom name** to identify the release later.
-
-![](/docs/images/final/install-release.png)
-
-### Configuring Release Values
-
-In the right panel, you can view and modify the release’s configuration values. These values define the application’s behavior and resource usage.
-
-You can:
-
-* Edit values directly.
-* Search for specific parameters.
-* Add or delete configuration entries.
-* Reset to default values.
-
-> **Note:** Configuration options vary between releases. Some applications have only a few settings, while others offer extensive customization.
-
-Once configuration is complete, click **Install**. KubeKit handles the deployment and will notify you when the installation finishes.
-
----
 
 ## Managing Installed Releases
 
-Click the **Installed** tab to view all deployed releases. You can filter releases by namespace or search by name.
-
+Click the **Installed** tab to view all deployed releases. You can filter releases by namespace.
 ![](/docs/images/final/deployed-release.png)
 
 Selecting a release shows its details on the right panel:
 
-* **Custom name** (if assigned)
-* **Release name and version**
-* **Namespace**
-* **App version** and **last updated time**
-* **Current status** (Deployed, Failed, Uninstalled, etc.)
+* **Release name** along with **chart name** and **version** 
+* **Namespace**, **App version**, **Last updated time** and **Current status** (Deployed, Failed, Uninstalled, etc.)
+* **Release values** used during the installation, by clicking the checkbox  **see only custom values**, will show you only the values that were modified from the default chart values while installing or upgrading the release. 
+* **Release Description**, **Notes** 
+* List of created **Kubernetes resources** with their **kind**, **name**, **namespace**, and **age**.
 
-You can also view all associated Kubernetes resources, such as:
-
-* **ClusterRole** and **ClusterRoleBinding** – define access permissions.
-* **ConfigMap** – store configuration data.
-* **Deployment** – manage stateless applications.
-* **StatefulSet** – manage stateful workloads.
-* **DaemonSet** – ensure pods run on specific nodes.
-* **PersistentVolumeClaim (PVC)** – manage storage requests.
-* **Service** – expose applications internally or externally.
-* **ServiceAccount** – provide identities for pods.
-
-Viewing these components helps in understanding and troubleshooting the deployed release.
-
----
-
-## Managing Release Lifecycle
-
-After installation, you can perform the following lifecycle actions on any release:
-
-### Upgrade
+## Upgrading a Release
 
 Upgrade a release to:
 
@@ -121,19 +54,25 @@ Upgrade a release to:
 
 Example: If you installed Prometheus and changed the `scrape_interval` from 1 minute to 30 seconds, enabling **Reuse current release values** keeps that configuration during upgrade.
 
-![](/docs/images/final/upgrade-release.png)
+![Upgrade a release](/docs/images/final/upgrade-release.png)
 
-### Rollback
 
-Each installation or upgrade creates a **revision**,  a checkpoint of your release. You can roll back to any previous revision to restore the application’s last working state in case of issues.
 
-![](/docs/images/final/rollback-release.png)
+## Rolling Back a Release
 
-### Uninstall
+After the first installation of a release, it creates a revision history. After that, if you upgrade the release, it creates a new revision. After multiple revisions, you can rollback to any previous revision. 
 
-Uninstalling removes the release from the cluster. By default, KubeKit keeps the release history for future rollbacks. You can uncheck **Keep history for future rollback** if you want to permanently delete it.
+Click on the **Rollback** button to see the list of available revisions.
 
----
+![Rollback a release](/docs/images/final/rollback-release.png)
+
+Select the desired revision and click **Rollback now** to initiate the rollback process.
+
+## Uninstalling a Release
+
+Uninstalling removes the release from the cluster. By default, KubeKit keeps the release history for future rollbacks. You can uncheck **Keep history for future rollback** if you want to permanently uninstall it.
+![Uninstall a release](/docs/images/final/uninstall-release.png)
+
 
 ## Managing Repositories
 

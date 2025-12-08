@@ -5,6 +5,12 @@
 * [Release notes](./docs/release-notes/README.md)
   * [v2.1.1](./docs/release-notes/release-v2.1.1.md)
   * [v2.1.0](./docs/release-notes/release-v2.1.0.md)
+  * [v2.0.3](./docs/release-notes/release-v2.0.3.md)
+  * [v2.0.2](./docs/release-notes/release-v2.0.2.md)
+  * [v2.0.1](./docs/release-notes/release-v2.0.1.md)
+  * [v2.0.0](./docs/release-notes/release-v2.0.0.md)
+  * [v1.2.0](./docs/release-notes/release-v1.2.0.md)
+
 
 ## Installing Kubekit
 

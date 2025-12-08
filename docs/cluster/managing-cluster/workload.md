@@ -5,12 +5,14 @@ The **Workloads** section displays all running resources within your cluster inc
 ## **Pods**  
 
 All **pods** along with their **name**, **namespace**, **container**, **cpu**, **memory**, **restarts**, **controlled by**, **node**, **age**, **status** are listed here.
-![](/docs/images/final/pod-list.png)
+
+![Pod List](/docs/images/final/pod-list.png)
 
 ### Pod Details
 
 Click on a **pod** row to view detailed information about it.
-![](/docs/images/final/pod-details.png)
+
+![Pod Details](/docs/images/final/pod-details.png)
 
 This page shows real-time **CPU** and **Memory** usage graphs for the selected pod. You will also find detailed information such as **Annotations**, **Service Account**, **QoS Class**, **Conditions**, **Affinities**, **Tolerations** and more.  
 
@@ -43,7 +45,8 @@ All the **deployments** along with **name**, **namespace**, **pods**, **replicas
 
 Click on a **deployment** row to view detailed information about it.
 
-This page shows real-time **CPU** and **Memory** usage graphs for the selected deployment. You will also find detailed information such as **Annotations**, **Selector**, **Node Selector**, **Conditions**, **Affinities**, **Tolerations**, **Straegy Type** and more.  
+This page shows real-time **CPU** and **Memory** usage graphs for the selected deployment. You will also find detailed information such as **Annotations**, **Selector**, **Node Selector**, **Conditions**, **Affinities**, **Tolerations**, **Straegy Type** and more. 
+
 ![Deployment Details](/docs/images/final/deployments-details.png)
 
 In addition, you can view details about the **pods** running inside the deployment, along with **Events** related to the deployment.
@@ -165,7 +168,7 @@ You can view all the **pods** running under the stateful set, as well as **Event
 All the **jobs** along with **name**, **namespace**, **completions**, **age** and **conditions** are listed here.
 
 You can view **logs** of any **jobs** by clicking the **`Logs`** option in the three-dot menu of the jobs row.
-![](/docs/images/final/job-list.png)
+![Job List](/docs/images/final/job-list.png)
 
 ### Job Details
 
@@ -175,21 +178,21 @@ This page shows real-time **CPU** and **Memory** usage graphs for the selected j
 
 A **Logs** button is also available at the top-right corner to view the job logs.
 
-![](/docs/images/final/job-details.png)
+![Job Details](/docs/images/final/job-details.png)
 
 You can view all the **pods** running under the jobs, as well as **Events** related to it.  
 
 ## **Cron Jobs**   
 
 All the **cron Jobs** along with **name**, **namespace**, **schedule**, **suspend**, **last schedule**, **age**,  and **conditions** are listed here.
-![](/docs/images/final/cj-list.png)
+![Cron Job List](/docs/images/final/cj-list.png)
 
 ### Cron Job Details
 
 Click on a **cron Jobs** row to view detailed information about it.
 
 This page shows real-time **CPU** and **Memory** usage graphs for the selected cron Jobs. You will also find detailed information such as **Scheduler**, **DNS policy**, **Status**, **Concurrency policy** and more.  
-![](/docs/images/final/cj-details.png)
+![Cron Job Details](/docs/images/final/cj-details.png)
 
 You can view all the **events** related to these cron jobs. 
 
