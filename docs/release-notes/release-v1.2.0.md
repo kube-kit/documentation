@@ -7,7 +7,7 @@
 - Prometheus metrics auto-install support.
 
 ## Bug fix:
-- Swap diable in cluster creation with CentOS 9 or above fixed.
+- Swap disable in cluster creation with CentOS 9 or above fixed.
 
 ## Enhancement:
 - Auto enable KubeKit metrics provider if it exists in cluster import.
