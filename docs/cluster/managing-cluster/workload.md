@@ -137,7 +137,7 @@ Click on a **replication controller** row to view detailed information about it.
 
 This page shows real-time **CPU** and **Memory** usage graphs for the selected replication controller. You will also find detailed information such as **Labels**, **Selector**, **DNS policy**, **Schedular**, **Restart Policy** and more.  
 
-A **Logs** button is also available at the top-right corner to view the replication controller logs.
+A **`Logs`** button is also available at the top-right corner to view the replication controller logs.
 
 ![Replication Controller Details](/docs/images/final/rc-details.png)
 
@@ -156,7 +156,7 @@ Click on a **stateful sets** row to view detailed information about it.
 
 This page shows real-time **CPU** and **Memory** usage graphs for the selected stateful set. You will also find detailed information such as **Images**, **Status**, **Selector**, **Schedular**, **Restart Policy** and more.  
 
-A **Logs** button is also available at the top-right corner to view the stateful set logs.
+A **`Logs`** button is also available at the top-right corner to view the stateful set logs.
 
 ![Stateful Set Details](/docs/images/final/ss-details.png)
 
@@ -175,7 +175,7 @@ Click on a **job** row to view detailed information about it.
 
 This page shows real-time **CPU** and **Memory** usage graphs for the selected jobs. You will also find detailed information such as **Annotations**, **Labels**, **Node Selector** and more.  
 
-A **Logs** button is also available at the top-right corner to view the job logs.
+A **`Logs`** button is also available at the top-right corner to view the job logs.
 
 ![Job Details](/docs/images/final/job-details.png)
 

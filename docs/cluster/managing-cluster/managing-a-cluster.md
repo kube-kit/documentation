@@ -32,7 +32,7 @@ The **Workloads** section displays all running resources within your cluster. Ea
 ### **Pods**  
 - View all pods across namespaces.  
 - Search and filter by **namespace**, **node**, or **status**.  
-- Delete pods by selecting them — a **Delete** button will appear.  
+- Delete pods by selecting them — a **`Delete`** button will appear.  
 - Access pod terminals — see [Terminal Access](../monitoring-and-logging/terminal-access.md).
 
 ### **Deployments**  
@@ -77,7 +77,7 @@ Configuration resources are critical for defining how workloads behave and inter
 ### **Config Maps**  
 - Lists all ConfigMaps.  
 - Search and filter by **namespace**.  
-- Delete using the **delete button**.  
+- Delete using the **`Delete`** button.  
 - Click on a ConfigMap to open its dedicated page for details and live editing via the built-in editor.
 
 ### **Secrets**  

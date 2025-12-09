@@ -19,7 +19,7 @@ The dashboard shows list of available charts and installed releases. On the righ
 
 ## Installing a Chart
 
-By clicking on the top-right **Install** button, you can install any charts in your cluster by providing - 
+By clicking on the top-right **`Install`** button, you can install any charts in your cluster by providing - 
 * **Version** 
 * **Namespace**
 * **Release name** 
@@ -27,7 +27,7 @@ By clicking on the top-right **Install** button, you can install any charts in y
 Also, you can **edit/modify** chart values in a **VS code** like editor as per your requirements. 
 ![Helm Chart Install](/docs/images/final/helm-chart-install.png)
 
-Finally, click on **Install now** button to start the installation process. And, after successful installation, you will see the installed chart under **Installed** tab.
+Finally, click on **`Install now`** button to start the installation process. And, after successful installation, you will see the installed chart under **Installed** tab.
 ![Helm Chart Installed](/docs/images/final/helm-chart-installed.png)
 
 
@@ -46,13 +46,13 @@ Selecting a release shows its details on the right panel:
 
 ## Upgrading a Release
 
-Click on the **Upgrade** button to upgrade a release.
+Click on the **`Upgrade`** button to upgrade a release.
 
 1. Select current release **Repository**.
 2. Select the desired **Version**.
 3. Reuse the last release's values and merge them with the new values by checking the **Reuse current release values** checkbox.
 4. You can **edit** the selected version's chart values in the editor while the **Base Values** option is selected.
-5. Click the **Upgrade now** button to start the upgrade process.
+5. Click the **`Upgrade now`** button to start the upgrade process.
 
 Also, you can see the current release values by selecting the **Current release values** option. This enables you to see the current release custom values by checking the **See only custom values** checkbox. 
 
@@ -63,12 +63,11 @@ Also, you can see the current release values by selecting the **Current release 
 
 After the first installation of a release, it creates a revision history. After that, if you upgrade the release, it creates a new revision. After multiple revisions, you can rollback to any previous revision. 
 
-Click on the **Rollback** button to see the list of available revisions.
+Click on the **`Rollback`** button to see the list of available revisions.
 
 ![Rollback a release](/docs/images/final/rollback-release.png)
 
-Select the desired revision and click **Rollback now** to initiate the rollback process.
-
+Select the desired revision and click **`Rollback now`** to initiate the rollback process.
 ## Uninstalling a Release
 
 Uninstalling removes the release from the cluster. By default, KubeKit keeps the release history for future rollbacks. You can uncheck **Keep history for future rollback** if you want to permanently uninstall it.
@@ -77,20 +76,20 @@ Uninstalling removes the release from the cluster. By default, KubeKit keeps the
 
 ## Managing Repositories
 
-Click on the **Manage Repo** button to see the list of available repositories provided by KubeKit. 
+Click on the **`Manage Repo`** button to see the list of available repositories provided by KubeKit. 
 
 By default, KubeKit includes popular Helm repositories like **Bitnami**, **Argo**, **Jetstack**, **Grafana**, **Prometheus Community**, **HashiCorp** and so on. All repositories are not added by default to helm. So, you can add the desired repositories from the list by clicking on the three-dot menu.
 ![Repo Add List](/docs/images/final/repo-add-list.png)
 
-Also, you can **update** or **delete** any added repositories from the same three-dot menu. By clicking on **Update all** button, you can update all added repositories at once.
+Also, you can **update** or **delete** any added repositories from the same three-dot menu. By clicking on **`Update all`** button, you can update all added repositories at once.
 
 > Chart list in the helm dashboard gets refreshed after adding, removing, or updating repositories.
 
 ### Adding a Custom Repository
 
-1. Click on **Add New Repository** button.
+1. Click on **`Add New Repository`** button.
 2. Enter a **Repo name** and a **URL**.
-3. Finally, Click on **Add** button.
+3. Finally, Click on **`Add`** button.
 
 ![Add Custom Repo](/docs/images/final/add-custom-repo.png)
 

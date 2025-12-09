@@ -24,7 +24,7 @@ You can filter logs by **namespace**, **deployment**, **replicaset**, **daemonse
 
 ## Search Logs  
 
-Utilise the search bar with any text like error message, component name, keyword etc. This will highlight all the matched logs. You can also **`Wrap`** or **`Unwrap`** the full logs into the view. Also, you can show/hide the log timestamp by clicking on the show timestamp checkbox. 
+Utilise the search bar with any text like error message, component name, keyword etc. This will highlight all the matched logs. You can also **`Wrap`** or **`Unwrap`** the full logs into the view. Also, you can show/hide the log timestamp by clicking on the **Show Timestamp** checkbox. 
 
 ## Download Logs 
 

@@ -59,7 +59,24 @@
 }
 
 .book-header {
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* hide everything inside */
+.book-header * {
     display: none !important;
+}
+
+/* SHOW ONLY the first <a> */
+.book-header > a.btn.pull-left.js-toolbar-action {
+    display: block !important;
+}
+
+/* Show the icon inside it */
+.book-header > a.btn.pull-left.js-toolbar-action > i {
+    display: inline-block !important;
 }
 
 .book-summary ul.summary {
@@ -109,7 +126,6 @@
     top: 0 !important;
     background: var(--content-bg);
     background-color: var(--content-bg);
-    left: 300px !important; /* Match sidebar width */
     color: var(--text-color);
 }
 
@@ -179,6 +195,7 @@
 .markdown-section p {
     margin-bottom: 1.25rem;
     line-height: 1.75;
+    
 }
 
 .markdown-section b,
@@ -195,7 +212,8 @@
 }
 
 .markdown-section a:hover {
-    border-bottom-color: var(--primary-color);
+    /* border-bottom-color: var(--primary-color); */
+    text-decoration: underline;
 }
 
 /* Code Blocks */
@@ -451,10 +469,46 @@ a.gitbook-link {
     display: none !important;
 }
 
+@media (max-width: 600px) {
+    :root {
+        font-size: 0.5rem;
+    }
+
+    .page-wrapper {
+        padding: 0px 5px;
+    }
+
+    .navigation {
+        min-width: 30px;
+    }
+
+    .book-summary {
+        width: 200px;
+    }
+    .book.with-summary .book-body {
+        left: 200px;
+        transform: none;
+    }
+
+    .book-header > a.btn.pull-left.js-toolbar-action {
+        display: block !important;
+                padding: 0px 0px 0px 8px;
+        line-height: 30px;
+    }
+}
+
 @media (max-width: 1240px) {
+    .book-body .body-inner {
+        position: inherit;
+    }
+
     .navigation {
         max-width: fit-content;
         width: fit-content;
-        display: block;
+    }
+
+    .navigation.navigation-unique {
+        max-width: fit-content;
+        width: fit-content;
     }
 }

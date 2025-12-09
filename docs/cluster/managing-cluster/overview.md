@@ -22,8 +22,8 @@ At a glance, you will see:
 - On the right side, all **pods** are listed.
 
 
-You can manage [pods](/docs/cluster/managing-cluster/workload.md#pods), [nodes](/docs/cluster/managing-cluster/nodes.md) and [events](/docs/cluster/managing-cluster/events.md) directly via the **Manage** button available on hover. 
+You can manage [pods](/docs/cluster/managing-cluster/workload.md#pods), [nodes](/docs/cluster/managing-cluster/nodes.md) and [events](/docs/cluster/managing-cluster/events.md) directly via the **`Manage`** button available on hover. 
 
 All information on this page is updated in real time.
 
-If metrics graphs are not visible then click on **`configure metrics`** button and follow the [instructions](/docs/cluster/managing-cluster/metrics.md#addding-a-metrics-provider).
+If metrics graphs are not visible then click on **`Configure metrics`** button and follow the [instructions](/docs/cluster/managing-cluster/metrics.md#addding-a-metrics-provider).
