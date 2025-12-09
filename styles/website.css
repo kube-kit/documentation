@@ -466,6 +466,15 @@ a.gitbook-link {
     display: none !important;
 }
 
+
+
+@media (max-width: 600px) {
+    .book.with-summary .book-body {
+        left: 300px;
+        transform: none;
+    }
+}
+
 @media (max-width: 1240px) {
     .book-body .body-inner {
         position: inherit;
@@ -474,14 +483,6 @@ a.gitbook-link {
     .navigation {
         max-width: fit-content;
         width: fit-content;
-    }
-
-    .navigation-prev {
-        left: 10px !important; /* Position on left side */
-    }
-
-    .navigation-next {
-        right: 10px; /* Position on right side */
     }
 
     .navigation.navigation-unique {
