@@ -59,7 +59,22 @@
 }
 
 .book-header {
+    position: fixed;
+}
+
+/* hide everything inside */
+.book-header * {
     display: none !important;
+}
+
+/* SHOW ONLY the first <a> */
+.book-header > a.btn.pull-left.js-toolbar-action {
+    display: block !important;
+}
+
+/* Show the icon inside it */
+.book-header > a.btn.pull-left.js-toolbar-action > i {
+    display: inline-block !important;
 }
 
 .book-summary ul.summary {
@@ -109,7 +124,6 @@
     top: 0 !important;
     background: var(--content-bg);
     background-color: var(--content-bg);
-    left: 300px !important; /* Match sidebar width */
     color: var(--text-color);
 }
 
@@ -195,7 +209,8 @@
 }
 
 .markdown-section a:hover {
-    border-bottom-color: var(--primary-color);
+    /* border-bottom-color: var(--primary-color); */
+    text-decoration: underline;
 }
 
 /* Code Blocks */
@@ -452,9 +467,25 @@ a.gitbook-link {
 }
 
 @media (max-width: 1240px) {
+    .book-body .body-inner {
+        position: inherit;
+    }
+
     .navigation {
         max-width: fit-content;
         width: fit-content;
-        display: block;
+    }
+
+    .navigation-prev {
+        left: 10px !important; /* Position on left side */
+    }
+
+    .navigation-next {
+        right: 10px; /* Position on right side */
+    }
+
+    .navigation.navigation-unique {
+        max-width: fit-content;
+        width: fit-content;
     }
 }

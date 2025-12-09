@@ -749,7 +749,7 @@
 <img src="../../images/final/helm-dashboard.png" alt="Helm Dashboard"></p>
 <p>The dashboard shows list of available charts and installed releases. On the right-side, selected chart details along with available versions, descriptions, charts values are displayed. </p>
 <h2 id="installing-a-chart">Installing a Chart</h2>
-<p>By clicking on the top-right <strong>Install</strong> button, you can install any charts in your cluster by providing - </p>
+<p>By clicking on the top-right <strong><code>Install</code></strong> button, you can install any charts in your cluster by providing - </p>
 <ul>
 <li><strong>Version</strong> </li>
 <li><strong>Namespace</strong></li>
@@ -757,7 +757,7 @@
 </ul>
 <p>Also, you can <strong>edit/modify</strong> chart values in a <strong>VS code</strong> like editor as per your requirements. 
 <img src="../../images/final/helm-chart-install.png" alt="Helm Chart Install"></p>
-<p>Finally, click on <strong>Install now</strong> button to start the installation process. And, after successful installation, you will see the installed chart under <strong>Installed</strong> tab.
+<p>Finally, click on <strong><code>Install now</code></strong> button to start the installation process. And, after successful installation, you will see the installed chart under <strong>Installed</strong> tab.
 <img src="../../images/final/helm-chart-installed.png" alt="Helm Chart Installed"></p>
 <h2 id="managing-installed-releases">Managing Installed Releases</h2>
 <p>Click the <strong>Installed</strong> tab to view all deployed releases. You can filter releases by namespace.
@@ -771,44 +771,44 @@
 <li>List of created <strong>Kubernetes resources</strong> with their <strong>kind</strong>, <strong>name</strong>, <strong>namespace</strong>, and <strong>age</strong>.</li>
 </ul>
 <h2 id="upgrading-a-release">Upgrading a Release</h2>
-<p>Click on the <strong>Upgrade</strong> button to upgrade a release.</p>
+<p>Click on the <strong><code>Upgrade</code></strong> button to upgrade a release.</p>
 <ol>
 <li>Select current release <strong>Repository</strong>.</li>
 <li>Select the desired <strong>Version</strong>.</li>
 <li>Reuse the last release&apos;s values and merge them with the new values by checking the <strong>Reuse current release values</strong> checkbox.</li>
 <li>You can <strong>edit</strong> the selected version&apos;s chart values in the editor while the <strong>Base Values</strong> option is selected.</li>
-<li>Click the <strong>Upgrade now</strong> button to start the upgrade process.</li>
+<li>Click the <strong><code>Upgrade now</code></strong> button to start the upgrade process.</li>
 </ol>
 <p>Also, you can see the current release values by selecting the <strong>Current release values</strong> option. This enables you to see the current release custom values by checking the <strong>See only custom values</strong> checkbox. </p>
 <p><img src="../../images/final/upgrade-release.png" alt="Upgrade a release"></p>
 <h2 id="rolling-back-a-release">Rolling Back a Release</h2>
 <p>After the first installation of a release, it creates a revision history. After that, if you upgrade the release, it creates a new revision. After multiple revisions, you can rollback to any previous revision. </p>
-<p>Click on the <strong>Rollback</strong> button to see the list of available revisions.</p>
+<p>Click on the <strong><code>Rollback</code></strong> button to see the list of available revisions.</p>
 <p><img src="../../images/final/rollback-release.png" alt="Rollback a release"></p>
-<p>Select the desired revision and click <strong>Rollback now</strong> to initiate the rollback process.</p>
+<p>Select the desired revision and click <strong><code>Rollback now</code></strong> to initiate the rollback process.</p>
 <h2 id="uninstalling-a-release">Uninstalling a Release</h2>
 <p>Uninstalling removes the release from the cluster. By default, KubeKit keeps the release history for future rollbacks. You can uncheck <strong>Keep history for future rollback</strong> if you want to permanently uninstall it.
 <img src="../../images/final/uninstall-release.png" alt="Uninstall a release"></p>
 <h2 id="managing-repositories">Managing Repositories</h2>
-<p>Click on the <strong>Manage Repo</strong> button to see the list of available repositories provided by KubeKit. </p>
+<p>Click on the <strong><code>Manage Repo</code></strong> button to see the list of available repositories provided by KubeKit. </p>
 <p>By default, KubeKit includes popular Helm repositories like <strong>Bitnami</strong>, <strong>Argo</strong>, <strong>Jetstack</strong>, <strong>Grafana</strong>, <strong>Prometheus Community</strong>, <strong>HashiCorp</strong> and so on. All repositories are not added by default to helm. So, you can add the desired repositories from the list by clicking on the three-dot menu.
 <img src="../../images/final/repo-add-list.png" alt="Repo Add List"></p>
-<p>Also, you can <strong>update</strong> or <strong>delete</strong> any added repositories from the same three-dot menu. By clicking on <strong>Update all</strong> button, you can update all added repositories at once.</p>
+<p>Also, you can <strong>update</strong> or <strong>delete</strong> any added repositories from the same three-dot menu. By clicking on <strong><code>Update all</code></strong> button, you can update all added repositories at once.</p>
 <blockquote>
 <p>Chart list in the helm dashboard gets refreshed after adding, removing, or updating repositories.</p>
 </blockquote>
 <h3 id="adding-a-custom-repository">Adding a Custom Repository</h3>
 <ol>
-<li>Click on <strong>Add New Repository</strong> button.</li>
+<li>Click on <strong><code>Add New Repository</code></strong> button.</li>
 <li>Enter a <strong>Repo name</strong> and a <strong>URL</strong>.</li>
-<li>Finally, Click on <strong>Add</strong> button.</li>
+<li>Finally, Click on <strong><code>Add</code></strong> button.</li>
 </ol>
 <p><img src="../../images/final/add-custom-repo.png" alt="Add Custom Repo"></p>
 <blockquote>
 <p>All custom repositories are categorized under <strong>Others</strong> category in the repository list page.</p>
 </blockquote>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; KubeKit all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">File Modify: 
-2025-12-08 17:53:41
+2025-12-09 14:51:05
 </span></footer>
                                 
                                 </section>
@@ -852,7 +852,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Helm","level":"3.3.8","depth":2,"next":{"title":"Workloads","level":"3.3.9","depth":2,"path":"docs/cluster/managing-cluster/workload.md","ref":"./docs/cluster/managing-cluster/workload.md","articles":[{"title":"Pods","level":"3.3.9.1","depth":3,"anchor":"#pods","path":"docs/cluster/managing-cluster/workload.md","ref":"docs/cluster/managing-cluster/workload.md#pods","articles":[]},{"title":"Deployments","level":"3.3.9.2","depth":3,"anchor":"#deployments","path":"docs/cluster/managing-cluster/workload.md","ref":"docs/cluster/managing-cluster/workload.md#deployments","articles":[]},{"title":"Daemon Sets","level":"3.3.9.3","depth":3,"anchor":"#daemon-sets","path":"docs/cluster/managing-cluster/workload.md","ref":"docs/cluster/managing-cluster/workload.md#daemon-sets","articles":[]},{"title":"Replica Sets","level":"3.3.9.4","depth":3,"anchor":"#replica-sets","path":"docs/cluster/managing-cluster/workload.md","ref":"docs/cluster/managing-cluster/workload.md#replica-sets","articles":[]},{"title":"Replication Controllers","level":"3.3.9.5","depth":3,"anchor":"#replication-controller","path":"docs/cluster/managing-cluster/workload.md","ref":"docs/cluster/managing-cluster/workload.md#replication-controller","articles":[]},{"title":"Stateful Sets","level":"3.3.9.6","depth":3,"anchor":"#stateful-sets","path":"docs/cluster/managing-cluster/workload.md","ref":"docs/cluster/managing-cluster/workload.md#stateful-sets","articles":[]},{"title":"Jobs","level":"3.3.9.7","depth":3,"anchor":"#jobs","path":"docs/cluster/managing-cluster/workload.md","ref":"docs/cluster/managing-cluster/workload.md#jobs","articles":[]},{"title":"Cron Jobs","level":"3.3.9.8","depth":3,"anchor":"#cron-jobs","path":"docs/cluster/managing-cluster/workload.md","ref":"docs/cluster/managing-cluster/workload.md#cron-jobs","articles":[]}]},"previous":{"title":"Terminal Access","level":"3.3.7","depth":2,"path":"docs/cluster/managing-cluster/terminal-access.md","ref":"./docs/cluster/managing-cluster/terminal-access.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","expandable-chapters-small","back-to-top-button","tbfed-pagefooter","code","prism","-highlight","copy-code-button","chapter-fold","github","emphasize","theme-default","favicon"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy; KubeKit"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"emphasize":{},"github":{"url":"https://github.com/kube-kit/kube-kit"},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"./docs/images/final/icon.ico","bookmark":"./docs/images/final/icon.ico"},"back-to-top-button":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{"depth":3}},"theme":"default","author":"kubekit","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRODUCTION.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kubekit Documentation","language":"en","gitbook":"*","description":"Complete documentation for kubekit"},"file":{"path":"docs/cluster/managing-cluster/helm.md","mtime":"2025-12-08T11:53:41.045Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-12-09T07:12:50.444Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Helm","level":"3.3.8","depth":2,"next":{"title":"Workloads","level":"3.3.9","depth":2,"path":"docs/cluster/managing-cluster/workload.md","ref":"./docs/cluster/managing-cluster/workload.md","articles":[{"title":"Pods","level":"3.3.9.1","depth":3,"anchor":"#pods","path":"docs/cluster/managing-cluster/workload.md","ref":"docs/cluster/managing-cluster/workload.md#pods","articles":[]},{"title":"Deployments","level":"3.3.9.2","depth":3,"anchor":"#deployments","path":"docs/cluster/managing-cluster/workload.md","ref":"docs/cluster/managing-cluster/workload.md#deployments","articles":[]},{"title":"Daemon Sets","level":"3.3.9.3","depth":3,"anchor":"#daemon-sets","path":"docs/cluster/managing-cluster/workload.md","ref":"docs/cluster/managing-cluster/workload.md#daemon-sets","articles":[]},{"title":"Replica Sets","level":"3.3.9.4","depth":3,"anchor":"#replica-sets","path":"docs/cluster/managing-cluster/workload.md","ref":"docs/cluster/managing-cluster/workload.md#replica-sets","articles":[]},{"title":"Replication Controllers","level":"3.3.9.5","depth":3,"anchor":"#replication-controller","path":"docs/cluster/managing-cluster/workload.md","ref":"docs/cluster/managing-cluster/workload.md#replication-controller","articles":[]},{"title":"Stateful Sets","level":"3.3.9.6","depth":3,"anchor":"#stateful-sets","path":"docs/cluster/managing-cluster/workload.md","ref":"docs/cluster/managing-cluster/workload.md#stateful-sets","articles":[]},{"title":"Jobs","level":"3.3.9.7","depth":3,"anchor":"#jobs","path":"docs/cluster/managing-cluster/workload.md","ref":"docs/cluster/managing-cluster/workload.md#jobs","articles":[]},{"title":"Cron Jobs","level":"3.3.9.8","depth":3,"anchor":"#cron-jobs","path":"docs/cluster/managing-cluster/workload.md","ref":"docs/cluster/managing-cluster/workload.md#cron-jobs","articles":[]}]},"previous":{"title":"Terminal Access","level":"3.3.7","depth":2,"path":"docs/cluster/managing-cluster/terminal-access.md","ref":"./docs/cluster/managing-cluster/terminal-access.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","expandable-chapters-small","back-to-top-button","tbfed-pagefooter","code","prism","-highlight","copy-code-button","chapter-fold","github","emphasize","theme-default","favicon"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy; KubeKit"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"emphasize":{},"github":{"url":"https://github.com/kube-kit/kube-kit"},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"./docs/images/final/icon.ico","bookmark":"./docs/images/final/icon.ico"},"back-to-top-button":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{"depth":3}},"theme":"default","author":"kubekit","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRODUCTION.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kubekit Documentation","language":"en","gitbook":"*","description":"Complete documentation for kubekit"},"file":{"path":"docs/cluster/managing-cluster/helm.md","mtime":"2025-12-09T08:51:05.737Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-12-09T11:09:32.069Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
