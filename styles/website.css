@@ -60,6 +60,8 @@
 
 .book-header {
     position: fixed;
+    padding: 0px;
+    margin: 0px;
 }
 
 /* hide everything inside */
@@ -193,6 +195,7 @@
 .markdown-section p {
     margin-bottom: 1.25rem;
     line-height: 1.75;
+    
 }
 
 .markdown-section b,
@@ -466,12 +469,31 @@ a.gitbook-link {
     display: none !important;
 }
 
-
-
 @media (max-width: 600px) {
+    :root {
+        font-size: small;
+    }
+
+    .page-wrapper {
+        padding: 0px 5px;
+    }
+
+    .navigation {
+        min-width: 30px;
+    }
+
+    .book-summary {
+        width: 200px;
+    }
     .book.with-summary .book-body {
-        left: 300px;
+        left: 200px;
         transform: none;
+    }
+
+    .book-header > a.btn.pull-left.js-toolbar-action {
+        display: block !important;
+                padding: 0px 0px 0px 8px;
+        line-height: 30px;
     }
 }
 
