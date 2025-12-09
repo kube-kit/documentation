@@ -20,4 +20,5 @@ To initiate the importing process, Navigate to the Import Cluster Page by clicki
 
 **Congratulations!!** You have successfully imported your Kubernetes cluster using KubeKit!
 ![Congratulations](/docs/images/final/congratulations.png)
+
 You can also download the **kubeconfig** file from here.

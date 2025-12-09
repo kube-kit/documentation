@@ -5,7 +5,7 @@
     --primary-color: #3b82f6;
     --sidebar-bg: #111827;
     --sidebar-text: #d1d5db;
-    --sidebar-active: #3b82f6;
+    --sidebar-active: #ffffff;
     --content-bg: #030712;
     --text-color: #9ca3af;
     --border-color: #374151;
@@ -21,8 +21,7 @@
 
 /* Handle */
 :-webkit-scrollbar-thumb {
-    background: rgba(107, 114, 128, 0.6);
-    border-radius: 0.4rem;
+    display: none;
 }
 
 *:hover::-webkit-scrollbar-thumb {
@@ -50,6 +49,13 @@
     background: var(--sidebar-bg);
     border-right: 1px solid var(--border-color);
     font-size: 14px;
+}
+
+.book-summary:hover {
+    ::-webkit-scrollbar-thumb {
+        background: rgba(107, 114, 128, 0.6);
+        border-radius: 0.4rem;
+    }
 }
 
 .book-header {
@@ -103,8 +109,15 @@
     top: 0 !important;
     background: var(--content-bg);
     background-color: var(--content-bg);
-    left: 280px !important; /* Match sidebar width */
+    left: 300px !important; /* Match sidebar width */
     color: var(--text-color);
+}
+
+.book-body:hover {
+    ::-webkit-scrollbar-thumb {
+        background: rgba(107, 114, 128, 0.6);
+        border-radius: 0.4rem;
+    }
 }
 
 .page-wrapper {
@@ -120,9 +133,9 @@
     font-size: 16px;
 }
 
-Make sidebar narrower to give more space to content
+/* Make sidebar narrower to give more space to content */
 .book-summary {
-    width: 280px; /* Decreased from 300px default */
+    width: 300px; /* Decreased from 300px default */
 }
 
 /* Typography */
@@ -159,13 +172,18 @@ Make sidebar narrower to give more space to content
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: #4b5563;
+    color: var(--heading-color);
 }
 
 /* Paragraphs */
 .markdown-section p {
     margin-bottom: 1.25rem;
     line-height: 1.75;
+}
+
+.markdown-section b,
+.markdown-section strong {
+    filter: brightness(1.2);
 }
 
 /* Links */
@@ -211,7 +229,7 @@ Make sidebar narrower to give more space to content
 /* Blockquotes */
 .markdown-section blockquote {
     border-left: 4px solid var(--primary-color);
-    background: #1f2937;
+    background: #1f293744;
     padding: 1rem 1.5rem;
     margin: 1.5rem 0;
     border-radius: 4px;
@@ -266,17 +284,28 @@ Make sidebar narrower to give more space to content
     line-height: 1.7;
 }
 
+.markdown-section img {
+    border: 0;
+    max-width: 95%;
+    margin: 0px 20px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Navigation Buttons */
 .navigation {
     border-top: none;
-    padding-top: 2rem;
-    margin-top: 3rem;
     color: #e5e7eb !important;
+    position: absolute;
+    top: 40%;
+    bottom: 40%;
 }
 
-.navigation :hover{
-  text-decoration: none !important;
-  color: #9ca3af !important;
+.navigation :hover {
+    text-decoration: none !important;
+    color: #9ca3af !important;
 }
 
 .navigation a {
@@ -295,6 +324,16 @@ Make sidebar narrower to give more space to content
     border-bottom: none;
 }
 
+a.navigation.navigation-next:hover {
+    background: #1f293744;
+    border-radius: 30px 0px 0px 30px;
+}
+
+a.navigation.navigation-prev:hover {
+    background: #1f293744;
+    border-radius: 0px 30px 30px 0px;
+}
+
 /* Search Bar */
 #book-search-input {
     padding: 2px 10px;
@@ -311,6 +350,15 @@ Make sidebar narrower to give more space to content
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+#book-search-input input,
+#book-search-input input:focus,
+#book-search-input input:hover {
+    padding: 7px 0px 7px 32px;
+    background: no-repeat left center;
+    background-size: 1.8rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' stroke='gray' fill='none' viewBox='0 0 24 24'%3E%3Ccircle cx='11' cy='11' r='7' stroke-width='2'/%3E%3Cline x1='16' y1='16' x2='22' y2='22' stroke-width='2'/%3E%3C/svg%3E");
 }
 
 /* Copy Code Button */
@@ -354,6 +402,7 @@ Make sidebar narrower to give more space to content
     border-top: 1px solid var(--border-color);
     font-size: 14px;
     color: #6b7280;
+    display: none;
 }
 
 /* Responsive Design */
@@ -396,4 +445,16 @@ Make sidebar narrower to give more space to content
 
 .markdown-section table tr:hover {
     background: rgba(255, 255, 255, 0.03);
+}
+
+a.gitbook-link {
+    display: none !important;
+}
+
+@media (max-width: 1240px) {
+    .navigation {
+        max-width: fit-content;
+        width: fit-content;
+        display: block;
+    }
 }
