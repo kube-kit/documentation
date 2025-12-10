@@ -378,6 +378,7 @@ a.navigation.navigation-prev:hover {
 
 /* Copy Code Button */
 .copy-code-button {
+    display: none;
     background: rgba(255, 255, 255, 0.1);
     color: white;
     border: none !important;
@@ -469,6 +470,20 @@ a.gitbook-link {
         font-size: 1.5rem;
     }
 
+    .markdown-section pre {
+        padding: 25px 20px 15px 20px;
+    }
+
+    .copy-wrapper i {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+
+    .code-wrapper pre {
+        position: static !important;
+    }
+
     .page-wrapper {
         padding: 0px 5px;
     }
@@ -485,6 +500,12 @@ a.gitbook-link {
         transform: none;
     }
 
+    #book-search-input input,
+    #book-search-input input:focus,
+    #book-search-input input:hover {
+        padding: 7px 0px 7px 24px;
+    }
+
     .book-header {
         height: 30px;
     }
@@ -495,8 +516,8 @@ a.gitbook-link {
         line-height: 30px;
     }
 
-    .markdown-section table th,
-    td {
+    .markdown-section table :is(th, td) {
+        text-align: left;
         padding: 4px 8px;
     }
 }
