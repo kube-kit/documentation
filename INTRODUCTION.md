@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/docs/images/final/logo.svg" alt="KubeKit Logo"/>
+  <img id="kubekit-logo" src="/docs/images/final/logo.svg" style="border-radius:0px;" alt="KubeKit Logo"/>
 </p>
 
 <h4 align="center"> Build and manage on-prem Kubernetes clusters effortlessly with GUI </h4>
