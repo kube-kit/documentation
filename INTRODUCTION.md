@@ -5,7 +5,8 @@
 <h4 align="center"> Build and manage on-prem Kubernetes clusters effortlessly with GUI </h4>
 
 # Introduction
->Welcome to the official KubeKit documentation repository. This repository contains comprehensive documentation designed to help users understand, set up, and manage Kubernetes clusters using KubeKit.
+
+>Welcome to the official KubeKit documentation. This guide provides comprehensive resources to help you understand, deploy, and manage Kubernetes clusters using KubeKit.
 
 
 [KubeKit](https://kubekit.io) is an innovative, GUI-driven automation tool that streamlines on-premises Kubernetes cluster creation and management. It removes the need for deep technical expertise, manual setup, and complex scripting by providing a fast, intuitive, no-code experience for Developers, SysAdmins, and DevOps engineers. With KubeKit, you can easily create, configure, monitor and manage clusters while maintaining full control over their infrastructure. For a quick onboarding experience, visit the [Quick Start](./getting-started/quick-start-guide.md) guide.
