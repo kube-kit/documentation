@@ -1,6 +1,6 @@
-<h1 style="display:flex; justify-content: space-between; align-items: center;"> Release v2.0.3  <span style="font-size:medium; font-weight:normal; font-style:italic;">Released on  Nov 02, 2025</span> </h1> 
+<h1 style="display:flex; justify-content: space-between; align-items: center;"> KubeKit v2.0.3  <span id="release-date" style="font-size:medium; font-weight:normal; font-style:italic;">Nov 02, 2025</span> </h1> 
 
-## Bug Fix
+## Bug Fixes
 - Fixed root user home path issue
 - Verbose log enabled in metrics installation script
 
