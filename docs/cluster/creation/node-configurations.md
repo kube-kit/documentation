@@ -1,9 +1,8 @@
 # Node Configuration
 
-## **Configure Node Information**
+Specify the total number of nodes you want to include in your cluster on the left.
 
-Here, on the left, provide total number of nodes.
-![](/docs/images/final/cluster-creation.png)
+![Cluster Creation](/docs/images/final/cluster-creation.png)
 
 To make configuration easier there are several optional settings that help multiple nodes with same configuration.
 - If all your nodes have the same username, then you enable the first switch and enter the username. 
@@ -17,8 +16,6 @@ To make configuration easier there are several optional settings that help multi
 
 Finally, click **Continue** to move forward.
 
----
-
 ## **Verify/Edit Node Information**
 
 
@@ -28,13 +25,10 @@ Here you can see the details information of your each node separately, also you 
 * You can edit the SSH port(if it's not `22`).
 * Use **`+`** or **`Delete`** button to add or remove any node.
 
-![](/docs/images/final/node-configuration.png)
+![Node Configuration](/docs/images/final/node-configuration.png)
 
 
 Click **continue** and it will ask you for confirmation to check node access and prerequisites.
-
-
----
 
 ## **Node Information Preview**
 
@@ -48,5 +42,6 @@ Click **continue** and it will ask you for confirmation to check node access and
 * If any node is unreachable, an **error message** will appear.
 
 Click **Continue** to move forward.
-![](/docs/images/final/node-preview.png)
+
+![Node Preview](/docs/images/final/node-preview.png)
 

@@ -1,7 +1,5 @@
 # Cluster Configuration
 
-## **Configure Cluster**
-
 On the **Cluster Configuration** page:
  * Select your cluster **icon** and provide a **name** for your cluster, this will appear in the dashboard after creation.
  * Choose your desired **Kubernetes version**, **Container Runtime Engine**, **CNI Provider**, **Load Balancer**. Or you can keep the default options.

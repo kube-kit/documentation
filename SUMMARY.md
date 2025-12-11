@@ -5,6 +5,12 @@
 * [Release notes](./docs/release-notes/README.md)
   * [v2.1.1](./docs/release-notes/release-v2.1.1.md)
   * [v2.1.0](./docs/release-notes/release-v2.1.0.md)
+  * [v2.0.3](./docs/release-notes/release-v2.0.3.md)
+  * [v2.0.2](./docs/release-notes/release-v2.0.2.md)
+  * [v2.0.1](./docs/release-notes/release-v2.0.1.md)
+  * [v2.0.0](./docs/release-notes/release-v2.0.0.md)
+  * [v1.2.0](./docs/release-notes/release-v1.2.0.md)
+
 
 ## Installing Kubekit
 
@@ -33,6 +39,14 @@
   * [Terminal Access](./docs/cluster/managing-cluster/terminal-access.md)
   * [Helm](./docs/cluster/managing-cluster/helm.md)
   * [Workloads](./docs/cluster/managing-cluster/workload.md)
+    * [Pods](/docs/cluster/managing-cluster/workload.md#pods)
+    * [Deployments](/docs/cluster/managing-cluster/workload.md#deployments) 
+    * [Daemon Sets](/docs/cluster/managing-cluster/workload.md#daemon-sets) 
+    * [Replica Sets](/docs/cluster/managing-cluster/workload.md#replica-sets)
+    * [Replication Controllers](/docs/cluster/managing-cluster/workload.md#replication-controller) 
+    * [Stateful Sets](/docs/cluster/managing-cluster/workload.md#stateful-sets) 
+    * [Jobs](/docs/cluster/managing-cluster/workload.md#jobs)
+    * [Cron Jobs](/docs/cluster/managing-cluster/workload.md#cron-jobs)
   
   <!-- * [Config](/docs/cluster/managing-cluster/config.md) -->
   

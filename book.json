@@ -9,7 +9,6 @@
     "-lunr",
     "-search",
     "search-plus",
-    "splitter",
     "expandable-chapters-small",
     "back-to-top-button",
     "tbfed-pagefooter",
@@ -57,8 +56,9 @@
     "mobi": "styles/mobi.css",
     "epub": "styles/epub.css"
   },
-  
+
+
   "structure": {
-    "readme": "README.md"
+    "readme": "INTRODUCTION.md"
   }
 }
