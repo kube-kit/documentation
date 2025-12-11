@@ -13,6 +13,7 @@ With a single click, you can manage all helm operations.
 ## Helm Dashboard
 
 From the KubeKit **Cluster Dashboard**, open the **Helm** section using the left-sidebar navigation.
+
 ![Helm Dashboard](/docs/images/final/helm-dashboard.png)
 
 The dashboard shows list of available charts and installed releases. On the right-side, selected chart details along with available versions, descriptions, charts values are displayed. 
@@ -24,17 +25,20 @@ By clicking on the top-right **`Install`** button, you can install any charts in
 * **Namespace**
 * **Release name** 
 
-Also, you can **edit/modify** chart values in a **VS code** like editor as per your requirements. 
+Also, you can **edit/modify** chart values in a **VS code** like editor as per your requirements.
+
 ![Helm Chart Install](/docs/images/final/helm-chart-install.png)
 
 Finally, click on **`Install now`** button to start the installation process. And, after successful installation, you will see the installed chart under **Installed** tab.
+
 ![Helm Chart Installed](/docs/images/final/helm-chart-installed.png)
 
 
 ## Managing Installed Releases
 
 Click the **Installed** tab to view all deployed releases. You can filter releases by namespace.
-![](/docs/images/final/deployed-release.png)
+
+![Deployed Releases](/docs/images/final/deployed-release.png)
 
 Selecting a release shows its details on the right panel:
 
@@ -71,6 +75,7 @@ Select the desired revision and click **`Rollback now`** to initiate the rollbac
 ## Uninstalling a Release
 
 Uninstalling removes the release from the cluster. By default, KubeKit keeps the release history for future rollbacks. You can uncheck **Keep history for future rollback** if you want to permanently uninstall it.
+
 ![Uninstall a release](/docs/images/final/uninstall-release.png)
 
 
@@ -79,6 +84,7 @@ Uninstalling removes the release from the cluster. By default, KubeKit keeps the
 Click on the **`Manage Repo`** button to see the list of available repositories provided by KubeKit. 
 
 By default, KubeKit includes popular Helm repositories like **Bitnami**, **Argo**, **Jetstack**, **Grafana**, **Prometheus Community**, **HashiCorp** and so on. All repositories are not added by default to helm. So, you can add the desired repositories from the list by clicking on the three-dot menu.
+
 ![Repo Add List](/docs/images/final/repo-add-list.png)
 
 Also, you can **update** or **delete** any added repositories from the same three-dot menu. By clicking on **`Update all`** button, you can update all added repositories at once.

@@ -14,6 +14,8 @@ If any error occurs (often due to network issues):
 * You can also track the error logs.
 
 **Congratulations!!** You have successfully created your first Kubernetes cluster using KubeKit!
+
 ![Congratulations](/docs/images/final/congratulations.png)
+
 Click **`Manage This Cluster`** to open your **Cluster Dashboard**, where you can start managing this cluster.
 

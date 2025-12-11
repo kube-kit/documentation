@@ -6,10 +6,10 @@
 
 # Introduction
 
->Welcome to the official KubeKit documentation. This guide provides comprehensive resources to help you understand, deploy, and manage Kubernetes clusters using KubeKit.
+>Welcome to the official KubeKit documentation. This guide provides comprehensive resources to help you understand, deploy, and manage Kubernetes clusters using <a href="https://kubekit.io">**KubeKit**</a>.
 
 
-[KubeKit](https://kubekit.io) is an innovative, GUI-driven automation tool that streamlines on-premises Kubernetes cluster creation and management. It removes the need for deep technical expertise, manual setup, and complex scripting by providing a fast, intuitive, no-code experience for Developers, SysAdmins, and DevOps engineers. With KubeKit, you can easily create, configure, monitor and manage clusters while maintaining full control over their infrastructure. For a quick onboarding experience, visit the [Quick Start](./getting-started/quick-start-guide.md) guide.
+[KubeKit](https://kubekit.io) is an innovative, GUI-driven automation tool that streamlines on-premises Kubernetes cluster creation and management. It removes the need for deep technical expertise, manual setup, and complex scripting by providing a fast, intuitive, no-code experience for Developers, SysAdmins, and DevOps engineers. With KubeKit, you can easily create, configure, monitor and manage clusters while maintaining full control over their infrastructure. For a quick onboarding experience, visit the [Quick Start](/docs/getting-started/quick-start-guide.md) guide.
 
 <iframe width="100%" style="aspect-ratio: 560/315" src="https://www.youtube.com/embed/7xl2InfMma8?si=xs8qtkSq06lgNDC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

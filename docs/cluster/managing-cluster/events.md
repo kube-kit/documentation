@@ -1,7 +1,8 @@
 # Events
 
 All **events** along with their **type**, **message**, **namesapce**, **involved object**, **source**, **count**, **age**  are listed here.
-![](/docs/images/final/event-list.png)
+
+![Event List](/docs/images/final/event-list.png)
 
 ## Event Details
 

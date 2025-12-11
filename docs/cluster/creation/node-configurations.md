@@ -42,5 +42,6 @@ Click **continue** and it will ask you for confirmation to check node access and
 * If any node is unreachable, an **error message** will appear.
 
 Click **Continue** to move forward.
+
 ![Node Preview](/docs/images/final/node-preview.png)
 

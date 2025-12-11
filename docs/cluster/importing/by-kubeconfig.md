@@ -16,4 +16,5 @@ On the left panel, select the second option **I want to paste the kubeconfig con
 Then just paste the kubeconfig contents. 
 
 Also you can edit here.
+
 ![Paste Configuration](/docs/images/final/paste-config.png)

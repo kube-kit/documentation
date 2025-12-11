@@ -33,12 +33,12 @@ The **Workloads** section displays all running resources within your cluster. Ea
 - View all pods across namespaces.  
 - Search and filter by **namespace**, **node**, or **status**.  
 - Delete pods by selecting them — a **`Delete`** button will appear.  
-- Access pod terminals — see [Terminal Access](../monitoring-and-logging/terminal-access.md).
+- Access pod terminals — see [Terminal Access](/docs/cluster/managing-cluster/terminal-access.md).
 
 ### **Deployments**  
-- Search and filter by **namespace**.  
+- Search and filter by **namespace**.
 - Delete or scale deployments as needed.  
-- Follow [Scaling Deployments](../cluster/deployment-scalling.md) for scaling instructions.
+- Follow [Scaling Deployments](/docs/cluster/managing-cluster/workload.md#scaling-deployments) for scaling instructions.
 
 ### **Replica Sets**  
 - Lists all ReplicaSets.  
