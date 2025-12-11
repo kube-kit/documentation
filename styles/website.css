@@ -65,6 +65,8 @@
     background-color: var(--content-bg);
     width: 100%;
     z-index: 999;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* hide everything inside */
@@ -74,12 +76,43 @@
 
 /* SHOW ONLY the first <a> */
 .book-header > a.btn.pull-left.js-toolbar-action {
-    display: block !important;
+    display: flex !important;
+    line-height: normal;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Show the icon inside it */
 .book-header > a.btn.pull-left.js-toolbar-action > i {
     display: inline-block !important;
+}
+/* KubeKit.io link button */
+#kubekit-link-btn {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 600;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 50px;
+    margin-right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: normal;
+    height: fit-content;
+    text-transform: none;
+    padding: 6px 16px;
+}
+
+.heroicons-solid--arrow-sm-right {
+    display: inline-block !important;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%233b82f6' fill-rule='evenodd' d='M10.293 5.293a1 1 0 0 1 1.414 0l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414-1.414L12.586 11H5a1 1 0 1 1 0-2h7.586l-2.293-2.293a1 1 0 0 1 0-1.414' clip-rule='evenodd' stroke-width='0.2' stroke='%233b82f6'/%3E%3C/svg%3E");
+    margin-left: 6px;
 }
 
 .book-summary ul.summary {
@@ -453,25 +486,23 @@ a.gitbook-link {
     display: none !important;
 }
 
-
-
 @media (max-width: 600px) {
     :root {
         font-size: 0.5rem;
     }
-    
+
     .markdown-section {
         padding: 30px 25px;
     }
-    
+
     .markdown-section h1 {
         font-size: 2rem;
     }
-    
+
     .markdown-section h2 {
         font-size: 1.5rem;
     }
-    
+
     .markdown-section pre {
         border-radius: 6px;
         padding: 15px 20px 15px 20px;
@@ -480,25 +511,25 @@ a.gitbook-link {
     .markdown-section img {
         max-width: 100%;
     }
-    
+
     .code-wrapper i {
         position: absolute;
         top: 6px;
         right: 6px;
     }
-    
+
     .code-wrapper pre {
         position: static !important;
     }
-    
+
     .page-wrapper {
         padding: 0px 5px;
     }
-    
+
     .navigation {
         min-width: 30px;
     }
-    
+
     .book-summary {
         width: 200px;
     }
@@ -506,7 +537,7 @@ a.gitbook-link {
         left: 200px;
         transform: none;
     }
-    
+
     #book-search-input input,
     #book-search-input input:focus,
     #book-search-input input:hover {
@@ -519,7 +550,7 @@ a.gitbook-link {
 
     .book-header > a.btn.pull-left.js-toolbar-action {
         display: block !important;
-        padding: 0px 0px 0px 8px;
+        padding: 0px 8px;
         line-height: 30px;
     }
 
@@ -527,9 +558,21 @@ a.gitbook-link {
         text-align: left;
         padding: 4px 8px;
     }
-    
+
     #release-date {
         font-size: small !important;
+    }
+
+    #kubekit-link-btn {
+        padding: 2px 10px;
+        font-size: 1.25rem;
+        margin-right: 8px;
+    }
+
+    .heroicons-solid--arrow-sm-right {
+        width: 16px;
+        height: 16px;
+        margin-left: 4px;
     }
 }
 
@@ -537,7 +580,7 @@ a.gitbook-link {
     .book-body .body-inner {
         position: inherit;
     }
-    
+
     .navigation {
         max-width: fit-content;
         width: fit-content;
