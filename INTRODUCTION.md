@@ -1,17 +1,34 @@
 <p align="center">
-  <img id="kubekit-logo" src="/docs/images/final/logo.svg" style="border-radius:0px;" alt="KubeKit Logo"/>
+    <img id="kubekit-logo" src="/docs/images/final/logo.svg" onclick="window.open('https://kubekit.io', '_blank')" style="border-radius:0px; cursor: pointer;" alt="KubeKit Logo"/>
 </p>
 
 <h4 align="center"> Build and manage on-prem Kubernetes clusters effortlessly with GUI </h4>
 
 # Introduction
 
->Welcome to the official KubeKit documentation. This guide provides comprehensive resources to help you understand, deploy, and manage Kubernetes clusters using <a href="https://kubekit.io">**KubeKit**</a>.
+>Welcome to the official KubeKit documentation. This guide provides comprehensive resources to help you understand, deploy, and manage Kubernetes clusters using <a href="https://kubekit.io" target="_blank">**KubeKit**</a>.
 
 
 [KubeKit](https://kubekit.io) is an innovative, GUI-driven automation tool that streamlines on-premises Kubernetes cluster creation and management. It removes the need for deep technical expertise, manual setup, and complex scripting by providing a fast, intuitive, no-code experience for Developers, SysAdmins, and DevOps engineers. With KubeKit, you can easily create, configure, monitor and manage clusters while maintaining full control over their infrastructure. For a quick onboarding experience, visit the [Quick Start](/docs/getting-started/quick-start-guide.md) guide.
 
-<iframe width="100%" style="aspect-ratio: 560/315" src="https://www.youtube.com/embed/7xl2InfMma8?si=xs8qtkSq06lgNDC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div onclick="handleVideoClick()" id="tutorial" class="tutorial-container">
+  <img src="/docs/images/final/thumbnail.webp" alt="tutorial_video_thumbnail" class="tutorial-image" loading="lazy">
+  <img src="/docs/images/final/play.svg" alt="play_button" class="tutorial-play-button">
+</div>
+
+<script>
+function handleVideoClick() {
+  var iframe = document.createElement('iframe');
+  iframe.src = 'https://www.youtube.com/embed/7xl2InfMma8?si=xs8qtkSq06lgNDC4&autoplay=1';
+  iframe.title = 'YouTube video player';
+  iframe.allow = 'autoplay;';
+  iframe.allowFullscreen = true;
+  iframe.className = 'tutorial-iframe';
+  
+  var container = document.getElementById('tutorial');
+  container.replaceWith(iframe);
+}
+</script>
 
 For more information about KubeKit and to access the official website, visit [kubekit.io](https://kubekit.io).
 

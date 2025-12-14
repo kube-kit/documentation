@@ -10,10 +10,11 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
                 isMac = /Mac|iPhone|iPad|iPod/.test(navigator.userAgent);
             }
 
-            var shortcut = isMac ? '⌘K' : 'Ctrl+K';
-            
+            var shortcut = isMac ? '⌘ ' : 'Ctrl ';
+            var kButton = 'K';
+
             $('#book-search-input').append(
-                '<span id="search-shortcut-hint">' + shortcut + '</span>'
+                '<div id="search-shortcut-hint"> <kbd>' + shortcut + '</kbd><kbd>' + kButton + '</kbd></div>'
             );
         }
         
@@ -24,6 +25,26 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
                 $('#book-search-input input').focus();
             }
         });
+
+        // hide search-shortcut-hint for non-desktop devices
+
+        function isDesktop() {
+            return window.innerWidth >= 1024;
+        }
+        
+        function updateShortcutVisibility() {
+            if (isDesktop()) {
+                $('#search-shortcut-hint').show();
+            } else {
+                $('#search-shortcut-hint').hide();
+            }
+        }
+        
+        // Initial check
+        updateShortcutVisibility();
+
+        // Update on window resize
+        $(window).on('resize', updateShortcutVisibility);
     });
 });
 
