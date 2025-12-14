@@ -4,7 +4,7 @@
 
 You can manage multiple cluster using KubeKit simultaneously. All the clusters you have created or imported are listed in the dashboard.
 
-![](/docs/images/final/kubekit-dashboard.png)
+![KubeKit Dashboard](/docs/images/final/kubekit-dashboard.png)
 
 You can download the **kubeconfig** file of any cluster in the dashboard.
 
@@ -24,29 +24,21 @@ Additionally, the dashboard displays total cluster capacity metrics such as **CP
 ## Cluster Management Options  
 KubeKit’s left sidebar contains several dedicated sections for managing different components of the cluster. Each section offers a focused view with search, filtering, and management capabilities.
 
----
-
-
-
-
-
-
 
 ## Workloads  
 The **Workloads** section displays all running resources within your cluster. Each workload type supports searching, filtering, and management features such as deletion, scaling, and detailed inspection.
 
----
 
 ### **Pods**  
 - View all pods across namespaces.  
 - Search and filter by **namespace**, **node**, or **status**.  
-- Delete pods by selecting them — a **Delete** button will appear.  
-- Access pod terminals — see [Terminal Access](../monitoring-and-logging/terminal-access.md).
+- Delete pods by selecting them — a **`Delete`** button will appear.  
+- Access pod terminals — see [Terminal Access](/docs/cluster/managing-cluster/terminal-access.md).
 
 ### **Deployments**  
-- Search and filter by **namespace**.  
+- Search and filter by **namespace**.
 - Delete or scale deployments as needed.  
-- Follow [Scaling Deployments](../cluster/deployment-scalling.md) for scaling instructions.
+- Follow [Scaling Deployments](/docs/cluster/managing-cluster/workload.md#scaling-deployments) for scaling instructions.
 
 ### **Replica Sets**  
 - Lists all ReplicaSets.  
@@ -78,7 +70,6 @@ The **Workloads** section displays all running resources within your cluster. Ea
 - View, search, and filter by **namespace**.  
 - Delete or inspect a DaemonSet by clicking its name.
 
----
 
 ## Config  
 Configuration resources are critical for defining how workloads behave and interact. In Kubernetes, **ConfigMaps**, **Secrets**, **ResourceQuotas**, and related components define the operational boundaries and configurations of workloads. **KubeKit** offers an easy way to view, edit, and manage these configurations from a single dashboard.
@@ -86,7 +77,7 @@ Configuration resources are critical for defining how workloads behave and inter
 ### **Config Maps**  
 - Lists all ConfigMaps.  
 - Search and filter by **namespace**.  
-- Delete using the **delete button**.  
+- Delete using the **`Delete`** button.  
 - Click on a ConfigMap to open its dedicated page for details and live editing via the built-in editor.
 
 ### **Secrets**  
@@ -113,8 +104,6 @@ Configuration resources are critical for defining how workloads behave and inter
 - Lists all resource leases.  
 - Search and delete where applicable.
 
----
-
 ## Network  
 Networking is fundamental in Kubernetes, governing communication between pods, services, and external clients. KubeKit provides clear visibility into your network configuration and lets you manage all related resources effortlessly.
 
@@ -140,8 +129,6 @@ Networking is fundamental in Kubernetes, governing communication between pods, s
 - Manage and monitor network access rules.  
 - Search, filter, and delete policies as needed.
 
----
-
 ## Access Control  
 Access control ensures that only authorized entities can perform actions within the cluster. Kubernetes enforces access management using RBAC (Role-Based Access Control), and KubeKit provides a streamlined way to manage all access-related resources.
 
@@ -164,7 +151,5 @@ Access control ensures that only authorized entities can perform actions within 
 ### **Cluster Role Bindings**  
 - Manage Cluster Role Bindings with ease.  
 - Search, filter, and delete as needed.
-
----
 
 **KubeKit** provides complete lifecycle management of your Kubernetes cluster, from configuration and networking to workloads and access control, enabling a unified, efficient, and transparent operational experience for DevOps and platform teams.

@@ -1,0 +1,9 @@
+{
+  "name": "gitbook-plugin-kubekit-custom",
+  "version": "1.0.0",
+  "description": "Custom scripts for KubeKit documentation",
+  "main": "index.js",
+  "engines": {
+    "gitbook": ">=3.0.0"
+  }
+}

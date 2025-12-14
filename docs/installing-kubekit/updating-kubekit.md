@@ -15,7 +15,7 @@ It is recommended to stay up to date to the latest version.
 3. **Check for Updates**  
    Navigate to the **About** section to view your current KubeKit version, then click **Check for updates** to see if a newer version is available.
 
-   ![](/docs/images/final/check-update.png)
+   ![Check Update](/docs/images/final/check-update.png)
 
 4. **Install Updates**  
    - If KubeKit is up to date, a message will appear: **"Your KubeKit is up to date!"**  

@@ -1,3 +1,4 @@
 _book
 .vscode
 node_modules
+!_plugins/
