@@ -20,7 +20,8 @@
     "github",
     "emphasize",
     "theme-default",
-    "favicon"
+    "favicon",
+    "kubekit-custom"
   ],
   
   "pluginsConfig": {
