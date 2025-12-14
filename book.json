@@ -9,7 +9,6 @@
     "-lunr",
     "-search",
     "search-plus",
-    "splitter",
     "expandable-chapters-small",
     "back-to-top-button",
     "tbfed-pagefooter",
@@ -21,7 +20,8 @@
     "github",
     "emphasize",
     "theme-default",
-    "favicon"
+    "favicon",
+    "kubekit-custom"
   ],
   
   "pluginsConfig": {
@@ -57,8 +57,9 @@
     "mobi": "styles/mobi.css",
     "epub": "styles/epub.css"
   },
-  
+
+
   "structure": {
-    "readme": "README.md"
+    "readme": "INTRODUCTION.md"
   }
 }

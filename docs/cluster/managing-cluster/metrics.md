@@ -2,7 +2,7 @@
 
 Metrics are essential for monitoring and managing the health and performance of your Kubernetes cluster. They provide insights into resource utilization, application performance, and overall cluster stability.
 
-If you have not installed a metrics provider like Prometheus or KubeKit in your cluster, you can add any metrics provider from [here](#addding-a-metrics-provider).
+If you have not installed a metrics provider like **Prometheus** or **KubeKit** in your cluster, you can add any metrics provider from [here](#addding-a-metrics-provider).
 
 ## Individual Resource Metrics 
 
@@ -19,7 +19,7 @@ Here, at the top you will find the node metrics and below that, the workload met
 
 ![Central Metrics](/docs/images/final/central-metrics.png)
 
-By clicking on the **View Pods** button from the workload metrics row, you can access detailed metrics for all the pods running under the selected resource.
+By clicking on the **`View Pods`** button from the workload metrics row, you can access detailed metrics for all the pods running under the selected resource.
 
 On the right side graph, you will see real-time **CPU** and **Memory** usage for the selected resource.
 
@@ -34,7 +34,7 @@ Also, you can filter workload metrics by **namespace**, **deployment**, **replic
 
 ## Addding a Metrics Provider
 
-KubeKit supports two metrics providers: **Prometheus** and the built-in **KubeKit** metrics. If you have not installed any of these metrics providers in your cluster, you can add one by clicking on the **Add Metrics Provider** button.
+KubeKit supports two metrics providers: **Prometheus** and the built-in **KubeKit** metrics. If you have not installed any of these metrics providers in your cluster, you can add one by clicking on the **`Add Metrics Provider`** button.
 
 ![Add Metrics Provider](/docs/images/final/add-metrics-provider.png)
 
@@ -57,14 +57,14 @@ If you have **pre-installed** **KubeKit** in your cluster, KubeKit will automati
 
 KubeKit allows you to manage your metrics providers easily. You can switch between different metrics providers or remove an existing one as needed. 
 
-Click on the **Manage Providers** button on the top-right corner of the **central metrics dashboard** to view the currently configured metrics providers.
+Click on the **`Manage Providers`** button on the top-right corner of the **central metrics dashboard** to view the currently configured metrics providers.
 
 
 
-When creating a cluster with **KubeKit**, you have the option to choose one of two metrics providers: **Prometheus** or the built-in KubeKit metrics engine. If you skip this during creation, you still retain the flexibility to configure your preferred toolkit later.
+When creating a cluster with **KubeKit**, you have the option to choose one of two metrics providers: **Prometheus** or the built-in **KubeKit** metrics engine. If you skip this during creation, you still retain the flexibility to configure your preferred toolkit later.
 
 ![Manage Metrics Providers](/docs/images/final/manage-metrics-providers.png)
 
-You can **enable** or **disable** any of the configured metrics providers without unistalling them. Also, you can uninstall any metrics provider by clicking on the **Uninstall** button. 
+You can **enable** or **disable** any of the configured metrics providers without unistalling them. Also, you can uninstall any metrics provider by clicking on the **`Uninstall`** button. 
 
-Also, you can edit the configuration of any pre-installed metrics provider by clicking on the **Edit** button.
+Also, you can edit the configuration of any pre-installed metrics provider by clicking on the **`Edit`** button.

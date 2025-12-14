@@ -3,7 +3,7 @@
 
 ## Installing KubeKit
 
-Before you start the installation, make sure your PC meets the minimum [**system requirements.**](/docs/installing-kubekit/system-req.md)
+Before you start the installation, make sure your PC meets the minimum [system requirements.](/docs/installing-kubekit/system-req.md)
 
 Now you can start installation process following [this guide](/docs/installing-kubekit/installing-kubekit.md) easily.
 
