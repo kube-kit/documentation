@@ -63,7 +63,7 @@
     padding: 0px;
     margin: 0px;
     background-color: var(--content-bg);
-    width: 100%;
+    width: -webkit-fill-available;
     z-index: 999;
     display: flex;
     justify-content: space-between;
