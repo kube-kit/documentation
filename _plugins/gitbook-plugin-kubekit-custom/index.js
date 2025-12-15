@@ -1,6 +1,10 @@
 module.exports = {
     website: {
         assets: './assets',
-        js: ['custom.js']
+        js: [
+            'clear-btn.js',
+            'control-k.js',
+            'redirect-marketing-site.js',
+        ]
     }
 };
