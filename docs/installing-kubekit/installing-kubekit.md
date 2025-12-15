@@ -41,7 +41,7 @@ sudo rpm -ivh ./KubeKit-2.1.1-arm64.rpm -y
 
 ## 3. Launch KubeKit
 
-- Double click on the KubeKit logo and the applications should run immidiately.
+- Double click on the KubeKit logo and the applications should run immediately.
 - If KubeKit fails to launch and you are in MAC Silicon(M1,M2,M3,...), Run the below command in your terminal and accept the license agreement by typing **`A`**
 ```bash
 softwareupdate --install-rosetta
