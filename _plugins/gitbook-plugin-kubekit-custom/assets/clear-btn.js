@@ -9,7 +9,7 @@
 
 
 require(["gitbook", "jquery"], function (gitbook, $) {
-    gitbook.events.bind('start', function () {
+    gitbook.events.bind('page.change', function () {
         var wrapper = $("#book-search-input");
         var input = $("#book-search-input input");
         var clearButtonID = "clear-button";

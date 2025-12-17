@@ -9,7 +9,7 @@
 
 // Add KubeKit.io link button
 require(["gitbook", "jquery"], function (gitbook, $) {
-    gitbook.events.bind('start', function () {
+    gitbook.events.bind('page.change', function () {
         // Remove existing button if present
         $("#kubekit-link-btn").remove();
 
