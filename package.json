@@ -7,7 +7,7 @@
     "install:gitbook": ". ~/.nvm/nvm.sh && nvm use 18 && npm i && . ~/.nvm/nvm.sh && nvm use 10 && npm run setup-plugin && gitbook install 2>&1 | grep -v 'Not found : gitbook-plugin-kubekit-custom' || true",
     "setup-plugin": "chmod +x scripts/setup-plugin.sh && bash scripts/setup-plugin.sh",
     "start": ". ~/.nvm/nvm.sh && nvm use 10 && npm run setup-plugin && gitbook serve",
-    "build": ". ~/.nvm/nvm.sh && nvm use 10 && npm run setup-plugin && gitbook build",
+    "build": "rm -rf _book && . ~/.nvm/nvm.sh && nvm use 10 && npm run setup-plugin && gitbook build",
     "deploy": ". ~/.nvm/nvm.sh && nvm use 18 && gh-pages -d _book -b docs"
   },
   "author": "kubekit",
