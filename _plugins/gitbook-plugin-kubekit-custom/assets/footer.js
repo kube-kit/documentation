@@ -7,7 +7,7 @@
  */
 
 require(['gitbook', 'jquery'], function(gitbook, $) {
-    gitbook.events.bind('page.change', function() {
+    gitbook.events.bind('start', function() {
         // Select the copyright span
         var $copyrightSpan = $('.page-footer .copyright');
         
