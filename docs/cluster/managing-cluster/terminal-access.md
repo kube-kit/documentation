@@ -1,4 +1,4 @@
-## Access Node Terminal
+# Access Node Terminal
 
 From the KubeKit **Cluster Dashboard**, open the **Nodes** section using the left-sidebar navigation. On the **Nodes** page, you will find a table displaying every node in your cluster along with key metadata such as name, role, and status.
 
