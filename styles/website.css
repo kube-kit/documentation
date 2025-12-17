@@ -12,6 +12,7 @@
     --code-bg: #f3f4f6;
     --heading-color: #d1d5db;
     --table-bg: #1f2937;
+    --footer-color: #808080;
     --font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji !important;
     font-family: var(--font-family);
 }
@@ -152,8 +153,13 @@ body {
     height: 24px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%233b82f6' fill-rule='evenodd' d='M10.293 5.293a1 1 0 0 1 1.414 0l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414-1.414L12.586 11H5a1 1 0 1 1 0-2h7.586l-2.293-2.293a1 1 0 0 1 0-1.414' clip-rule='evenodd' stroke-width='0.2' stroke='%233b82f6'/%3E%3C/svg%3E");
+    background-image: url("/docs/images/final/right-arrow-icon.svg");
     margin-left: 6px;
+}
+
+.search-results-title {
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 .book-summary ul.summary {
@@ -449,11 +455,11 @@ a.navigation.navigation-prev:hover {
     padding: 7px 0px 7px 32px;
     background: no-repeat left center;
     background-size: 1.8rem;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' stroke='gray' fill='none' viewBox='0 0 24 24'%3E%3Ccircle cx='11' cy='11' r='7' stroke-width='2'/%3E%3Cline x1='16' y1='16' x2='22' y2='22' stroke-width='2'/%3E%3C/svg%3E");
+    background-image: url("/docs/images/final/search-icon.svg");
+    width: 90%;
 }
 
-/* Keyboard shortcut badge */
-#search-shortcut-hint {
+#clear-button {
     display:flex; 
     justify-content: center;
     align-items: center;
@@ -462,17 +468,22 @@ a.navigation.navigation-prev:hover {
     right: 6px;
     top: 50%;
     transform: translateY(-50%);
-    pointer-events: none;
+    width: 24px; 
+    height: 24px;
 }
 
-#search-shortcut-hint kbd {
-    background: transparent;
-    color: var(--text-color);
-    padding: 4px 6px;
-    border-radius: 4px;
-    font-family: 'Monaco', 'Courier New', monospace;
-    font-size: 10px;
-    border: 1px solid var(--border-color);
+.clear-icon-img {
+    background-image: url(/docs/images/final/close-icon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#clear-button:hover .clear-icon-img {
+    filter: brightness(0) invert(1);
+    opacity: 0.6;
+    cursor: pointer;
 }
 
 /* Copy Code Button */
@@ -515,8 +526,14 @@ a.navigation.navigation-prev:hover {
     margin-top: 3rem;
     padding-top: 2rem;
     border-top: 1px solid var(--border-color);
-    font-size: 14px;
-    color: #6b7280;
+    font-size: 1.2rem;
+    color: var(--footer-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-modification {
     display: none;
 }
 
@@ -610,6 +627,7 @@ a.gitbook-link {
     #book-search-input input:focus,
     #book-search-input input:hover {
         padding: 7px 0px 7px 24px;
+        width: 85%;
     }
 
     .book-header {
@@ -651,6 +669,19 @@ a.gitbook-link {
     
     .tutorial-iframe {
         max-width: 100%;
+    }
+
+    .clear-icon-img {
+        background-image: url(/docs/images/final/close-icon-sm.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 90%;
+        height: 90%;
+    }
+
+    .search-results-title {
+        margin-bottom: 0px !important;
+        font-size: 1.5em;
     }
 }
 

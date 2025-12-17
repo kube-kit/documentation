@@ -1,4 +1,4 @@
-## Cluster Dashborad  
+# Cluster Dashborad  
 
 **KubeKit** provides an intuitive UI interface to manage every aspect of your cluster including [**nodes**](/docs/cluster/managing-cluster/nodes.md), [**namespaces**](/docs/cluster/managing-cluster/namespaces.md), [**events**](/docs/cluster/managing-cluster/events.md), [**metrics**](/docs/cluster/managing-cluster/metrics.md), [**logs**](/docs/cluster/managing-cluster/log.md), [**helm**](/docs/cluster/managing-cluster/helm.md), [**workloads**](/docs/cluster/managing-cluster/workload.md) within a unified dashboard.
 
