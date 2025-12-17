@@ -5,6 +5,7 @@ module.exports = {
             'clear-btn.js',
             'control-k.js',
             'redirect-marketing-site.js',
+            'footer.js',
         ]
     }
 };

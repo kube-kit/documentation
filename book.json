@@ -34,9 +34,6 @@
     "search-plus": {
       "depth": 3
     },
-    "tbfed-pagefooter": {
-      "copyright": "Copyright &copy; KubeKit"
-    },
     "github": {
       "url": "https://github.com/kube-kit/kube-kit"
     },

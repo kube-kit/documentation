@@ -549,8 +549,14 @@ a.navigation.navigation-prev:hover {
     margin-top: 3rem;
     padding-top: 2rem;
     border-top: 1px solid var(--border-color);
-    font-size: 14px;
-    color: #6b7280;
+    font-size: 1.2rem;
+    color: white/60;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-modification {
     display: none;
 }
 
