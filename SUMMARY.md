@@ -3,6 +3,7 @@
 
 * [Quick Start Guide](./docs/getting-started/quick-start-guide.md)
 * [Release notes](./docs/release-notes/README.md)
+* [v0.1.99](./docs/release-notes/release-v0.1.99.md)
   * [v2.1.4](./docs/release-notes/release-v2.1.4.md)
   * [v2.1.3](./docs/release-notes/release-v2.1.3.md)
   * [v2.1.2](./docs/release-notes/release-v2.1.2.md)
