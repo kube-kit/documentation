@@ -569,7 +569,17 @@ a.gitbook-link {
     display: none !important;
 }
 
+#release-heading {
+    display:flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
 
+#release-date {
+    font-size:medium; 
+    font-weight:normal; 
+    font-style:italic;
+}
 
 @media (max-width: 600px) {
     :root {
