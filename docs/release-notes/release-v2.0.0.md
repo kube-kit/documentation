@@ -1,4 +1,4 @@
-<h1 style="display:flex; justify-content: space-between; align-items: center;"> KubeKit v2.0.0  <span id="release-date" style="font-size:medium; font-weight:normal; font-style:italic;">Aug 20, 2025</span> </h1> 
+<h1 id="release-heading"> KubeKit v2.0.0  <span id="release-date">Aug 20, 2025</span> </h1> 
 
 ## Bug Fixes:
 * Title bar back button issue fixed.

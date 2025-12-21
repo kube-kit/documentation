@@ -1,4 +1,4 @@
-<h1 style="display:flex; justify-content: space-between; align-items: center;"> KubeKit v1.2.0  <span id="release-date" style="font-size:medium; font-weight:normal; font-style:italic;">Mar 24, 2025</span> </h1> 
+<h1 id="release-heading"> KubeKit v1.2.0  <span id="release-date">Mar 24, 2025</span> </h1> 
 
 ## New Features:
 * Logs monitoring dashboard.

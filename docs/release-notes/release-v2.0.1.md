@@ -1,4 +1,4 @@
-<h1 style="display:flex; justify-content: space-between; align-items: center;"> KubeKit v2.0.1  <span id="release-date" style="font-size:medium; font-weight:normal; font-style:italic;">Oct 27, 2025</span> </h1> 
+<h1 id="release-heading"> KubeKit v2.0.1  <span id="release-date">Oct 27, 2025</span> </h1> 
 
 ## New Features:
 * TLS support with Let's Encrypt.

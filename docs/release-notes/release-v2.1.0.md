@@ -1,4 +1,4 @@
-<h1 style="display:flex; justify-content: space-between; align-items: center;"> KubeKit v2.1.0  <span id="release-date" style="font-size:medium; font-weight:normal; font-style:italic;">Nov 25, 2025</span> </h1> 
+<h1 id="release-heading"> KubeKit v2.1.0  <span id="release-date">Nov 25, 2025</span> </h1> 
 
 ## New Features
 * Added in app analytics.
