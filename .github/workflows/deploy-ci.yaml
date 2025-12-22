@@ -1,0 +1,57 @@
+name: Deploy Documentation
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Setup Custom Plugin
+        run: |
+          chmod +x scripts/setup-plugin.sh
+          ./scripts/setup-plugin.sh
+
+      - name: Setup Node.js 10
+        uses: actions/setup-node@v4
+        with:
+          node-version: '10'
+
+      - name: Install GitBook
+        run: |
+          npx gitbook-cli install || true
+
+      - name: Build Documentation
+        run: |
+          rm -rf _book
+          npx gitbook-cli build
+
+      - name: Setup Node.js 18 for Deploy
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      # - name: Deploy to GitHub Pages
+      #   run: npx gh-pages -d _book -b docs
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
