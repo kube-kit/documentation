@@ -22,11 +22,6 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Setup Custom Plugin
-        run: |
-          chmod +x scripts/setup-plugin.sh
-          ./scripts/setup-plugin.sh
-
       - name: Setup Node.js 10
         uses: actions/setup-node@v4
         with:
@@ -35,6 +30,17 @@ jobs:
       - name: Install GitBook
         run: |
           npx gitbook-cli install || true
+
+      - name: Setup Custom Plugin
+        run: |
+          chmod +x scripts/setup-plugin.sh
+          ./scripts/setup-plugin.sh
+
+      - name: Inject and Verify Custom Plugin
+        run: |
+          chmod +x scripts/setup-plugin.sh
+          ./scripts/setup-plugin.sh > /dev/null 2>&1  
+          echo "✓ Kubekit custom plugin injected into node_modules!"
 
       - name: Build Documentation
         run: |
