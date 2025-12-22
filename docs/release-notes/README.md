@@ -3,6 +3,7 @@
 > This document provides a comprehensive overview of **KubeKit** releases, including **New Features**, **Bug Fixes**, and **Enhancements**.
 
 To see the complete list of release notes, visit the following pages:
+* [KubeKit test-notes](/docs/release-notes/release-test-notes.md)
 * [KubeKit v2.1.4](/docs/release-notes/release-v2.1.4.md)
 * [KubeKit v2.1.3](/docs/release-notes/release-v2.1.3.md)
 * [KubeKit v2.1.2](/docs/release-notes/release-v2.1.2.md)
