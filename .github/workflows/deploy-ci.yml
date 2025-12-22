@@ -29,12 +29,12 @@ jobs:
 
       - name: Install GitBook
         run: |
-          npx gitbook-cli install || true
+          npx gitbook-cli install > /dev/null 2>&1 || true
 
       - name: Inject and Verify Custom Plugin
         run: |
           chmod +x scripts/setup-plugin.sh
-          ./scripts/setup-plugin.sh > /dev/null 2>&1  
+          ./scripts/setup-plugin.sh   
           echo "✓ Kubekit custom plugin injected into node_modules!"
 
       - name: Build Documentation
