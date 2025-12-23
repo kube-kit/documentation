@@ -47,12 +47,14 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Configure Git
+      - name: Deploy docs to docs branch
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Deploy to GitHub Pages
-        run: npx gh-pages -d _book -b docs
+          npx gh-pages \
+            -d _book \
+            -b docs \
+            -r https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.DOCUMENTATION_REPO_TOKEN }}
