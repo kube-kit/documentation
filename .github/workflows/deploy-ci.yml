@@ -52,7 +52,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      # - name: Deploy to GitHub Pages
-      #   run: npx gh-pages -d _book -b docs
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy to GitHub Pages
+        run: npx gh-pages -d _book -b docs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
