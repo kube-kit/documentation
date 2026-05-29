@@ -36,18 +36,7 @@ To create a new release of the documentation, follow these steps:
 4. Set the target branch to `master`.
 5. Create the release by clicking on the `Publish release` button.
 
-### Deploy
-
-Switch to **master** branch
-
-```bash
-git switch master
-git pull origin master
-npm run build
-npm run deploy
-```
-
-Now check the documentation at [**docs.kubekit.io**](https://docs.kubekit.io).
+Now check the documentation at [`docs.kubekit.io`](https://docs.kubekit.io).
 You may wait for a few minutes (2-5 minutes) for the changes to reflect.
 
 
@@ -57,4 +46,15 @@ You may wait for a few minutes (2-5 minutes) for the changes to reflect.
 2. Scroll down to the "Pages" section.
 3. In the "Custom domain" field, set `docs.kubekit.io` and save.
 
-Now wait for a few minutes for the changes to take effect. Try accessing `docs.kubekit.io` again.
+Now wait for a few minutes for the changes to take effect. Try accessing [`docs.kubekit.io`](https://docs.kubekit.io) again.
+
+### Manual Deploy
+
+Switch to **master** branch
+
+```bash
+git switch master
+git pull origin master
+npm run build
+npm run deploy
+```
